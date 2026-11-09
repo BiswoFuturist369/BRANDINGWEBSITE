@@ -1,0 +1,23 @@
+# Dependencies & build output
+node_modules/
+dist/
+.vite/
+
+# Environment & logs
+.env
+.env.local
+.env.*.local
+npm-debug.log*
+*.log
+
+# OS & editor files
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+
+# Workspace helper binaries & staging backups (served assets live in public/)
+gh.exe
+files (2)/
+/urbrand360-reel-1080p.mp4
+/urbrand360-reel-poster.jpg
