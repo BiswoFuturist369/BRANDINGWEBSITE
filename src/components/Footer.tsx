@@ -24,7 +24,7 @@ export const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="relative w-full bg-[#0A0A0A] text-[#FFFFFF] pt-24 pb-12 px-6 md:px-12 border-t border-white/10 overflow-hidden">
+    <footer className="relative w-full max-w-full bg-[#0A0A0A] text-[#FFFFFF] pt-20 md:pt-24 pb-12 px-4 sm:px-6 md:px-12 border-t border-white/10 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Top 3 Columns: Services / Company / Contact */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 pb-20 border-b border-white/10">
@@ -165,9 +165,9 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Giant Basic Serif Wordmark "urbrand 360" with #E11D2A Accent (No Halftone) */}
-        <div className="py-14 md:py-20 overflow-hidden flex items-center justify-center select-none">
-          <h2 className="font-display text-[68px] sm:text-[116px] md:text-[168px] lg:text-[216px] leading-[0.88] tracking-[-0.02em] text-white text-center font-normal whitespace-nowrap">
+        {/* Giant Basic Serif Wordmark "urbrand 360" with #E11D2A Accent (Fluids Clamped for All Screens) */}
+        <div className="w-full max-w-full py-12 sm:py-16 md:py-20 overflow-hidden flex items-center justify-center select-none px-2">
+          <h2 className="font-display text-[clamp(34px,8.5vw,132px)] leading-[0.9] tracking-[-0.02em] text-white text-center font-normal whitespace-nowrap max-w-full">
             urbrand <span className="italic text-[#E11D2A]">360</span>
           </h2>
         </div>

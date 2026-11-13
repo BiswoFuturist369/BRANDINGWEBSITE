@@ -74,7 +74,7 @@ export const StatementStats: React.FC = () => {
     <section
       ref={sectionRef}
       id="statement"
-      className="relative w-full bg-[#FFFFFF] text-[#0A0A0A] py-24 md:py-32 px-6 md:px-12 border-b border-[#0A0A0A]/12"
+      className="relative w-full max-w-full bg-[#FFFFFF] text-[#0A0A0A] py-20 md:py-32 px-4 sm:px-6 md:px-12 border-b border-[#0A0A0A]/12 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto">
         {/* Eyebrow — Increased font size */}
@@ -84,9 +84,9 @@ export const StatementStats: React.FC = () => {
           </span>
         </div>
 
-        {/* Clean Display Heading H2 (Halftone animation removed entirely) */}
+        {/* Clean Display Heading H2 (Fluids Clamped for All Screens) */}
         <div className="max-w-5xl mb-8">
-          <h2 className="font-display text-[44px] md:text-[68px] lg:text-[88px] leading-[1.04] text-[#0A0A0A] font-normal tracking-[-0.015em]">
+          <h2 className="font-display text-[clamp(32px,5.2vw,72px)] leading-[1.04] text-[#0A0A0A] font-normal tracking-[-0.015em] max-w-full">
             Rewrite the way the world <span className="italic text-[#E11D2A]">sees you.</span>
           </h2>
         </div>
@@ -104,7 +104,7 @@ export const StatementStats: React.FC = () => {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 pt-12 border-t border-[#0A0A0A]/12">
           {/* Stat 1 */}
           <div className="flex flex-col">
-            <div className="font-display text-[56px] md:text-[76px] lg:text-[88px] leading-none text-[#0A0A0A] mb-3">
+            <div className="font-display text-[clamp(42px,5vw,76px)] leading-none text-[#0A0A0A] mb-3">
               <Counter end={5} trigger={inView} />
             </div>
             <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#0A0A0A]/60">
@@ -114,7 +114,7 @@ export const StatementStats: React.FC = () => {
 
           {/* Stat 2 */}
           <div className="flex flex-col">
-            <div className="font-display text-[56px] md:text-[76px] lg:text-[88px] leading-none text-[#0A0A0A] mb-3">
+            <div className="font-display text-[clamp(42px,5vw,76px)] leading-none text-[#0A0A0A] mb-3">
               {inView ? (
                 <span>
                   3–<Counter end={8} trigger={inView} />+
@@ -130,7 +130,7 @@ export const StatementStats: React.FC = () => {
 
           {/* Stat 3 */}
           <div className="flex flex-col">
-            <div className="font-display text-[56px] md:text-[76px] lg:text-[88px] leading-none text-[#0A0A0A] mb-3">
+            <div className="font-display text-[clamp(42px,5vw,76px)] leading-none text-[#0A0A0A] mb-3">
               <Counter end={100} suffix="%" trigger={inView} />
             </div>
             <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#0A0A0A]/60">
@@ -140,7 +140,7 @@ export const StatementStats: React.FC = () => {
 
           {/* Stat 4 */}
           <div className="flex flex-col">
-            <div className="font-display text-[56px] md:text-[76px] lg:text-[88px] leading-none text-[#0A0A0A] mb-3">
+            <div className="font-display text-[clamp(42px,5vw,76px)] leading-none text-[#0A0A0A] mb-3">
               <Counter end={1} trigger={inView} />
             </div>
             <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#0A0A0A]/60">

@@ -35,7 +35,7 @@ export const BrandHero: React.FC = () => {
     <section
       ref={containerRef}
       id="studio"
-      className="relative w-full min-h-screen bg-[#FFFFFF] text-[#0A0A0A] overflow-hidden flex flex-col justify-between pt-24 pb-12 px-6 md:px-12 selection:bg-[#E11D2A] selection:text-white"
+      className="relative w-full max-w-full min-h-screen bg-[#FFFFFF] text-[#0A0A0A] overflow-hidden flex flex-col justify-between pt-24 pb-12 px-4 sm:px-6 md:px-12 selection:bg-[#E11D2A] selection:text-white"
     >
       {/* Clean Architectural Background — Zero cracks, zero noisy filters, pristine Interbrand aesthetic */}
       <div className="relative z-10 max-w-7xl mx-auto w-full flex-1 flex flex-col justify-between">
@@ -70,8 +70,8 @@ export const BrandHero: React.FC = () => {
           </div>
 
           {/* Interbrand Unfold H1: First centered 'U', then expands into full 'URBrand 360' */}
-          <div className="relative flex items-center justify-center select-none overflow-hidden py-2 px-2 max-w-full">
-            <h1 className="font-sans font-black tracking-[-0.035em] text-[64px] sm:text-[96px] md:text-[140px] lg:text-[170px] xl:text-[200px] leading-[0.92] text-[#0A0A0A] flex items-center justify-center uppercase">
+          <div className="relative w-full max-w-full flex items-center justify-center select-none overflow-hidden py-2 px-2">
+            <h1 className="font-sans font-black tracking-[-0.03em] text-[clamp(32px,7.5vw,118px)] leading-[0.92] text-[#0A0A0A] flex items-center justify-center uppercase max-w-full">
               {/* The Anchor Initial Letter 'U' */}
               <motion.span
                 layout
@@ -97,7 +97,7 @@ export const BrandHero: React.FC = () => {
                 <span className="inline-block text-[#0A0A0A]">
                   RBrand
                 </span>
-                <span className="inline-block ml-3 sm:ml-5 md:ml-7 text-[#E11D2A]">
+                <span className="inline-block ml-2 sm:ml-3 md:ml-4 text-[#E11D2A]">
                   360
                 </span>
               </motion.div>

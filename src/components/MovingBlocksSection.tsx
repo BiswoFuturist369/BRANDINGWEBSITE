@@ -25,7 +25,7 @@ const MovingBlockWrapper: React.FC<MovingBlockCardProps> = ({
 
   return (
     <div
-      className={`pointer-events-none absolute inset-x-0 top-1/2 -translate-y-1/2 flex px-4 sm:px-8 md:px-14 lg:px-20 ${
+      className={`pointer-events-none absolute inset-x-0 top-1/2 -translate-y-1/2 flex px-3 sm:px-6 md:px-10 lg:px-16 ${
         side === 'left' ? 'justify-center md:justify-start' : 'justify-center md:justify-end'
       }`}
     >
@@ -51,18 +51,18 @@ export const MovingBlocksSection: React.FC = () => {
     <section
       ref={sectionRef}
       id="highlights"
-      className="relative w-full h-[330vh] bg-[#F6F6F4] text-[#0A0A0A] border-t border-b border-[#0A0A0A]/12"
+      className="relative w-full max-w-full h-[330vh] bg-[#F6F6F4] text-[#0A0A0A] border-t border-b border-[#0A0A0A]/12 overflow-hidden"
     >
       {/* Sticky Full-Viewport Stage */}
-      <div className="sticky top-0 w-full h-screen overflow-hidden flex items-center justify-center">
+      <div className="sticky top-0 w-full max-w-full h-screen overflow-hidden flex items-center justify-center">
         {/* Background Layer: Centered Sticky Basic Header ("DID YOU KNOW?") */}
-        <div className="relative z-10 max-w-6xl mx-auto px-6 text-center select-none pointer-events-none">
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 text-center select-none pointer-events-none w-full">
           <div className="mb-4">
             <span className="font-mono text-[14px] sm:text-[15px] md:text-[16px] uppercase tracking-[0.22em] text-[#E11D2A] font-bold">
               URBRAND 360 · BY DESIGN
             </span>
           </div>
-          <h2 className="font-sans font-semibold uppercase text-[52px] sm:text-[84px] md:text-[118px] lg:text-[148px] leading-[0.94] tracking-[-0.04em] text-[#0A0A0A]">
+          <h2 className="font-sans font-semibold uppercase text-[clamp(36px,7.5vw,118px)] leading-[0.94] tracking-[-0.04em] text-[#0A0A0A] max-w-full">
             DID YOU KNOW?
           </h2>
           <p className="mt-5 font-mono text-[10px] md:text-[11px] uppercase tracking-[0.2em] text-[#0A0A0A]/45">
@@ -79,7 +79,7 @@ export const MovingBlocksSection: React.FC = () => {
             yRange={['40vh', '-112vh']}
             side="left"
           >
-            <div className="w-[325px] sm:w-[395px] md:w-[440px] min-h-[390px] md:min-h-[435px] bg-[#0A0A0A] text-white p-8 md:p-10 shadow-[0_25px_70px_rgba(10,10,10,0.3)] border border-white/10 flex flex-col justify-between">
+            <div className="w-[min(440px,calc(100vw-36px))] min-h-[360px] md:min-h-[420px] bg-[#0A0A0A] text-white p-8 md:p-10 shadow-[0_25px_70px_rgba(10,10,10,0.3)] border border-white/10 flex flex-col justify-between">
               <div className="flex items-start justify-between gap-4">
                 <p className="font-serif italic text-[22px] md:text-[26px] leading-[1.15] text-white/95 max-w-[16ch]">
                   One dedicated pod engineered around your business.
@@ -112,7 +112,7 @@ export const MovingBlocksSection: React.FC = () => {
             yRange={['102vh', '-112vh']}
             side="right"
           >
-            <div className="w-[325px] sm:w-[395px] md:w-[440px] min-h-[390px] md:min-h-[435px] bg-[#FFFFFF] text-[#0A0A0A] border-x-[14px] border-[#0A0A0A] border-y border-y-[#0A0A0A]/15 p-8 md:p-10 shadow-[0_25px_70px_rgba(10,10,10,0.22)] flex flex-col justify-between">
+            <div className="w-[min(440px,calc(100vw-36px))] min-h-[360px] md:min-h-[420px] bg-[#FFFFFF] text-[#0A0A0A] border-x-[14px] border-[#0A0A0A] border-y border-y-[#0A0A0A]/15 p-8 md:p-10 shadow-[0_25px_70px_rgba(10,10,10,0.22)] flex flex-col justify-between">
               <div className="text-center border-b border-[#0A0A0A]/12 pb-4">
                 <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#E11D2A] font-semibold">
                   02 / SENIOR PEDIGREE
@@ -144,7 +144,7 @@ export const MovingBlocksSection: React.FC = () => {
             yRange={['106vh', '-112vh']}
             side="left"
           >
-            <div className="w-[325px] sm:w-[395px] md:w-[440px] min-h-[400px] md:min-h-[445px] bg-[#E11D2A] text-white p-8 md:p-10 shadow-[0_25px_70px_rgba(225,29,42,0.28)] flex flex-col justify-between relative overflow-hidden">
+            <div className="w-[min(440px,calc(100vw-36px))] min-h-[360px] md:min-h-[420px] bg-[#E11D2A] text-white p-8 md:p-10 shadow-[0_25px_70px_rgba(225,29,42,0.28)] flex flex-col justify-between relative overflow-hidden">
               <div className="flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.18em] text-white/90">
                 <span>03 / TAX &amp; COMPLIANCE</span>
                 <span>CHARTERED LED</span>
@@ -192,7 +192,7 @@ export const MovingBlocksSection: React.FC = () => {
             yRange={['106vh', '-112vh']}
             side="right"
           >
-            <div className="w-[325px] sm:w-[395px] md:w-[440px] min-h-[390px] md:min-h-[435px] bg-[#FFFFFF] text-[#0A0A0A] border border-[#0A0A0A]/15 p-8 md:p-10 shadow-[0_25px_70px_rgba(10,10,10,0.2)] flex flex-col justify-between">
+            <div className="w-[min(440px,calc(100vw-36px))] min-h-[360px] md:min-h-[420px] bg-[#FFFFFF] text-[#0A0A0A] border border-[#0A0A0A]/15 p-8 md:p-10 shadow-[0_25px_70px_rgba(10,10,10,0.2)] flex flex-col justify-between">
               <div className="flex items-start justify-between gap-4 border-b border-[#0A0A0A]/10 pb-5">
                 <span className="font-serif text-[22px] text-[#0A0A0A]/80">We build</span>
                 <span className="font-serif text-[22px] text-[#E11D2A] italic text-right">
@@ -225,7 +225,7 @@ export const MovingBlocksSection: React.FC = () => {
             yRange={['106vh', '-112vh']}
             side="left"
           >
-            <div className="w-[325px] sm:w-[395px] md:w-[440px] min-h-[390px] md:min-h-[435px] bg-[#0A0A0A] text-white border-t-4 border-[#E11D2A] p-8 md:p-10 shadow-[0_25px_70px_rgba(10,10,10,0.32)] flex flex-col justify-between">
+            <div className="w-[min(440px,calc(100vw-36px))] min-h-[360px] md:min-h-[420px] bg-[#0A0A0A] text-white border-t-4 border-[#E11D2A] p-8 md:p-10 shadow-[0_25px_70px_rgba(10,10,10,0.32)] flex flex-col justify-between">
               <div className="flex items-center justify-between">
                 <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#E11D2A]">
                   05 / COMMERCE + AI
@@ -257,7 +257,7 @@ export const MovingBlocksSection: React.FC = () => {
             yRange={['106vh', '-42vh']}
             side="right"
           >
-            <div className="w-[325px] sm:w-[395px] md:w-[440px] min-h-[390px] md:min-h-[435px] bg-[#FFFFFF] text-[#0A0A0A] border border-[#0A0A0A]/20 p-8 md:p-10 shadow-[0_25px_70px_rgba(10,10,10,0.22)] flex flex-col justify-between">
+            <div className="w-[min(440px,calc(100vw-36px))] min-h-[360px] md:min-h-[420px] bg-[#FFFFFF] text-[#0A0A0A] border border-[#0A0A0A]/20 p-8 md:p-10 shadow-[0_25px_70px_rgba(10,10,10,0.22)] flex flex-col justify-between">
               <div className="flex items-center justify-between">
                 <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#E11D2A] font-semibold">
                   06 / ACCOUNTABILITY

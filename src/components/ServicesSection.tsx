@@ -21,7 +21,7 @@ export const ServicesSection: React.FC = () => {
       id="services"
       ref={containerRef}
       onMouseMove={handleMouseMove}
-      className="relative w-full py-24 md:py-36 px-6 md:px-12 bg-[#FFFFFF] text-[#0A0A0A] overflow-hidden"
+      className="relative w-full max-w-full py-20 md:py-36 px-4 sm:px-6 md:px-12 bg-[#FFFFFF] text-[#0A0A0A] overflow-hidden"
     >
       <div className="max-w-7xl mx-auto">
         {/* Floating Preview Image Following Cursor */}
@@ -64,9 +64,9 @@ export const ServicesSection: React.FC = () => {
           </span>
         </div>
 
-        {/* Basic Display Heading H2 */}
+        {/* Basic Display Heading H2 (Fluids Clamped) */}
         <div className="max-w-5xl mb-16 md:mb-24">
-          <h2 className="font-display text-[42px] md:text-[64px] lg:text-[78px] leading-[1.03] tracking-[-0.015em] text-[#0A0A0A] font-normal">
+          <h2 className="font-display text-[clamp(30px,4.5vw,66px)] leading-[1.03] tracking-[-0.015em] text-[#0A0A0A] font-normal max-w-full">
             Eight ways we help brands{' '}
             <span className="italic text-[#E11D2A]">find and command</span>{' '}
             their unique premium.

@@ -253,7 +253,7 @@ export const GlobalSection: React.FC = () => {
   return (
     <section
       id="global"
-      className="relative w-full py-28 md:py-40 px-6 md:px-12 bg-[#0A0A0A] text-[#FFFFFF] overflow-hidden border-t border-white/10"
+      className="relative w-full max-w-full py-20 md:py-40 px-4 sm:px-6 md:px-12 bg-[#0A0A0A] text-[#FFFFFF] overflow-hidden border-t border-white/10"
     >
       <div className="max-w-7xl mx-auto">
         {/* Eyebrow — Increased font size */}
@@ -263,9 +263,9 @@ export const GlobalSection: React.FC = () => {
           </span>
         </div>
 
-        {/* Basic Display Heading H2 */}
+        {/* Basic Display Heading H2 (Fluids Clamped) */}
         <div className="max-w-5xl mb-16 md:mb-20">
-          <h2 className="font-display text-[42px] md:text-[64px] lg:text-[78px] leading-[1.03] tracking-[-0.015em] text-white font-normal">
+          <h2 className="font-display text-[clamp(30px,4.5vw,66px)] leading-[1.03] tracking-[-0.015em] text-white font-normal max-w-full">
             One studio. <span className="italic text-[#E11D2A]">Every market.</span>
           </h2>
         </div>

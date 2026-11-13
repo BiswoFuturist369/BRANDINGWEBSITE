@@ -24,18 +24,18 @@ export const CaseStudiesGallery: React.FC = () => {
   return (
     <section
       id="results"
-      className="relative w-full py-28 md:py-40 bg-[#0A0A0A] text-[#FFFFFF] overflow-hidden border-t border-white/10 select-none"
+      className="relative w-full max-w-full py-20 md:py-40 bg-[#0A0A0A] text-[#FFFFFF] overflow-hidden border-t border-white/10 select-none"
     >
       {/* Top Header: Eyebrow + Basic H2 + Badge */}
-      <div className="max-w-7xl mx-auto px-6 md:px-12 mb-16 md:mb-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 mb-14 md:mb-20">
         <div className="mb-6">
-          <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#E11D2A] font-semibold">
+          <span className="font-mono text-[14px] sm:text-[15px] md:text-[16px] uppercase tracking-[0.22em] text-[#E11D2A] font-bold">
             SELECTED WORK
           </span>
         </div>
 
         <div className="max-w-5xl mb-6">
-          <h2 className="font-display text-[42px] md:text-[64px] lg:text-[78px] leading-[1.03] tracking-[-0.015em] text-white font-normal">
+          <h2 className="font-display text-[clamp(30px,4.5vw,66px)] leading-[1.03] tracking-[-0.015em] text-white font-normal max-w-full">
             Design a future so irresistible,{' '}
             <span className="italic text-[#E11D2A]">it becomes inevitable.</span>
           </h2>

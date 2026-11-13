@@ -36,19 +36,19 @@ export const CTASection: React.FC = () => {
   return (
     <section
       id="contact"
-      className="relative w-full py-28 md:py-40 px-6 md:px-12 bg-[#0A0A0A] text-[#FFFFFF] border-t border-white/10 overflow-hidden"
+      className="relative w-full max-w-full py-20 md:py-40 px-4 sm:px-6 md:px-12 bg-[#0A0A0A] text-[#FFFFFF] border-t border-white/10 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto">
         {/* Eyebrow */}
         <div className="mb-6">
-          <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#E11D2A] font-semibold">
+          <span className="font-mono text-[14px] sm:text-[15px] md:text-[16px] uppercase tracking-[0.22em] text-[#E11D2A] font-bold">
             GET IN TOUCH
           </span>
         </div>
 
-        {/* Basic Display Heading H2 */}
+        {/* Basic Display Heading H2 (Fluids Clamped) */}
         <div className="max-w-5xl mb-6">
-          <h2 className="font-display text-[42px] md:text-[64px] lg:text-[78px] leading-[1.03] tracking-[-0.015em] text-white font-normal">
+          <h2 className="font-display text-[clamp(30px,4.5vw,66px)] leading-[1.03] tracking-[-0.015em] text-white font-normal max-w-full">
             Let’s build something <span className="italic text-[#E11D2A]">great together.</span>
           </h2>
         </div>

@@ -48,7 +48,7 @@ export const EmployeesPage: React.FC = () => {
               THE SPECIALISTS · SENIOR EXECUTION TEAM
             </span>
 
-            <h1 className="font-display text-[44px] md:text-[72px] lg:text-[84px] leading-[1.02] tracking-[-0.015em] text-white font-normal max-w-4xl">
+            <h1 className="font-display text-[clamp(32px,5.5vw,76px)] leading-[1.02] tracking-[-0.015em] text-white font-normal max-w-4xl">
               Specialists, <span className="italic text-[#E11D2A]">not generalists.</span>
             </h1>
 

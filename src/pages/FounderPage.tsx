@@ -40,7 +40,7 @@ export const FounderPage: React.FC = () => {
             <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#E11D2A] font-semibold block mb-4">
               COMPANY LEADERSHIP · FOUNDER & CEO
             </span>
-            <h1 className="font-display text-[44px] md:text-[72px] lg:text-[84px] leading-[1.02] tracking-[-0.01em] text-white font-normal">
+            <h1 className="font-display text-[clamp(32px,5.5vw,76px)] leading-[1.02] tracking-[-0.01em] text-white font-normal max-w-full">
               Led by a founder who is{' '}
               <span className="italic text-[#E11D2A]">personally accountable.</span>
             </h1>

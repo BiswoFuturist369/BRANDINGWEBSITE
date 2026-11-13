@@ -43,7 +43,7 @@ export const TrustSection: React.FC = () => {
   return (
     <section
       id="trust"
-      className="relative w-full py-28 md:py-36 px-6 md:px-12 bg-[#0A0A0A] text-[#FFFFFF] border-t border-white/10 overflow-hidden"
+      className="relative w-full max-w-full py-20 md:py-36 px-4 sm:px-6 md:px-12 bg-[#0A0A0A] text-[#FFFFFF] border-t border-white/10 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto">
         {/* Eyebrow — Increased font size */}
@@ -53,9 +53,9 @@ export const TrustSection: React.FC = () => {
           </span>
         </div>
 
-        {/* Section Title */}
+        {/* Section Title (Fluids Clamped) */}
         <div className="max-w-4xl mb-16 md:mb-20">
-          <h2 className="font-serif text-[38px] md:text-[52px] lg:text-[60px] leading-[1.08] text-white">
+          <h2 className="font-serif text-[clamp(28px,3.8vw,54px)] leading-[1.08] text-white max-w-full">
             Built on transparency, senior craft, and{' '}
             <span className="italic text-[#E11D2A]">real accountability.</span>
           </h2>

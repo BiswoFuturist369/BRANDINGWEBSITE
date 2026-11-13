@@ -13,7 +13,7 @@ export const LeadershipGatewaySection: React.FC = () => {
   return (
     <section
       id="founder"
-      className="relative w-full py-28 md:py-40 px-6 md:px-12 bg-[#0A0A0A] text-[#FFFFFF] border-t border-white/10 overflow-hidden"
+      className="relative w-full max-w-full py-20 md:py-40 px-4 sm:px-6 md:px-12 bg-[#0A0A0A] text-[#FFFFFF] border-t border-white/10 overflow-hidden"
     >
       {/* Subtle Orbit Ring Accent */}
       <div className="pointer-events-none absolute -right-24 top-1/2 -translate-y-1/2 w-[520px] h-[520px] rounded-full border border-white/[0.04]" />
@@ -27,9 +27,9 @@ export const LeadershipGatewaySection: React.FC = () => {
           </span>
         </div>
 
-        {/* Basic Display Heading (No Halftone) */}
+        {/* Basic Display Heading (Fluids Clamped) */}
         <div className="max-w-5xl mb-14 md:mb-20">
-          <h2 className="font-display text-[40px] md:text-[64px] lg:text-[76px] leading-[1.03] tracking-[-0.015em] text-white font-normal">
+          <h2 className="font-display text-[clamp(28px,4.2vw,62px)] leading-[1.03] tracking-[-0.015em] text-white font-normal max-w-full">
             Led by a founder who is{' '}
             <span className="italic text-[#E11D2A]">personally accountable.</span>
           </h2>
@@ -80,8 +80,8 @@ export const LeadershipGatewaySection: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Primary Explicit Button Headline */}
-                <div className="font-display text-[30px] sm:text-[38px] md:text-[46px] lg:text-[52px] leading-[1.08] text-white group-hover:text-white transition-colors">
+                {/* Primary Explicit Button Headline (Fluids Clamped) */}
+                <div className="font-display text-[clamp(22px,3.2vw,46px)] leading-[1.08] text-white group-hover:text-white transition-colors max-w-full">
                   Tap on it to know about the founder and the team
                 </div>
 
