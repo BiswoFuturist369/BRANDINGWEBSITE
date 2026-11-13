@@ -59,12 +59,12 @@ export const EMPLOYEES_DATA: EmployeeProfile[] = [
     bio: 'CA with 6 years of corporate experience and specialised expertise in complex taxation within the international market; precise financial oversight and compliance strategies, helping businesses navigate cross-border tax regulations and optimise their financial operations.',
   },
   {
-    id: 'aarti-singh',
+    id: 'prakash-tiwari',
     number: '02',
-    name: 'Aarti Singh',
+    name: 'Prakash Tiwari',
     role: 'MARKETING & SALES STRATEGY LEADER',
-    image: '/team/team-aarti-singh.jpg',
-    bio: 'Strategic leader in commercial marketing, CMO-level leadership and sales management; strong in high-level networking; builds structured sales strategies that drive revenue growth and aligns operational planning with business goals so success can scale.',
+    image: '/team/Prakash_tiwari.jpg',
+    bio: 'Strategic leader in commercial marketing, CMO-level leadership and sales management; strong in high-level networking; builds structured sales strategies that drive revenue growth and aligns operational planning with business goals so success can scale; website tester.',
   },
   {
     id: 'ajay-harshchandani',

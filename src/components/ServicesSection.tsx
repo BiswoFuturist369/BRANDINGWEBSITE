@@ -57,9 +57,9 @@ export const ServicesSection: React.FC = () => {
           )}
         </AnimatePresence>
 
-        {/* Section Eyebrow */}
+        {/* Section Eyebrow — Increased font size */}
         <div className="mb-6">
-          <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#E11D2A] font-semibold">
+          <span className="font-mono text-[14px] sm:text-[15px] md:text-[16px] uppercase tracking-[0.22em] text-[#E11D2A] font-bold">
             SERVICES & EXPERTISE
           </span>
         </div>

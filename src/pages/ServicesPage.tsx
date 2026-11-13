@@ -4,11 +4,30 @@ import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { SERVICES_DATA, ServiceItem } from '../data/services';
 import { ArrowRight, Check, ArrowUpRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { MagneticPill } from '../components/MagneticPill';
 
 export const ServicesPage: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<string>(SERVICES_DATA[0].id);
+  const location = useLocation();
+
+  const getInitialTab = () => {
+    const searchParams = new URLSearchParams(location.search);
+    const tabParam = searchParams.get('tab') || (location.hash ? location.hash.replace('#', '') : null);
+    if (tabParam && SERVICES_DATA.some((s) => s.id === tabParam)) {
+      return tabParam;
+    }
+    return SERVICES_DATA[0].id;
+  };
+
+  const [activeTab, setActiveTab] = useState<string>(getInitialTab());
+
+  React.useEffect(() => {
+    const searchParams = new URLSearchParams(location.search);
+    const tabParam = searchParams.get('tab') || (location.hash ? location.hash.replace('#', '') : null);
+    if (tabParam && SERVICES_DATA.some((s) => s.id === tabParam)) {
+      setActiveTab(tabParam);
+    }
+  }, [location.search, location.hash]);
 
   const currentService = SERVICES_DATA.find((s) => s.id === activeTab) || SERVICES_DATA[0];
 

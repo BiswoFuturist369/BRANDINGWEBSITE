@@ -64,9 +64,9 @@ export const ProcessSection: React.FC = () => {
       className="relative w-full py-24 md:py-36 px-6 md:px-12 bg-[#FFFFFF] text-[#0A0A0A] border-b border-[#0A0A0A]/12"
     >
       <div className="max-w-7xl mx-auto">
-        {/* Eyebrow */}
+        {/* Eyebrow — Increased font size */}
         <div className="mb-6">
-          <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#E11D2A] font-semibold">
+          <span className="font-mono text-[14px] sm:text-[15px] md:text-[16px] uppercase tracking-[0.22em] text-[#E11D2A] font-bold">
             HOW WE WORK
           </span>
         </div>

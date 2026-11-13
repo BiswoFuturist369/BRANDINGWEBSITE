@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { HalftoneHeading } from './ui/halftone-heading';
 
 interface CounterProps {
   end: number;
@@ -78,26 +77,18 @@ export const StatementStats: React.FC = () => {
       className="relative w-full bg-[#FFFFFF] text-[#0A0A0A] py-24 md:py-32 px-6 md:px-12 border-b border-[#0A0A0A]/12"
     >
       <div className="max-w-7xl mx-auto">
-        {/* Eyebrow */}
+        {/* Eyebrow — Increased font size */}
         <div className="mb-6">
-          <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#E11D2A] font-semibold">
+          <span className="font-mono text-[14px] sm:text-[15px] md:text-[16px] uppercase tracking-[0.22em] text-[#E11D2A] font-bold">
             THE STATEMENT
           </span>
         </div>
 
-        {/* Halftone Heading H2 */}
+        {/* Clean Display Heading H2 (Halftone animation removed entirely) */}
         <div className="max-w-5xl mb-8">
-          <HalftoneHeading
-            as="h2"
-            text={"Rewrite the way the world *sees you.*"}
-            vw={0.052}
-            minSize={44}
-            maxSize={104}
-            lineHeight={1.04}
-            accent="#E11D2A"
-            warm="#E11D2A"
-            hairBoost={0.015}
-          />
+          <h2 className="font-display text-[44px] md:text-[68px] lg:text-[88px] leading-[1.04] text-[#0A0A0A] font-normal tracking-[-0.015em]">
+            Rewrite the way the world <span className="italic text-[#E11D2A]">sees you.</span>
+          </h2>
         </div>
 
         {/* Short Statement Paragraph */}
@@ -109,7 +100,7 @@ export const StatementStats: React.FC = () => {
           </p>
         </div>
 
-        {/* Real Stats Strip (Replaces all placeholders) */}
+        {/* Real Stats Strip */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 pt-12 border-t border-[#0A0A0A]/12">
           {/* Stat 1 */}
           <div className="flex flex-col">
@@ -161,4 +152,3 @@ export const StatementStats: React.FC = () => {
     </section>
   );
 };
-

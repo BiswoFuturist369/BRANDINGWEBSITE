@@ -58,7 +58,7 @@ export const MovingBlocksSection: React.FC = () => {
         {/* Background Layer: Centered Sticky Basic Header ("DID YOU KNOW?") */}
         <div className="relative z-10 max-w-6xl mx-auto px-6 text-center select-none pointer-events-none">
           <div className="mb-4">
-            <span className="font-mono text-[11px] uppercase tracking-[0.22em] text-[#E11D2A] font-semibold">
+            <span className="font-mono text-[14px] sm:text-[15px] md:text-[16px] uppercase tracking-[0.22em] text-[#E11D2A] font-bold">
               URBRAND 360 · BY DESIGN
             </span>
           </div>
