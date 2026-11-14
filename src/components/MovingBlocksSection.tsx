@@ -209,7 +209,7 @@ export const MovingBlocksSection: React.FC = () => {
 
               <div className="flex items-end justify-between gap-4 pt-5 border-t border-[#0A0A0A]/10">
                 <p className="font-sans text-[13px] text-[#0A0A0A]/70 leading-relaxed font-light">
-                  100% remote-first studio agility without traditional agency bloat.
+                  100% remote-first agility without traditional agency bloat.
                 </p>
                 <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#0A0A0A] font-semibold flex-shrink-0">
                   04 / REACH

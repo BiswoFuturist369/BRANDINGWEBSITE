@@ -39,7 +39,7 @@ export const INSIGHTS_DATA: InsightArticle[] = [
     readTime: '4 min read',
     date: 'January 2026',
     author: 'Design Direction',
-    authorRole: 'URBrand 360 Studio',
+    authorRole: 'URBrand 360 Team',
     coverImage: 'https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=1000&auto=format&fit=crop',
     content: [
       'In luxury brand systems, confidence is communicated through what is omitted. When headlines are set in disciplined light weights with expansive tracking and intentional negative space, the viewer perceives an organisation that does not need to shout.',

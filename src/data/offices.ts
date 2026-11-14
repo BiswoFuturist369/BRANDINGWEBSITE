@@ -19,7 +19,7 @@ export const OFFICES_DATA: OfficeData[] = [
     id: 'studio-indore',
     country: 'India',
     city: 'Indore',
-    address: 'URBrand 360 Studio',
+    address: 'URBrand 360 Headquarters',
     district: 'Madhya Pradesh',
     postal: '452001',
     timezone: 'IST (UTC+5:30)',

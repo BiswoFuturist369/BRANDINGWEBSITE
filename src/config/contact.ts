@@ -41,7 +41,7 @@ export const contactConfig: ContactConfig = {
     city: "Indore",
     state: "Madhya Pradesh",
     country: "India",
-    note: "Remote-first studio serving brands worldwide",
+    note: "Remote-first team serving brands worldwide",
   },
 };
 

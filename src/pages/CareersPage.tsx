@@ -38,7 +38,7 @@ export const CareersPage: React.FC = () => {
     {
       id: 'automation-lead',
       title: 'AI & Automation Engineer',
-      department: 'Computational Operations',
+      department: 'Computational Strategy & Systems',
       location: 'Remote',
       type: 'Full-time',
       description: 'Architect resilient backend API pipelines, automated CRM/ERP integrations, and LLM-assisted workflows.',

@@ -235,7 +235,7 @@ export const FreeAssessmentSection: React.FC = () => {
                           <option value="Brand Positioning & Market Authority">Brand Positioning &amp; Authority</option>
                           <option value="Paid Media Scaling & CAC Inefficiency">Paid Media Scaling &amp; CAC</option>
                           <option value="Cross-Border Tax & Compliance Audit">Cross-Border Tax &amp; Compliance</option>
-                          <option value="AI Workflows & Process Bottlenecks">AI Workflows &amp; Operations</option>
+                          <option value="AI Workflows & Strategic Bottlenecks">AI Workflows &amp; Strategy</option>
                         </select>
                       </div>
                     </div>

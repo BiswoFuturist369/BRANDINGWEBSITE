@@ -57,13 +57,13 @@ export const ContactPage: React.FC = () => {
         <section className="pt-40 pb-16 px-6 md:px-14 lg:px-20 max-w-7xl mx-auto border-b border-white/10">
           <div className="max-w-4xl">
             <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#E11D2A] font-semibold block mb-4">
-              DIRECT INQUIRIES · GLOBAL STUDIO
+              DIRECT INQUIRIES · GLOBAL HEADQUARTERS
             </span>
             <h1 className="font-display text-[44px] md:text-[68px] leading-[1.02] text-white">
               Tell us where you're <span className="italic text-[#E11D2A]">headed.</span>
             </h1>
             <p className="font-sans text-[17px] leading-[1.65] text-white/70 mt-6 max-w-3xl font-light">
-              We would be happy to start with a no-obligation conversation about your goals. Whether preparing for market expansion, restructuring corporate identity, or automating critical operations, let us examine your vision together.
+              We would be happy to start with a no-obligation conversation about your goals. Whether preparing for market expansion, restructuring corporate identity, or automating critical systems, let us examine your vision together.
             </p>
           </div>
         </section>

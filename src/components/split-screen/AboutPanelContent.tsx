@@ -108,13 +108,13 @@ export const AboutPanelContent: React.FC<AboutPanelContentProps> = ({
         </div>
       </section>
 
-      {/* SECTION C: "Our studio" */}
+      {/* SECTION C: "Our Presence" */}
       <section className="relative z-20 bg-[#F6F6F4] text-[#0A0A0A] py-24 md:py-32 px-6 md:px-14 lg:px-20 border-t border-black/10">
         <div className="max-w-6xl mx-auto">
           <div className="mb-14 flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div>
               <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#E11D2A] font-semibold block mb-3">
-                STUDIO PRESENCE
+                GLOBAL PRESENCE
               </span>
               <h2 className="font-serif text-[38px] md:text-[52px] text-[#0A0A0A]">
                 Headquarters
@@ -134,7 +134,7 @@ export const AboutPanelContent: React.FC<AboutPanelContentProps> = ({
                 <div className="relative aspect-[4/3] w-full overflow-hidden bg-black">
                   <img
                     src={office.image}
-                    alt={`${office.city} Studio`}
+                    alt={`${office.city} Headquarters`}
                     className="w-full h-full object-cover grayscale contrast-125 transition-all duration-700 ease-out group-hover:scale-105"
                     loading="lazy"
                   />
