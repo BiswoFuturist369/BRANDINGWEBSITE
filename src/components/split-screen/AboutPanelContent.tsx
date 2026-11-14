@@ -74,7 +74,7 @@ export const AboutPanelContent: React.FC<AboutPanelContentProps> = ({
             className="max-w-2xl"
           >
             <p className="font-sans text-xl md:text-2xl font-light leading-relaxed text-white/95">
-              URBrand 360 is a creative brand and business consultancy. We help ambitious companies worldwide build brands, sharpen strategy, automate operations and grow, with one partner that sees the full 360°.
+              URBrand 360 is a creative brand and business consultancy. We help ambitious companies worldwide build brands, sharpen strategy, scale systems and grow, with one partner that sees the full 360°.
             </p>
           </motion.div>
         </div>

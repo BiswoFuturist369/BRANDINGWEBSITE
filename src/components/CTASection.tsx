@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { contactConfig } from '../config/contact';
 import { SERVICES_DATA } from '../data/services';
-import { ArrowUpRight, CheckCircle2 } from 'lucide-react';
+import { ArrowUpRight, CheckCircle2, MessageSquare, Mail, Send } from 'lucide-react';
 
 export const CTASection: React.FC = () => {
+  const [activeChannel, setActiveChannel] = useState<'whatsapp' | 'email'>('whatsapp');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -28,9 +29,31 @@ export const CTASection: React.FC = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmitEmail = (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitted(true);
+  };
+
+  const handleSendWhatsApp = (e: React.FormEvent) => {
+    e.preventDefault();
+    setSubmitted(true);
+
+    const whatsappNumber = contactConfig.whatsapp.replace(/[^0-9]/g, '') || '919876543210';
+    const text =
+      `*New Partnership Inquiry · URBrand 360*\n` +
+      `--------------------------------------\n` +
+      `• *Name:* ${formData.name}\n` +
+      `• *Work Email:* ${formData.email}\n` +
+      `• *Company:* ${formData.company || 'Not specified'}\n` +
+      `• *Location:* ${formData.location || 'Worldwide'}\n` +
+      `• *Services of Interest:* ${formData.selectedServices.length > 0 ? formData.selectedServices.join(', ') : 'All 360° Disciplines'}\n` +
+      `• *Budget Range:* ${formData.budget || 'Flexible'}\n` +
+      `• *Project Scope / Goals:*\n${formData.message || 'We would like to explore strategy & brand growth.'}\n` +
+      `--------------------------------------\n` +
+      `_Sent via URBrand 360 Online Portal_`;
+
+    const encoded = encodeURIComponent(text);
+    window.open(`https://wa.me/${whatsappNumber}?text=${encoded}`, '_blank');
   };
 
   return (
@@ -53,12 +76,57 @@ export const CTASection: React.FC = () => {
           </h2>
         </div>
 
-        <p className="font-sans text-[18px] md:text-[20px] leading-[1.65] text-white/75 font-light max-w-2xl mb-16">
-          We would be happy to start with a no-obligation conversation about your goals.
+        <p className="font-sans text-[18px] md:text-[20px] leading-[1.65] text-white/75 font-light max-w-2xl mb-12">
+          We would be happy to start with a no-obligation conversation about your goals. Reach us directly on WhatsApp or submit your brief below.
         </p>
 
+        {/* WhatsApp Highlight Banner Button */}
+        <div className="mb-12">
+          <div
+            onClick={() => setActiveChannel('whatsapp')}
+            className={`cursor-pointer rounded-[20px] p-6 sm:p-8 border transition-all duration-300 flex flex-col sm:flex-row sm:items-center justify-between gap-6 ${
+              activeChannel === 'whatsapp'
+                ? 'bg-gradient-to-r from-[#0d2818] via-[#091b10] to-[#0A0A0A] border-[#25D366] shadow-[0_0_35px_rgba(37,211,102,0.25)]'
+                : 'bg-[#121212] border-white/15 hover:border-[#25D366]/60'
+            }`}
+          >
+            <div className="flex items-center gap-5">
+              {/* WhatsApp Official Logo SVG */}
+              <div className="w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center flex-shrink-0 shadow-[0_0_20px_rgba(37,211,102,0.6)]">
+                <svg className="w-8 h-8 fill-current" viewBox="0 0 24 24">
+                  <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.971.53 1.834.813 2.796.813 3.183 0 5.768-2.586 5.768-5.766 0-3.18-2.585-5.766-5.768-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.748 0-3.385-.45-4.815-1.242l-5.185 1.358 1.385-5.056c-.886-1.488-1.385-3.218-1.385-5.06 0-5.514 4.486-10 10-10 5.514 0 10 4.486 10 10z"/>
+                </svg>
+              </div>
+
+              <div>
+                <div className="flex items-center gap-3">
+                  <span className="font-mono text-[12px] uppercase tracking-[0.2em] text-[#25D366] font-bold">
+                    CONTACT US HERE ON WHATSAPP
+                  </span>
+                  <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-mono bg-[#25D366]/20 text-[#25D366]">
+                    FASTEST RESPONSE
+                  </span>
+                </div>
+                <h3 className="font-serif text-[22px] sm:text-[26px] text-white mt-1">
+                  Chat Directly with Our Leadership Team
+                </h3>
+                <p className="font-sans text-[14px] text-white/70 font-light mt-0.5">
+                  Fill the brief below and click send — it instantly routes directly to our WhatsApp.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex-shrink-0">
+              <span className="font-mono text-[12px] uppercase tracking-[0.18em] px-6 py-3 rounded-full bg-[#25D366] text-black font-bold flex items-center gap-2">
+                <span>CONNECT ON WHATSAPP</span>
+                <ArrowUpRight size={16} />
+              </span>
+            </div>
+          </div>
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-          {/* Left Column: Direct Contact Info (Referencing contact.ts TODO placeholders) */}
+          {/* Left Column: Direct Contact Info */}
           <div className="lg:col-span-4 flex flex-col gap-10">
             <div>
               <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#E11D2A] mb-3">
@@ -68,37 +136,37 @@ export const CTASection: React.FC = () => {
                 {contactConfig.email}
               </div>
               <div className="font-mono text-[11px] text-white/50 tracking-[0.1em]">
-                (Placeholder for official studio inbox)
+                Direct founder &amp; senior partner inbox
               </div>
             </div>
 
             <div>
               <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#E11D2A] mb-3">
-                TELEPHONE & WHATSAPP
+                TELEPHONE &amp; WHATSAPP
               </div>
               <div className="font-sans text-[16px] text-white/90 font-light mb-1">
                 {contactConfig.phone}
               </div>
-              <div className="font-sans text-[16px] text-white/90 font-light">
-                {contactConfig.whatsapp}
+              <div className="font-sans text-[16px] text-[#25D366] font-medium flex items-center gap-2">
+                <span>WhatsApp: {contactConfig.whatsapp}</span>
               </div>
             </div>
 
             <div>
               <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#E11D2A] mb-3">
-                STUDIO HEADQUARTERS
+                HEADQUARTERS &amp; WORKING REGIONS
               </div>
               <div className="font-sans text-[16px] text-white/90 font-light leading-relaxed">
                 {contactConfig.officeAddress.city}, {contactConfig.officeAddress.state}, {contactConfig.officeAddress.country}
               </div>
               <div className="font-mono text-[11px] text-white/50 tracking-[0.1em] mt-1">
-                {contactConfig.officeAddress.note}
+                Serving brands and founders worldwide
               </div>
             </div>
 
             <div className="pt-6 border-t border-white/10">
               <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#E11D2A] mb-4">
-                SOCIAL PRESENCE
+                CHANNELS
               </div>
               <div className="flex flex-col gap-2 font-mono text-[11px] uppercase tracking-[0.14em]">
                 <span className="text-white/60">LinkedIn · {contactConfig.social.linkedin}</span>
@@ -108,18 +176,59 @@ export const CTASection: React.FC = () => {
             </div>
           </div>
 
-          {/* Right Column: Contact Form */}
-          <div className="lg:col-span-8 bg-[#121212] border border-white/10 p-8 md:p-12 rounded-[16px]">
+          {/* Right Column: WhatsApp / Email Inquiry Form */}
+          <div className="lg:col-span-8 bg-[#121212] border border-white/10 p-8 md:p-12 rounded-[20px]">
             {submitted ? (
               <div className="py-16 text-center flex flex-col items-center justify-center">
-                <CheckCircle2 className="w-12 h-12 text-[#E11D2A] mb-4" />
-                <h3 className="font-serif text-[32px] text-white mb-2">Message Received</h3>
-                <p className="font-sans text-white/70 max-w-md">
-                  Thank you for reaching out. A senior partner will review your inquiry and follow up within one business day.
+                <CheckCircle2 className="w-14 h-14 text-[#25D366] mb-4" />
+                <h3 className="font-serif text-[32px] text-white mb-2">Inquiry Ready &amp; Transmitted</h3>
+                <p className="font-sans text-white/70 max-w-md mb-6">
+                  Thank you for reaching out. We have opened WhatsApp with your formatted brief. Our partners will respond promptly.
                 </p>
+                <button
+                  type="button"
+                  onClick={() => setSubmitted(false)}
+                  className="font-mono text-[11px] uppercase tracking-[0.18em] px-8 py-3 rounded-full bg-white text-black font-semibold cursor-pointer"
+                >
+                  Send Another Inquiry
+                </button>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="flex flex-col gap-8">
+              <form
+                onSubmit={activeChannel === 'whatsapp' ? handleSendWhatsApp : handleSubmitEmail}
+                className="flex flex-col gap-8"
+              >
+                {/* Form Header Channel Tabs */}
+                <div className="flex items-center justify-between border-b border-white/10 pb-5">
+                  <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-white/60">
+                    PREFERRED CONTACT MODE:
+                  </span>
+                  <div className="flex items-center gap-2">
+                    <button
+                      type="button"
+                      onClick={() => setActiveChannel('whatsapp')}
+                      className={`font-mono text-[11px] uppercase tracking-[0.16em] px-4 py-1.5 rounded-full transition-colors cursor-pointer ${
+                        activeChannel === 'whatsapp'
+                          ? 'bg-[#25D366] text-black font-bold'
+                          : 'bg-white/10 text-white/70 hover:text-white'
+                      }`}
+                    >
+                      WhatsApp Direct
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setActiveChannel('email')}
+                      className={`font-mono text-[11px] uppercase tracking-[0.16em] px-4 py-1.5 rounded-full transition-colors cursor-pointer ${
+                        activeChannel === 'email'
+                          ? 'bg-[#E11D2A] text-white font-bold'
+                          : 'bg-white/10 text-white/70 hover:text-white'
+                      }`}
+                    >
+                      Email Form
+                    </button>
+                  </div>
+                </div>
+
                 {/* Name & Email */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
@@ -132,7 +241,7 @@ export const CTASection: React.FC = () => {
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       placeholder="Jane Doe"
-                      className="w-full bg-[#181818] border border-white/15 rounded-[8px] px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#E11D2A] transition-colors"
+                      className="w-full bg-[#181818] border border-white/15 rounded-[10px] px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#25D366] transition-colors"
                     />
                   </div>
 
@@ -146,7 +255,7 @@ export const CTASection: React.FC = () => {
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       placeholder="jane@company.com"
-                      className="w-full bg-[#181818] border border-white/15 rounded-[8px] px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#E11D2A] transition-colors"
+                      className="w-full bg-[#181818] border border-white/15 rounded-[10px] px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#25D366] transition-colors"
                     />
                   </div>
                 </div>
@@ -162,7 +271,7 @@ export const CTASection: React.FC = () => {
                       value={formData.company}
                       onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                       placeholder="Acme Corp"
-                      className="w-full bg-[#181818] border border-white/15 rounded-[8px] px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#E11D2A] transition-colors"
+                      className="w-full bg-[#181818] border border-white/15 rounded-[10px] px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#25D366] transition-colors"
                     />
                   </div>
 
@@ -175,29 +284,29 @@ export const CTASection: React.FC = () => {
                       required
                       value={formData.location}
                       onChange={(e) => setFormData({ ...formData, location: e.target.value })}
-                      placeholder="e.g. India, Canada, Australia, Singapore, Worldwide..."
-                      className="w-full bg-[#181818] border border-white/15 rounded-[8px] px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#E11D2A] transition-colors"
+                      placeholder="e.g. India, US, UK, Australia, Worldwide..."
+                      className="w-full bg-[#181818] border border-white/15 rounded-[10px] px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#25D366] transition-colors"
                     />
                   </div>
                 </div>
 
-                {/* Services of Interest (The 8 Services) */}
+                {/* Services Pills */}
                 <div>
                   <label className="block font-mono text-[11px] uppercase tracking-[0.18em] text-white/70 mb-3">
                     Services of Interest (Select all that apply)
                   </label>
                   <div className="flex flex-wrap gap-2.5">
                     {SERVICES_DATA.map((service) => {
-                      const isSelected = formData.selectedServices.includes(service.name);
+                      const selected = formData.selectedServices.includes(service.name);
                       return (
                         <button
                           key={service.id}
                           type="button"
                           onClick={() => toggleService(service.name)}
-                          className={`px-4 py-2 rounded-full font-mono text-[11px] uppercase tracking-[0.12em] transition-all duration-200 border ${
-                            isSelected
-                              ? 'bg-[#E11D2A] border-[#E11D2A] text-white'
-                              : 'bg-[#181818] border-white/15 text-white/70 hover:border-white/30'
+                          className={`font-mono text-[11px] uppercase tracking-[0.14em] px-4 py-2 rounded-full border transition-all duration-200 cursor-pointer ${
+                            selected
+                              ? 'bg-[#25D366] text-black border-[#25D366] font-semibold'
+                              : 'bg-transparent border-white/15 text-white/75 hover:border-white/40'
                           }`}
                         >
                           {service.name}
@@ -215,39 +324,51 @@ export const CTASection: React.FC = () => {
                   <select
                     value={formData.budget}
                     onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
-                    className="w-full bg-[#181818] border border-white/15 rounded-[8px] px-4 py-3 text-white text-sm focus:outline-none focus:border-[#E11D2A] transition-colors"
+                    className="w-full bg-[#181818] border border-white/15 rounded-[10px] px-4 py-3 text-white text-sm focus:outline-none focus:border-[#25D366] transition-colors"
                   >
                     <option value="">Select an investment tier...</option>
-                    <option value="Under $10,000">Under $10,000</option>
-                    <option value="$10,000 - $25,000">$10,000 - $25,000</option>
-                    <option value="$25,000 - $50,000">$25,000 - $50,000</option>
-                    <option value="$50,000+">$50,000+</option>
-                    <option value="Flexible / Advisory">Flexible / Advisory</option>
+                    <option value="Under $5,000 / Rs. 4 Lakhs">Sprint: Under $5,000 / Rs. 4 Lakhs</option>
+                    <option value="$5,000 – $15,000 / Rs. 4–12 Lakhs">Quarterly: $5,000 – $15,000 / Rs. 4–12 Lakhs</option>
+                    <option value="$15,000 – $50,000+ / Rs. 12–40 Lakhs+">Scale: $15,000 – $50,000+ / Rs. 12–40 Lakhs+</option>
+                    <option value="Enterprise / Ongoing Fractional Retainer">Ongoing Fractional Strategic Retainer</option>
                   </select>
                 </div>
 
                 {/* Message */}
                 <div>
                   <label className="block font-mono text-[11px] uppercase tracking-[0.18em] text-white/70 mb-2">
-                    Project Scope & Objectives *
+                    Project Scope &amp; Objectives *
                   </label>
                   <textarea
                     required
                     rows={4}
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    placeholder="Tell us about your venture, timeline, and what you aim to achieve..."
-                    className="w-full bg-[#181818] border border-white/15 rounded-[8px] px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#E11D2A] transition-colors resize-none"
+                    placeholder="Briefly describe your business goals, immediate timeline, or questions for our specialists..."
+                    className="w-full bg-[#181818] border border-white/15 rounded-[10px] px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#25D366] transition-colors"
                   />
                 </div>
 
-                {/* Submit Pill Button */}
+                {/* Submit Action */}
                 <button
                   type="submit"
-                  className="w-full py-4 rounded-full bg-[#E11D2A] hover:bg-[#c91823] text-white font-mono text-[11px] uppercase tracking-[0.18em] font-medium transition-colors flex items-center justify-center gap-2 shadow-lg"
+                  className={`w-full font-mono text-[12px] uppercase tracking-[0.2em] py-4 rounded-[12px] transition-all duration-300 font-bold flex items-center justify-center gap-3 cursor-pointer shadow-lg ${
+                    activeChannel === 'whatsapp'
+                      ? 'bg-[#25D366] text-black hover:bg-white hover:text-black shadow-[0_0_25px_rgba(37,211,102,0.4)]'
+                      : 'bg-[#E11D2A] text-white hover:bg-white hover:text-black shadow-[0_0_25px_rgba(225,29,42,0.4)]'
+                  }`}
                 >
-                  <span>START A PROJECT</span>
-                  <ArrowUpRight className="w-4 h-4" />
+                  {activeChannel === 'whatsapp' ? (
+                    <>
+                      <span>SEND INQUIRY TO OUR WHATSAPP</span>
+                      <ArrowUpRight size={18} />
+                    </>
+                  ) : (
+                    <>
+                      <span>SEND MESSAGE TO STRATEGY INBOX</span>
+                      <Send size={16} />
+                    </>
+                  )}
                 </button>
               </form>
             )}

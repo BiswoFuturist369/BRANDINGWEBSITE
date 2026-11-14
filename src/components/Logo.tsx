@@ -51,7 +51,7 @@ export const URBrandLogo: React.FC<LogoProps> = ({
               isLightBg ? 'text-[#0A0A0A]/70' : 'text-[#FFFFFF]/70'
             }`}
           >
-            BRAND · GROWTH · OPS
+            BRAND · GROWTH · STRATEGY
           </span>
         )}
       </div>

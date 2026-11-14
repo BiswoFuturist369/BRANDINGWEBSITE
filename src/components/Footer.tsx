@@ -56,11 +56,11 @@ export const Footer: React.FC = () => {
             <ul className="flex flex-col gap-3 font-sans text-[14px] text-white/70 font-light">
               <li>
                 <a
-                  href="#studio"
-                  onClick={(e) => handleHashClick(e, '#studio')}
+                  href="#home"
+                  onClick={(e) => handleHashClick(e, '#home')}
                   className="hover:text-white transition-colors"
                 >
-                  The Studio
+                  Home
                 </a>
               </li>
               <li>
@@ -124,11 +124,11 @@ export const Footer: React.FC = () => {
           {/* Column 3: Contact & Headquarters */}
           <div className="lg:col-span-4 flex flex-col gap-6">
             <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#E11D2A] block font-semibold">
-              STUDIO &amp; INQUIRIES
+              HEADQUARTERS &amp; INQUIRIES
             </span>
 
             <div className="font-sans text-[14px] text-white/75 font-light leading-relaxed">
-              <p className="text-white font-medium mb-1">URBrand 360 Studio</p>
+              <p className="text-white font-medium mb-1">URBrand 360</p>
               <p>
                 {contactConfig.officeAddress.city}, {contactConfig.officeAddress.state}
               </p>

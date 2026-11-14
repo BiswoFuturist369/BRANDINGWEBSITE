@@ -26,7 +26,7 @@ export const FounderPage: React.FC = () => {
               className="inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.18em] text-white/60 hover:text-[#E11D2A] transition-colors"
             >
               <ArrowLeft className="w-3.5 h-3.5" />
-              <span>Back to Studio</span>
+              <span>Back to Home</span>
             </Link>
           </div>
 

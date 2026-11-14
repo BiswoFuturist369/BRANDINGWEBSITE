@@ -33,7 +33,7 @@ export const EmployeesPage: React.FC = () => {
               to="/"
               className="font-mono text-[11px] uppercase tracking-[0.18em] text-white/50 hover:text-white transition-colors"
             >
-              Return to Studio
+              Return to Home
             </Link>
           </div>
 

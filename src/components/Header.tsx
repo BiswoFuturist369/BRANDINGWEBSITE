@@ -54,7 +54,7 @@ export const Header: React.FC<HeaderProps> = ({ isPanelExpanded = false }) => {
   }, [location.pathname]);
 
   const navItems = [
-    { label: 'STUDIO', href: '#studio' },
+    { label: 'HOME', href: '#home' },
     { label: 'SERVICES', href: '#services', isDropdown: true },
     { label: 'PROCESS', href: '#process' },
     { label: 'RESULTS', href: '#results' },
@@ -91,6 +91,15 @@ export const Header: React.FC<HeaderProps> = ({ isPanelExpanded = false }) => {
 
     if (location.pathname !== '/') {
       navigate('/' + href);
+      return;
+    }
+
+    if (href === '#home') {
+      if (window.__lenis) {
+        window.__lenis.scrollTo(0, { duration: 1.1 });
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
       return;
     }
 
@@ -198,7 +207,7 @@ export const Header: React.FC<HeaderProps> = ({ isPanelExpanded = false }) => {
                   : 'border-white text-white hover:bg-[#E11D2A] hover:border-[#E11D2A] hover:text-white'
               }`}
             >
-              START A PROJECT
+              BOOK A CALL
             </a>
           </div>
 
@@ -423,7 +432,7 @@ export const Header: React.FC<HeaderProps> = ({ isPanelExpanded = false }) => {
                 onClick={(e) => handleNavClick(e, '#contact')}
                 className="mt-3 text-center font-mono text-[11px] uppercase tracking-[0.18em] px-6 py-3 rounded-full bg-[#E11D2A] text-white"
               >
-                START A PROJECT
+                BOOK A CALL
               </a>
             </div>
           </motion.div>

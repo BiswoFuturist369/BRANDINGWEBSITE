@@ -56,7 +56,7 @@ export const EMPLOYEES_DATA: EmployeeProfile[] = [
     name: 'Sanjeev Panjwani',
     role: 'CHARTERED ACCOUNTANT | TAXATION & FINANCE',
     image: '/team/team-sanjeev-panjwani.jpg',
-    bio: 'CA with 6 years of corporate experience and specialised expertise in complex taxation within the international market; precise financial oversight and compliance strategies, helping businesses navigate cross-border tax regulations and optimise their financial operations.',
+    bio: 'CA with 6 years of corporate experience and specialised expertise in complex taxation within the international market; precise financial oversight and compliance strategies, helping businesses navigate cross-border tax regulations and optimise their financial strategy.',
   },
   {
     id: 'prakash-tiwari',

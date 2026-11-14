@@ -45,7 +45,7 @@ export const ServicesPage: React.FC = () => {
     {
       num: '03',
       title: 'Execution',
-      desc: 'The right specialists get to work on your brand, marketing, operations, or tax compliance with a single point of contact for you.',
+      desc: 'The right specialists get to work on your brand, marketing, strategy, or tax compliance with a single point of contact for you.',
     },
     {
       num: '04',

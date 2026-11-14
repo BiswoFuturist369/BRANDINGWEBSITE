@@ -266,7 +266,7 @@ export const GlobalSection: React.FC = () => {
         {/* Basic Display Heading H2 (Fluids Clamped) */}
         <div className="max-w-5xl mb-16 md:mb-20">
           <h2 className="font-display text-[clamp(30px,4.5vw,66px)] leading-[1.03] tracking-[-0.015em] text-white font-normal max-w-full">
-            One studio. <span className="italic text-[#E11D2A]">Every market.</span>
+            One partner. <span className="italic text-[#E11D2A]">Every market.</span>
           </h2>
         </div>
 

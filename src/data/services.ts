@@ -53,7 +53,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     ledBy: 'Ajay Harshchandani',
     previewImage: 'https://images.unsplash.com/photo-1556742049-0a67c5574f73?q=80&w=900&auto=format&fit=crop',
     headline: 'End-to-end commerce acceleration across storefronts and global marketplaces.',
-    overview: 'From catalog listing optimization and storefront UI to inventory forecasting and marketplace algorithms, we scale high-volume commerce operations across platforms.',
+    overview: 'From catalog listing optimization and storefront UI to inventory forecasting and marketplace algorithms, we scale high-volume commerce channels across platforms.',
     deliverables: [
       'Shopify & Headless Storefront Architecture',
       'Amazon, Flipkart & Walmart Marketplace Optimization',
@@ -100,7 +100,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     id: 'business-consulting',
     number: '06',
     name: 'Business Consulting',
-    tagline: 'Planning, operations and growth advice, including fractional marketing leadership for teams that need senior direction without a full-time hire.',
+    tagline: 'Planning, strategy and growth advice, including fractional marketing leadership for teams that need senior direction without a full-time hire.',
     ledBy: 'Vaishnavi Ahuja',
     previewImage: 'https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=900&auto=format&fit=crop',
     headline: 'Navigating complexity with clarity, rigor, and strategic conviction.',
@@ -138,7 +138,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     ledBy: 'Bisworanjan Nayak',
     previewImage: 'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=900&auto=format&fit=crop',
     headline: 'Eliminate friction. Unlock exponential operational leverage.',
-    overview: 'Modern businesses scale through intelligent workflows. We build robust automated systems connecting APIs, LLMs, computer vision, CRM pipelines, and operations into cohesive digital machinery.',
+    overview: 'Modern businesses scale through intelligent workflows. We build robust automated systems connecting APIs, LLMs, computer vision, CRM pipelines, and workflows into cohesive digital machinery.',
     deliverables: [
       'End-to-End Workflow & Zapier/Make Automation',
       'Custom LLM & AI Assistant Deployments',

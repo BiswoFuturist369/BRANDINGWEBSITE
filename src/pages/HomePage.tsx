@@ -6,11 +6,14 @@ import { BrandHero } from '../components/BrandHero';
 import { StatementStats } from '../components/StatementStats';
 import { ServicesSection } from '../components/ServicesSection';
 import { MovingBlocksSection } from '../components/MovingBlocksSection';
+import { AboutSection } from '../components/AboutSection';
 import { ProcessSection } from '../components/ProcessSection';
+import { FreeAssessmentSection } from '../components/FreeAssessmentSection';
 import { GlobalSection } from '../components/GlobalSection';
 import { LeadershipGatewaySection } from '../components/LeadershipGatewaySection';
 import { TrustSection } from '../components/TrustSection';
-import { CaseStudiesGallery } from '../components/CaseStudiesGallery';
+import { ArticlesSection } from '../components/ArticlesSection';
+import { FAQSection } from '../components/FAQSection';
 import { CTASection } from '../components/CTASection';
 import { Footer } from '../components/Footer';
 
@@ -38,40 +41,49 @@ export const HomePage: React.FC = () => {
       {/* Dynamic Header switching theme on scroll */}
       <Header />
 
-      {/* 1. Reel Hero (Silent Video, auto-scrolls to #studio on completion) */}
+      {/* 1. Reel Hero (Silent Video, auto-scrolls on completion) */}
       <HeroReel />
 
-      {/* 2. Brand Hero (#studio, HalftoneHeading H1 URBrand 360) */}
+      {/* 2. Brand Hero (#home / #studio, Interbrand Starting Reveal H1 URBrand 360) */}
       <BrandHero />
 
-      {/* 3. Statement + Stats (#statement, HalftoneHeading H2 Tagline, real stats) */}
+      {/* 3. Statement + Stats (#statement, Tagline, real stats) */}
       <StatementStats />
 
-      {/* 4. Services (Basic Display H2, 8 numbered rows) */}
+      {/* 4. Services (#services, 8 numbered rows) */}
       <ServicesSection />
 
       {/* 5. Middle Section: Moving Blocks Upon Scrolling ("DID YOU KNOW?") */}
       <MovingBlocksSection />
 
-      {/* 6. How We Work (#process, Basic Display H2, 360° ring quadrant diagram) */}
+      {/* 6. About URBrand 360 & Why Choose Us (Mission, Vision & Strategic Pillars) */}
+      <AboutSection />
+
+      {/* 7. How We Work (#process, 3D Rotating Gyroscope Quadrant Diagram) */}
       <ProcessSection />
 
-      {/* 7. Global (#global, Basic Display H2, dark ground transition, wireframe globe) */}
+      {/* 8. Book a Free Assessment (Outlook Integration & Intake Modal) */}
+      <FreeAssessmentSection />
+
+      {/* 9. Global Reach (#global, 3D Canvas Continents Globe & Worldwide Hubs) */}
       <GlobalSection />
 
-      {/* 8. Leadership Gateway (#founder, One big designed button linking to /founder -> /employees) */}
+      {/* 10. Leadership Gateway (#founder, Links to /founder -> /employees) */}
       <LeadershipGatewaySection />
 
-      {/* 9. Why Clients Trust Us (#trust, 6 items in 2x3 hairline grid) */}
+      {/* 11. Why Clients Trust Us (#trust, 6 items in hairline grid) */}
       <TrustSection />
 
-      {/* 10. Case Studies Gallery (#results, Basic Display H2, horizontal drag gallery) */}
-      <CaseStudiesGallery />
+      {/* 12. Strategic Perspectives & Articles (#results, Replaces ad-like case studies) */}
+      <ArticlesSection />
 
-      {/* 11. CTA (#contact, Basic Display H2, contact form with "Where are you based?") */}
+      {/* 13. Frequently Asked Questions (#faq, Accordion) */}
+      <FAQSection />
+
+      {/* 14. Contact (#contact, WhatsApp Direct Modal & Email Brief) */}
       <CTASection />
 
-      {/* 12. Footer (Basic giant "urbrand 360" wordmark, 3 columns, Indore metadata) */}
+      {/* 15. Footer (Wordmark, Navigation, Worldwide metadata) */}
       <Footer />
     </div>
   );
