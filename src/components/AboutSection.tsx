@@ -1,31 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Target, Compass, Sparkles, TrendingUp, ShieldCheck, Zap } from 'lucide-react';
+import { Target, Compass } from 'lucide-react';
 
 export const AboutSection: React.FC = () => {
-  const pillars = [
-    {
-      icon: <Sparkles className="w-5 h-5 text-[#E11D2A]" />,
-      title: 'Strategy & Brand Positioning',
-      desc: 'Identify core commercial challenges and strengthen brand authority so your business stands apart.',
-    },
-    {
-      icon: <TrendingUp className="w-5 h-5 text-[#E11D2A]" />,
-      title: 'Structured Growth',
-      desc: 'Move from fragmented marketing efforts to a disciplined, predictable demand engine.',
-    },
-    {
-      icon: <ShieldCheck className="w-5 h-5 text-[#E11D2A]" />,
-      title: 'Financial Precision',
-      desc: 'Chartered Accountant oversight for corporate tax, cross-border structuring, and financial governance.',
-    },
-    {
-      icon: <Zap className="w-5 h-5 text-[#E11D2A]" />,
-      title: 'Smart Automation',
-      desc: 'Deploy custom AI workflows and API pipelines to eliminate bottlenecks and unlock operational leverage.',
-    },
-  ];
-
   return (
     <section
       id="about-urbrand"
@@ -37,24 +14,30 @@ export const AboutSection: React.FC = () => {
 
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Eyebrow */}
-        <div className="mb-6">
+        <div className="mb-4">
           <span className="font-mono text-[14px] sm:text-[15px] md:text-[16px] uppercase tracking-[0.22em] text-[#E11D2A] font-bold">
             ABOUT URBRAND 360
           </span>
         </div>
 
-        {/* Main Headline */}
-        <div className="max-w-5xl mb-12 md:mb-16">
-          <h2 className="font-display text-[clamp(32px,5vw,72px)] leading-[1.04] tracking-[-0.015em] text-[#0A0A0A] font-normal max-w-full">
-            Building Better Businesses Through{' '}
-            <span className="italic text-[#E11D2A]">Strategy, Innovation &amp; Collaboration.</span>
+        {/* Large Prominent Display Headline: WHY CHOOSE URBRAND 360 */}
+        <div className="max-w-5xl mb-6">
+          <h2 className="font-display text-[clamp(36px,5.8vw,80px)] leading-[1.0] tracking-[-0.02em] text-[#0A0A0A] font-normal uppercase max-w-full">
+            WHY CHOOSE <span className="italic text-[#E11D2A]">URBRAND 360</span>
           </h2>
         </div>
 
+        {/* Core Subtitle / Value Statement */}
+        <div className="max-w-5xl mb-12 md:mb-16">
+          <p className="font-serif italic text-[24px] sm:text-[28px] md:text-[34px] leading-[1.18] text-[#0A0A0A]/85">
+            Building Better Businesses Through Strategy, Innovation &amp; Collaboration.
+          </p>
+        </div>
+
         {/* Two-Column Core Story */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start mb-20 pb-16 border-b border-[#0A0A0A]/10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start mb-16 pb-16 border-b border-[#0A0A0A]/10">
           <div className="lg:col-span-6 space-y-6">
-            <p className="font-serif italic text-[24px] sm:text-[28px] md:text-[32px] leading-[1.2] text-[#0A0A0A]">
+            <p className="font-serif italic text-[22px] sm:text-[26px] md:text-[28px] leading-[1.25] text-[#0A0A0A]">
               At URBrand 360, we believe every business has the potential to achieve more with the right strategy, structure and support.
             </p>
             <p className="font-sans text-[16px] md:text-[17px] leading-[1.7] text-[#0A0A0A]/75 font-light">
@@ -76,7 +59,7 @@ export const AboutSection: React.FC = () => {
         </div>
 
         {/* Mission & Vision: 3D Floating Perspective Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Mission Card */}
           <motion.div
             whileHover={{ y: -6, rotateX: 2, rotateY: -2 }}
@@ -144,34 +127,6 @@ export const AboutSection: React.FC = () => {
               <span className="text-[#E11D2A]">LONG-TERM SUCCESS</span>
             </div>
           </motion.div>
-        </div>
-
-        {/* Why Choose URBrand 360: 4 Strategic Pillars */}
-        <div>
-          <div className="mb-8">
-            <span className="font-mono text-[12px] uppercase tracking-[0.18em] text-[#0A0A0A]/60 font-semibold">
-              WHY CHOOSE URBRAND 360 · INTEGRATED EXPERTISE
-            </span>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {pillars.map((pillar, idx) => (
-              <div
-                key={idx}
-                className="p-6 rounded-[16px] bg-[#FFFFFF] border border-[#0A0A0A]/10 shadow-sm hover:border-[#E11D2A] transition-colors flex flex-col justify-between"
-              >
-                <div>
-                  <div className="mb-4">{pillar.icon}</div>
-                  <h4 className="font-serif text-[20px] text-[#0A0A0A] mb-2">
-                    {pillar.title}
-                  </h4>
-                  <p className="font-sans text-[14px] leading-[1.6] text-[#0A0A0A]/70 font-light">
-                    {pillar.desc}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </section>

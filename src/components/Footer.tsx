@@ -144,10 +144,19 @@ export const Footer: React.FC = () => {
 
             <div className="flex flex-col gap-1.5 font-sans text-[14px] text-white/75 font-light">
               <p className="text-white/50 font-mono text-[11px] uppercase tracking-[0.14em]">
-                Direct Communication
+                Direct Communication &amp; Booking
               </p>
               <p>{contactConfig.phone}</p>
-              <p>{contactConfig.whatsapp}</p>
+              <p className="text-[#25D366]">WhatsApp: {contactConfig.whatsapp}</p>
+              <a
+                href={contactConfig.calendarUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-1 text-[#E11D2A] hover:underline font-mono text-[12px] uppercase tracking-[0.12em] inline-flex items-center gap-1"
+              >
+                <span>Book a Strategy Call</span>
+                <span>→</span>
+              </a>
             </div>
 
             <div className="pt-2">

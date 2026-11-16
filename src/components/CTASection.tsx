@@ -117,10 +117,16 @@ export const CTASection: React.FC = () => {
             </div>
 
             <div className="flex-shrink-0">
-              <span className="font-mono text-[12px] uppercase tracking-[0.18em] px-6 py-3 rounded-full bg-[#25D366] text-black font-bold flex items-center gap-2">
-                <span>CONNECT ON WHATSAPP</span>
+              <a
+                href={`https://wa.me/919131353596?text=${encodeURIComponent("Hi URBrand 360 team, I would like to discuss brand strategy and growth for my business.")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+                className="font-mono text-[12px] uppercase tracking-[0.18em] px-6 py-3 rounded-full bg-[#25D366] text-black font-bold flex items-center gap-2 hover:bg-white transition-colors"
+              >
+                <span>OPEN WHATSAPP CHAT</span>
                 <ArrowUpRight size={16} />
-              </span>
+              </a>
             </div>
           </div>
         </div>
@@ -150,6 +156,21 @@ export const CTASection: React.FC = () => {
               <div className="font-sans text-[16px] text-[#25D366] font-medium flex items-center gap-2">
                 <span>WhatsApp: {contactConfig.whatsapp}</span>
               </div>
+            </div>
+
+            <div>
+              <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#E11D2A] mb-3">
+                SCHEDULE A 1-ON-1 STRATEGY CALL
+              </div>
+              <a
+                href={contactConfig.calendarUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.18em] px-5 py-2.5 rounded-full border border-white/20 text-white hover:border-[#E11D2A] hover:bg-[#E11D2A] transition-all"
+              >
+                <span>OPEN GOOGLE CALENDAR</span>
+                <ArrowUpRight size={14} />
+              </a>
             </div>
 
             <div>

@@ -9,7 +9,9 @@ export interface ContactConfig {
   email: string;
   phone: string;
   whatsapp: string;
+  calendarUrl: string;
   website: string;
+  domain: string;
   social: {
     linkedin: string;
     instagram: string;
@@ -28,14 +30,16 @@ export const contactConfig: ContactConfig = {
   tagline: "Where Vision Meets Strategy",
   headquarters: "Indore, Madhya Pradesh, India",
   reach: "Indore, India · Working worldwide",
-  email: "TODO: hello@urbrand360.com",
-  phone: "TODO: +91 XXXXX XXXXX",
-  whatsapp: "TODO: +91 XXXXX XXXXX",
+  email: "hello@urbrand360.com",
+  phone: "+91 91313 53596",
+  whatsapp: "+91 91313 53596",
+  calendarUrl: "https://calendar.app.google/4U87pAwTRdixg25Y7",
   website: "https://urbrand360.com",
+  domain: "urbrand360.com",
   social: {
-    linkedin: "TODO: https://linkedin.com/company/urbrand360",
-    instagram: "TODO: https://instagram.com/urbrand360",
-    twitter: "TODO: https://twitter.com/urbrand360",
+    linkedin: "https://linkedin.com/company/urbrand360",
+    instagram: "https://instagram.com/urbrand360",
+    twitter: "https://twitter.com/urbrand360",
   },
   officeAddress: {
     city: "Indore",

@@ -3,6 +3,7 @@ import { useLocation, useNavigate, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { URBrandLogo } from './Logo';
 import { Menu, X, ChevronDown } from 'lucide-react';
+import { contactConfig } from '../config/contact';
 
 interface HeaderProps {
   isPanelExpanded?: boolean;
@@ -196,11 +197,12 @@ export const Header: React.FC<HeaderProps> = ({ isPanelExpanded = false }) => {
             })}
           </nav>
 
-          {/* Right Action: Outlined Pill Button */}
+          {/* Right Action: Outlined Pill Button (Google Calendar Link) */}
           <div className="hidden lg:flex items-center">
             <a
-              href="#contact"
-              onClick={(e) => handleNavClick(e, '#contact')}
+              href={contactConfig.calendarUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className={`font-mono text-[11px] uppercase tracking-[0.18em] px-5 py-2.5 rounded-full border transition-all duration-300 ${
                 isLight
                   ? 'border-[#0A0A0A] text-[#0A0A0A] hover:bg-[#E11D2A] hover:border-[#E11D2A] hover:text-white'
@@ -428,9 +430,11 @@ export const Header: React.FC<HeaderProps> = ({ isPanelExpanded = false }) => {
               })}
 
               <a
-                href="#contact"
-                onClick={(e) => handleNavClick(e, '#contact')}
-                className="mt-3 text-center font-mono text-[11px] uppercase tracking-[0.18em] px-6 py-3 rounded-full bg-[#E11D2A] text-white"
+                href={contactConfig.calendarUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setMenuOpen(false)}
+                className="mt-3 text-center font-mono text-[11px] uppercase tracking-[0.18em] px-6 py-3 rounded-full bg-[#E11D2A] text-white hover:bg-black transition-colors"
               >
                 BOOK A CALL
               </a>
