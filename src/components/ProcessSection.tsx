@@ -60,7 +60,7 @@ export const ProcessSection: React.FC = () => {
     <section
       ref={sectionRef}
       id="process"
-      className="relative w-full max-w-full py-20 md:py-36 px-4 sm:px-6 md:px-12 bg-[#FFFFFF] text-[#0A0A0A] border-b border-[#0A0A0A]/12 overflow-hidden"
+      className="relative w-full max-w-full py-20 md:py-36 px-4 sm:px-6 md:px-12 bg-[#FFFFFF] text-[#0A0A0A] border-b border-[#0A0A0A]/12 overflow-x-clip"
     >
       <div className="max-w-7xl mx-auto">
         {/* Eyebrow — Increased font size */}
