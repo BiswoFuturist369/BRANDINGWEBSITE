@@ -6,7 +6,7 @@ export const AboutSection: React.FC = () => {
   return (
     <section
       id="about-urbrand"
-      className="relative w-full max-w-full py-24 md:py-36 px-4 sm:px-6 md:px-12 bg-[#FFFFFF] text-[#0A0A0A] border-b border-[#0A0A0A]/12 overflow-hidden"
+      className="relative w-full max-w-full py-16 sm:py-24 md:py-36 px-4 sm:px-6 md:px-12 bg-[#FFFFFF] text-[#0A0A0A] border-b border-[#0A0A0A]/12 overflow-hidden"
     >
       {/* 3D Background Decorative Grid & Orbital Arc */}
       <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-[#E11D2A]/[0.03] blur-3xl pointer-events-none" />

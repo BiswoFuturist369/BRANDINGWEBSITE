@@ -86,7 +86,7 @@ const ARTICLES_DATA: Article[] = [
       {
         sectionTitle: 'Avoiding Multi-Jurisdiction Double Taxation',
         paragraphs: [
-          'As modern startups invoice clients globally across the US, UK, Europe, and Asia, understanding bilateral tax treaties and permanent establishment thresholds is critical.',
+          'As modern startups invoice clients globally across North America, Europe, the Middle East, and Asia, understanding bilateral tax treaties and permanent establishment thresholds is critical.',
           'Having a dedicated Chartered Accountant structure cross-border transaction flows ensures compliance while protecting retained profits.',
         ],
         takeaway: 'Proactive tax structuring protects capital before international revenue expands.',
@@ -153,7 +153,7 @@ export const ArticlesSection: React.FC = () => {
               whileHover={{ y: -6 }}
               transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
               onClick={() => setSelectedArticle(article)}
-              className="group cursor-pointer rounded-[20px] p-8 md:p-10 bg-[#121212] border border-white/10 hover:border-[#E11D2A]/60 shadow-[0_20px_50px_rgba(0,0,0,0.5)] transition-all duration-300 flex flex-col justify-between"
+              className="group cursor-pointer rounded-[20px] p-6 sm:p-8 md:p-10 bg-[#121212] border border-white/10 hover:border-[#E11D2A]/60 shadow-[0_20px_50px_rgba(0,0,0,0.5)] transition-all duration-300 flex flex-col justify-between"
             >
               <div>
                 {/* Meta Header */}
@@ -209,7 +209,7 @@ export const ArticlesSection: React.FC = () => {
               exit={{ scale: 0.95, y: 20 }}
               transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
               onClick={(e) => e.stopPropagation()}
-              className="relative w-full max-w-3xl bg-[#141414] border border-white/15 rounded-[24px] p-8 sm:p-10 md:p-14 shadow-2xl max-h-[85vh] overflow-y-auto text-white"
+              className="relative w-full max-w-3xl bg-[#141414] border border-white/15 rounded-[20px] sm:rounded-[24px] p-6 sm:p-10 md:p-14 shadow-2xl max-h-[88svh] overflow-y-auto text-white"
             >
               {/* Close Button */}
               <button

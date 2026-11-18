@@ -55,7 +55,7 @@ export const FounderPage: React.FC = () => {
               transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
               className="lg:col-span-5 flex flex-col items-center lg:items-start bg-[#111111]/80 backdrop-blur-md border border-white/10 rounded-[20px] p-8 md:p-10"
             >
-              <div className="relative w-56 h-56 md:w-72 md:h-72 rounded-full p-2 ring-2 ring-[#E11D2A] mb-8 overflow-hidden bg-black">
+              <div className="relative w-44 h-44 sm:w-56 sm:h-56 md:w-72 md:h-72 rounded-full p-2 ring-2 ring-[#E11D2A] mb-6 sm:mb-8 overflow-hidden bg-black">
                 <img
                   src={FOUNDER_DATA.image}
                   alt={`${FOUNDER_DATA.name}, Founder & CEO`}
@@ -129,13 +129,13 @@ export const FounderPage: React.FC = () => {
 
             <Link
               to="/employees"
-              className="group relative inline-flex flex-col sm:flex-row items-center gap-5 px-8 md:px-12 py-6 md:py-7 rounded-full bg-[#0A0A0A] border border-white/25 hover:border-[#E11D2A] hover:bg-[#141414] transition-all duration-300 shadow-2xl"
+              className="group relative w-full sm:w-auto inline-flex flex-col sm:flex-row items-center gap-4 sm:gap-5 px-6 sm:px-8 md:px-12 py-5 sm:py-6 md:py-7 rounded-[24px] sm:rounded-full bg-[#0A0A0A] border border-white/25 hover:border-[#E11D2A] hover:bg-[#141414] transition-all duration-300 shadow-2xl"
             >
               <div className="text-center sm:text-left">
                 <span className="block font-mono text-[10px] uppercase tracking-[0.18em] text-[#E11D2A] mb-1">
                   04 SPECIALISTS · PHOTOS & PROFILES
                 </span>
-                <span className="font-serif text-[26px] md:text-[32px] leading-none text-white group-hover:text-white">
+                <span className="font-serif text-[22px] sm:text-[26px] md:text-[32px] leading-tight sm:leading-none text-white group-hover:text-white">
                   Explore the team and their expertise
                 </span>
               </div>

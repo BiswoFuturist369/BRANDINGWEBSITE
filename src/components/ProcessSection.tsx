@@ -79,9 +79,9 @@ export const ProcessSection: React.FC = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           {/* Left: Sticky 3D Rotating 360° Ring System */}
-          <div className="lg:col-span-5 lg:sticky lg:top-36 flex flex-col items-center justify-center py-8">
+          <div className="lg:col-span-5 lg:sticky lg:top-36 flex flex-col items-center justify-center py-4 sm:py-8">
             <div
-              className="relative w-72 h-72 md:w-88 md:h-88 flex items-center justify-center select-none"
+              className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-88 md:h-88 flex items-center justify-center select-none"
               style={{ perspective: 1200 }}
             >
               {/* 3D Gyroscope Container */}

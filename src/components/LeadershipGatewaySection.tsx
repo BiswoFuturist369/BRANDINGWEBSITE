@@ -47,23 +47,23 @@ export const LeadershipGatewaySection: React.FC = () => {
         >
           <Link
             to="/founder"
-            className="group relative block w-full rounded-[24px] p-8 sm:p-10 md:p-14 bg-gradient-to-br from-[#141414] via-[#0F0F0F] to-[#17090B] border border-white/20 hover:border-[#E11D2A] shadow-[0_30px_80px_rgba(0,0,0,0.65)] transition-all duration-500 overflow-hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-[#E11D2A]"
+            className="group relative block w-full rounded-[20px] sm:rounded-[24px] p-6 sm:p-10 md:p-14 bg-gradient-to-br from-[#141414] via-[#0F0F0F] to-[#17090B] border border-white/20 hover:border-[#E11D2A] shadow-[0_30px_80px_rgba(0,0,0,0.65)] transition-all duration-500 overflow-hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-[#E11D2A]"
           >
             {/* Hover Subtle Crimson Sweep */}
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-[#E11D2A]/0 via-[#E11D2A]/10 to-[#E11D2A]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-            <div className="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-8 lg:gap-12">
+            <div className="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-6 sm:gap-8 lg:gap-12">
               {/* Left Info + Giant Button Text */}
               <div className="flex-1">
                 {/* Overlapping Red-Ringed Team Avatars Preview */}
-                <div className="flex items-center gap-5 mb-7">
-                  <div className="flex -space-x-3">
+                <div className="flex flex-wrap items-center gap-3 sm:gap-5 mb-5 sm:mb-7">
+                  <div className="flex -space-x-2.5 sm:-space-x-3">
                     {previewAvatars.map((person, index) => (
                       <div
                         key={person.name}
                         className={`relative rounded-full p-0.5 ring-2 ${
                           person.isFounder ? 'ring-[#E11D2A] z-20' : 'ring-white/40 z-10'
-                        } bg-[#0A0A0A] w-12 h-12 sm:w-14 sm:h-14 overflow-hidden transition-transform duration-300 group-hover:scale-105`}
+                        } bg-[#0A0A0A] w-10 h-10 sm:w-14 sm:h-14 overflow-hidden transition-transform duration-300 group-hover:scale-105`}
                         style={{ transitionDelay: `${index * 40}ms` }}
                       >
                         <img
@@ -75,17 +75,17 @@ export const LeadershipGatewaySection: React.FC = () => {
                       </div>
                     ))}
                   </div>
-                  <div className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.18em] text-[#E11D2A] font-semibold">
+                  <div className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.16em] sm:tracking-[0.18em] text-[#E11D2A] font-semibold">
                     01 FOUNDER · 04 SPECIALISTS
                   </div>
                 </div>
 
                 {/* Primary Explicit Button Headline (Fluids Clamped) */}
-                <div className="font-display text-[clamp(22px,3.2vw,46px)] leading-[1.08] text-white group-hover:text-white transition-colors max-w-full">
+                <div className="font-display text-[clamp(22px,3.2vw,46px)] leading-[1.1] text-white group-hover:text-white transition-colors max-w-full">
                   Tap on it to know about the founder and the team
                 </div>
 
-                <div className="mt-5 flex flex-wrap items-center gap-3 font-mono text-[11px] uppercase tracking-[0.18em] text-white/55">
+                <div className="mt-4 sm:mt-5 flex flex-wrap items-center gap-2 sm:gap-3 font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.16em] sm:tracking-[0.18em] text-white/55">
                   <span className="text-white/85">Step 01: Company Owner Details</span>
                   <span className="text-[#E11D2A]">→</span>
                   <span>Step 02: The Team &amp; Their Expertise</span>
@@ -94,8 +94,8 @@ export const LeadershipGatewaySection: React.FC = () => {
 
               {/* Right Oversized Circular Action Badge */}
               <div className="flex-shrink-0 flex items-center justify-start lg:justify-end">
-                <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-[#E11D2A] text-white flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:bg-white group-hover:text-[#0A0A0A] shadow-[0_0_40px_rgba(225,29,42,0.4)]">
-                  <ArrowUpRight className="w-8 h-8 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                <div className="w-14 h-14 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full bg-[#E11D2A] text-white flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:bg-white group-hover:text-[#0A0A0A] shadow-[0_0_40px_rgba(225,29,42,0.4)]">
+                  <ArrowUpRight className="w-6 h-6 sm:w-8 sm:h-8 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                 </div>
               </div>
             </div>

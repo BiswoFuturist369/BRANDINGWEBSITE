@@ -287,7 +287,7 @@ export const GlobalSection: React.FC = () => {
             </div>
 
             {/* Compact Regional & Delivery Capabilities Grid */}
-            <div className="grid grid-cols-2 gap-4 pt-2">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-4 pt-2">
               <div className="p-4 rounded-[14px] bg-white/[0.04] border border-white/10">
                 <div className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#E11D2A] font-semibold mb-1">
                   REGIONS SERVED
@@ -328,7 +328,7 @@ export const GlobalSection: React.FC = () => {
 
           {/* Right: Rotating 3D Globe with Real Map Continents & Hubs */}
           <div className="lg:col-span-6 flex items-center justify-center">
-            <div className="relative w-full max-w-[460px] aspect-square flex items-center justify-center">
+            <div className="relative w-full max-w-[300px] sm:max-w-[400px] lg:max-w-[460px] aspect-square flex items-center justify-center">
               <canvas
                 ref={canvasRef}
                 className="w-full h-full block cursor-grab active:cursor-grabbing"

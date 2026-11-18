@@ -147,9 +147,9 @@ export const HeroReel: React.FC = () => {
     <section
       ref={containerRef}
       id="hero-reel"
-      className="relative w-full h-[100svh] p-4 md:p-4 bg-[#FFFFFF] flex items-center justify-center overflow-hidden"
+      className="relative w-full h-[100svh] p-2.5 sm:p-4 bg-[#FFFFFF] flex items-center justify-center overflow-hidden"
     >
-      <div className="relative w-full h-[calc(100svh-32px)] rounded-[16px] overflow-hidden bg-[#0A0A0A] shadow-2xl">
+      <div className="relative w-full h-[calc(100svh-20px)] sm:h-[calc(100svh-32px)] rounded-[14px] sm:rounded-[16px] overflow-hidden bg-[#0A0A0A] shadow-2xl flex items-center justify-center">
         <video
           ref={videoRef}
           autoPlay
@@ -157,7 +157,7 @@ export const HeroReel: React.FC = () => {
           playsInline
           preload="auto"
           poster="/video/urbrand360-reel-poster.jpg"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain sm:object-cover"
         >
           <source src="/video/urbrand360-reel-720p.mp4" media="(max-width: 768px)" type="video/mp4" />
           <source src="/video/urbrand360-reel-1080p.mp4" type="video/mp4" />

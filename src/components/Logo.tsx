@@ -25,21 +25,21 @@ export const URBrandLogo: React.FC<LogoProps> = ({
     <Link
       to="/"
       onClick={onClick}
-      className={`inline-flex items-center gap-3.5 focus:outline-none select-none transition-colors duration-200 ${className}`}
+      className={`inline-flex items-center gap-2.5 sm:gap-3.5 focus:outline-none select-none transition-colors duration-200 ${className}`}
       aria-label="URBrand 360 - Where Vision Meets Strategy"
     >
-      {/* Real Emblem Image (34px high, no box/background) */}
+      {/* Real Emblem Image (responsive height, no box/background) */}
       <img
         src={emblemSrc}
         alt="URBrand 360 Emblem"
-        className="h-[34px] w-auto object-contain flex-shrink-0"
+        className="h-[28px] sm:h-[34px] w-auto object-contain flex-shrink-0"
         loading="eager"
       />
 
       {/* Wordmark */}
       <div className="flex flex-col justify-center leading-none">
         <div
-          className={`font-display text-[22px] tracking-tight leading-none ${
+          className={`font-display text-[19px] sm:text-[22px] tracking-tight leading-none ${
             isLightBg ? 'text-[#0A0A0A]' : 'text-[#FFFFFF]'
           }`}
         >
@@ -47,7 +47,7 @@ export const URBrandLogo: React.FC<LogoProps> = ({
         </div>
         {!compact && (
           <span
-            className={`font-mono text-[9px] uppercase tracking-[0.18em] mt-1 ${
+            className={`font-mono text-[8px] sm:text-[9px] uppercase tracking-[0.14em] sm:tracking-[0.18em] mt-1 ${
               isLightBg ? 'text-[#0A0A0A]/70' : 'text-[#FFFFFF]/70'
             }`}
           >

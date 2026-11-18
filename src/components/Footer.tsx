@@ -175,14 +175,14 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Giant Basic Serif Wordmark "urbrand 360" with #E11D2A Accent (Fluids Clamped for All Screens) */}
-        <div className="w-full max-w-full py-12 sm:py-16 md:py-20 overflow-hidden flex items-center justify-center select-none px-2">
-          <h2 className="font-display text-[clamp(34px,8.5vw,132px)] leading-[0.9] tracking-[-0.02em] text-white text-center font-normal whitespace-nowrap max-w-full">
+        <div className="w-full max-w-full py-10 sm:py-16 md:py-20 overflow-hidden flex items-center justify-center select-none px-2">
+          <h2 className="font-display text-[clamp(30px,10vw,132px)] leading-[0.9] tracking-[-0.02em] text-white text-center font-normal whitespace-nowrap max-w-full">
             urbrand <span className="italic text-[#E11D2A]">360</span>
           </h2>
         </div>
 
         {/* Bottom Metadata Bar */}
-        <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-[11px] uppercase tracking-[0.18em] text-white/50">
+        <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 text-center sm:text-left font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.16em] sm:tracking-[0.18em] text-white/50">
           <div>© 2026 · Indore, India · Working worldwide</div>
           <div>Where Vision Meets Strategy</div>
         </div>

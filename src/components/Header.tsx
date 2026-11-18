@@ -331,7 +331,7 @@ export const Header: React.FC<HeaderProps> = ({ isPanelExpanded = false }) => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-            className={`fixed inset-x-0 top-20 z-[8999] lg:hidden p-6 border-b shadow-xl max-h-[calc(100vh-80px)] overflow-y-auto ${
+            className={`fixed inset-x-0 top-20 z-[8999] lg:hidden p-5 sm:p-6 border-b shadow-xl max-h-[calc(100svh-80px)] overflow-y-auto overscroll-contain ${
               isLight
                 ? 'bg-[#FFFFFF] border-[#0A0A0A]/10 text-[#0A0A0A]'
                 : 'bg-[#0A0A0A] border-white/10 text-white'

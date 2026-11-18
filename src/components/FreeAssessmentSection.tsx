@@ -42,41 +42,41 @@ export const FreeAssessmentSection: React.FC = () => {
     <>
       <section className="relative w-full max-w-full py-16 md:py-24 px-4 sm:px-6 md:px-12 bg-[#0A0A0A] text-white overflow-hidden border-t border-b border-white/10">
         <div className="max-w-7xl mx-auto relative z-10">
-          <div className="rounded-[28px] p-8 sm:p-12 md:p-16 bg-gradient-to-br from-[#161616] via-[#111111] to-[#1a0a0c] border border-white/15 shadow-[0_20px_60px_rgba(0,0,0,0.8)] relative overflow-hidden flex flex-col lg:flex-row lg:items-center justify-between gap-10">
+          <div className="rounded-[24px] sm:rounded-[28px] p-6 sm:p-10 md:p-16 bg-gradient-to-br from-[#161616] via-[#111111] to-[#1a0a0c] border border-white/15 shadow-[0_20px_60px_rgba(0,0,0,0.8)] relative overflow-hidden flex flex-col lg:flex-row lg:items-center justify-between gap-8 lg:gap-10">
             {/* Subtle Crimson Glow */}
             <div className="absolute top-0 right-0 w-80 h-80 rounded-full bg-[#E11D2A]/15 blur-3xl pointer-events-none" />
 
             <div className="max-w-2xl">
-              <span className="font-mono text-[12px] uppercase tracking-[0.2em] text-[#E11D2A] font-bold block mb-3">
+              <span className="font-mono text-[11px] sm:text-[12px] uppercase tracking-[0.2em] text-[#E11D2A] font-bold block mb-3">
                 FREE 360° STRATEGIC ASSESSMENT
               </span>
 
-              <h2 className="font-serif text-[34px] sm:text-[44px] md:text-[52px] leading-[1.08] text-white mb-4">
+              <h2 className="font-serif text-[28px] sm:text-[40px] md:text-[52px] leading-[1.08] text-white mb-4">
                 Discover your brand’s next tier of leverage.
               </h2>
 
-              <p className="font-sans text-[16px] md:text-[18px] leading-[1.65] text-white/75 font-light">
+              <p className="font-sans text-[15px] sm:text-[16px] md:text-[18px] leading-[1.65] text-white/75 font-light">
                 Receive an objective diagnostic across your positioning, commercial funnels,
                 and international compliance with actionable recommendations directly from our specialists.
               </p>
             </div>
 
-            <div className="flex-shrink-0 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+            <div className="flex-shrink-0 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
               <button
                 type="button"
                 onClick={() => setModalOpen(true)}
-                className="font-mono text-[12px] uppercase tracking-[0.2em] px-8 py-4 rounded-full bg-[#E11D2A] text-white hover:bg-white hover:text-[#0A0A0A] transition-all duration-300 font-bold shadow-[0_0_30px_rgba(225,29,42,0.4)] flex items-center justify-center gap-3 cursor-pointer"
+                className="font-mono text-[11px] sm:text-[12px] uppercase tracking-[0.16em] sm:tracking-[0.2em] px-5 sm:px-8 py-3.5 sm:py-4 rounded-full bg-[#E11D2A] text-white hover:bg-white hover:text-[#0A0A0A] transition-all duration-300 font-bold shadow-[0_0_30px_rgba(225,29,42,0.4)] flex items-center justify-center gap-2.5 sm:gap-3 cursor-pointer"
               >
-                <Calendar className="w-4 h-4" />
+                <Calendar className="w-4 h-4 flex-shrink-0" />
                 <span>BOOK A FREE ASSESSMENT</span>
               </button>
 
               <button
                 type="button"
                 onClick={() => setModalOpen(true)}
-                className="font-mono text-[12px] uppercase tracking-[0.18em] px-6 py-4 rounded-full border border-white/20 text-white hover:bg-white/10 transition-colors flex items-center justify-center gap-2 cursor-pointer"
+                className="font-mono text-[11px] sm:text-[12px] uppercase tracking-[0.16em] sm:tracking-[0.18em] px-5 sm:px-6 py-3.5 sm:py-4 rounded-full border border-white/20 text-white hover:bg-white/10 transition-colors flex items-center justify-center gap-2 cursor-pointer"
               >
-                <Mail className="w-4 h-4 text-[#E11D2A]" />
+                <Mail className="w-4 h-4 text-[#E11D2A] flex-shrink-0" />
                 <span>Outlook Form</span>
               </button>
             </div>
@@ -100,7 +100,7 @@ export const FreeAssessmentSection: React.FC = () => {
               exit={{ scale: 0.95, y: 20 }}
               transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
               onClick={(e) => e.stopPropagation()}
-              className="relative w-full max-w-2xl bg-[#141414] border border-white/15 rounded-[24px] p-8 sm:p-10 md:p-12 shadow-2xl text-white max-h-[90vh] overflow-y-auto"
+              className="relative w-full max-w-2xl bg-[#141414] border border-white/15 rounded-[20px] sm:rounded-[24px] p-6 sm:p-10 md:p-12 shadow-2xl text-white max-h-[90svh] overflow-y-auto"
             >
               {/* Close Button */}
               <button

@@ -21,7 +21,7 @@ export const ServicesSection: React.FC = () => {
       id="services"
       ref={containerRef}
       onMouseMove={handleMouseMove}
-      className="relative w-full max-w-full py-20 md:py-36 px-4 sm:px-6 md:px-12 bg-[#FFFFFF] text-[#0A0A0A] overflow-hidden"
+      className="relative w-full max-w-full py-16 sm:py-20 md:py-36 px-4 sm:px-6 md:px-12 bg-[#FFFFFF] text-[#0A0A0A] overflow-hidden"
     >
       <div className="max-w-7xl mx-auto">
         {/* Floating Preview Image Following Cursor */}
@@ -80,9 +80,9 @@ export const ServicesSection: React.FC = () => {
               key={service.id}
               onMouseEnter={() => setHoveredService(service)}
               onMouseLeave={() => setHoveredService(null)}
-              className="group relative border-t border-[#0A0A0A]/12 py-8 md:py-10 transition-colors duration-300 hover:bg-[#F6F6F4]/50 cursor-pointer"
+              className="group relative border-t border-[#0A0A0A]/12 py-6 sm:py-8 md:py-10 transition-colors duration-300 hover:bg-[#F6F6F4]/50 cursor-pointer"
             >
-              <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-baseline transition-transform duration-300 group-hover:translate-x-3">
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-3 sm:gap-6 items-baseline transition-transform duration-300 md:group-hover:translate-x-3">
                 {/* Number + Red Dot on Hover */}
                 <div className="md:col-span-2 flex items-center gap-3">
                   <span className="w-2 h-2 rounded-full bg-[#E11D2A] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -93,7 +93,7 @@ export const ServicesSection: React.FC = () => {
 
                 {/* Service Name & "Led by" */}
                 <div className="md:col-span-6">
-                  <h3 className="font-serif text-[28px] md:text-[34px] lg:text-[38px] leading-[1.1] text-[#0A0A0A] group-hover:text-[#E11D2A] transition-colors">
+                  <h3 className="font-serif text-[24px] sm:text-[28px] md:text-[34px] lg:text-[38px] leading-[1.12] text-[#0A0A0A] group-hover:text-[#E11D2A] transition-colors">
                     {service.name}
                   </h3>
                   <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#E11D2A] mt-2">

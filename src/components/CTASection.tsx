@@ -81,48 +81,48 @@ export const CTASection: React.FC = () => {
         </p>
 
         {/* WhatsApp Highlight Banner Button (Theme Palette: #0A0A0A / #E11D2A / #FFFFFF) */}
-        <div className="mb-12">
+        <div className="mb-10 sm:mb-12">
           <div
             onClick={() => setActiveChannel('whatsapp')}
-            className={`cursor-pointer rounded-[20px] p-6 sm:p-8 border transition-all duration-300 flex flex-col sm:flex-row sm:items-center justify-between gap-6 ${
+            className={`cursor-pointer rounded-[20px] p-5 sm:p-8 border transition-all duration-300 flex flex-col md:flex-row md:items-center justify-between gap-5 sm:gap-6 ${
               activeChannel === 'whatsapp'
                 ? 'bg-gradient-to-r from-[#1a0a0c] via-[#120809] to-[#0A0A0A] border-[#E11D2A] shadow-[0_0_35px_rgba(225,29,42,0.22)]'
                 : 'bg-[#121212] border-white/15 hover:border-[#E11D2A]/60'
             }`}
           >
-            <div className="flex items-center gap-5">
+            <div className="flex items-start sm:items-center gap-4 sm:gap-5">
               {/* WhatsApp Official Logo SVG in Brand Theme */}
-              <div className="w-14 h-14 rounded-full bg-[#E11D2A] text-white flex items-center justify-center flex-shrink-0 shadow-[0_0_20px_rgba(225,29,42,0.45)]">
-                <svg className="w-8 h-8 fill-current" viewBox="0 0 24 24">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#E11D2A] text-white flex items-center justify-center flex-shrink-0 shadow-[0_0_20px_rgba(225,29,42,0.45)]">
+                <svg className="w-6 h-6 sm:w-8 sm:h-8 fill-current" viewBox="0 0 24 24">
                   <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.971.53 1.834.813 2.796.813 3.183 0 5.768-2.586 5.768-5.766 0-3.18-2.585-5.766-5.768-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.748 0-3.385-.45-4.815-1.242l-5.185 1.358 1.385-5.056c-.886-1.488-1.385-3.218-1.385-5.06 0-5.514 4.486-10 10-10 5.514 0 10 4.486 10 10z"/>
                 </svg>
               </div>
 
-              <div>
-                <div className="flex items-center gap-3">
-                  <span className="font-mono text-[12px] uppercase tracking-[0.2em] text-[#E11D2A] font-bold">
+              <div className="min-w-0">
+                <div className="flex flex-wrap items-center gap-2 sm:gap-3">
+                  <span className="font-mono text-[11px] sm:text-[12px] uppercase tracking-[0.16em] sm:tracking-[0.2em] text-[#E11D2A] font-bold">
                     CONTACT US HERE ON WHATSAPP
                   </span>
-                  <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-mono bg-[#E11D2A]/20 text-white border border-[#E11D2A]/40">
+                  <span className="inline-flex items-center px-2 py-0.5 rounded text-[9px] sm:text-[10px] font-mono bg-[#E11D2A]/20 text-white border border-[#E11D2A]/40">
                     FASTEST RESPONSE
                   </span>
                 </div>
-                <h3 className="font-serif text-[22px] sm:text-[26px] text-white mt-1">
+                <h3 className="font-serif text-[20px] sm:text-[26px] text-white mt-1 leading-tight">
                   Chat Directly with Our Leadership Team
                 </h3>
-                <p className="font-sans text-[14px] text-white/70 font-light mt-0.5">
+                <p className="font-sans text-[13px] sm:text-[14px] text-white/70 font-light mt-1">
                   Fill the brief below and click send — it instantly routes directly to our WhatsApp.
                 </p>
               </div>
             </div>
 
-            <div className="flex-shrink-0">
+            <div className="flex-shrink-0 w-full md:w-auto">
               <a
                 href={`https://wa.me/919131353596?text=${encodeURIComponent("Hi URBrand 360 team, I would like to discuss brand strategy and growth for my business.")}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={(e) => e.stopPropagation()}
-                className="font-mono text-[12px] uppercase tracking-[0.18em] px-6 py-3 rounded-full bg-[#E11D2A] text-white font-bold flex items-center gap-2 hover:bg-white hover:text-[#0A0A0A] transition-colors"
+                className="w-full md:w-auto justify-center font-mono text-[11px] sm:text-[12px] uppercase tracking-[0.16em] sm:tracking-[0.18em] px-5 sm:px-6 py-3 rounded-full bg-[#E11D2A] text-white font-bold flex items-center gap-2 hover:bg-white hover:text-[#0A0A0A] transition-colors"
               >
                 <span>OPEN WHATSAPP CHAT</span>
                 <ArrowUpRight size={16} />
@@ -189,7 +189,7 @@ export const CTASection: React.FC = () => {
               <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#E11D2A] mb-4">
                 CHANNELS
               </div>
-              <div className="flex flex-col gap-2 font-mono text-[11px] uppercase tracking-[0.14em]">
+              <div className="flex flex-col gap-2 font-mono text-[11px] uppercase tracking-[0.14em] break-all">
                 <span className="text-white/60">LinkedIn · {contactConfig.social.linkedin}</span>
                 <span className="text-white/60">Instagram · {contactConfig.social.instagram}</span>
                 <span className="text-white/60">Twitter / X · {contactConfig.social.twitter}</span>
@@ -198,11 +198,11 @@ export const CTASection: React.FC = () => {
           </div>
 
           {/* Right Column: WhatsApp / Email Inquiry Form */}
-          <div className="lg:col-span-8 bg-[#121212] border border-white/10 p-8 md:p-12 rounded-[20px]">
+          <div className="lg:col-span-8 bg-[#121212] border border-white/10 p-5 sm:p-8 md:p-12 rounded-[20px]">
             {submitted ? (
               <div className="py-16 text-center flex flex-col items-center justify-center">
                 <CheckCircle2 className="w-14 h-14 text-[#E11D2A] mb-4" />
-                <h3 className="font-serif text-[32px] text-white mb-2">Inquiry Ready &amp; Transmitted</h3>
+                <h3 className="font-serif text-[28px] sm:text-[32px] text-white mb-2">Inquiry Ready &amp; Transmitted</h3>
                 <p className="font-sans text-white/70 max-w-md mb-6">
                   Thank you for reaching out. We have opened WhatsApp with your formatted brief. Our partners will respond promptly.
                 </p>
@@ -217,18 +217,18 @@ export const CTASection: React.FC = () => {
             ) : (
               <form
                 onSubmit={activeChannel === 'whatsapp' ? handleSendWhatsApp : handleSubmitEmail}
-                className="flex flex-col gap-8"
+                className="flex flex-col gap-6 sm:gap-8"
               >
                 {/* Form Header Channel Tabs */}
-                <div className="flex items-center justify-between border-b border-white/10 pb-5">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-white/10 pb-5">
                   <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-white/60">
                     PREFERRED CONTACT MODE:
                   </span>
-                  <div className="flex items-center gap-2">
+                  <div className="flex flex-wrap items-center gap-2">
                     <button
                       type="button"
                       onClick={() => setActiveChannel('whatsapp')}
-                      className={`font-mono text-[11px] uppercase tracking-[0.16em] px-4 py-1.5 rounded-full transition-colors cursor-pointer ${
+                      className={`font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.14em] sm:tracking-[0.16em] px-3.5 sm:px-4 py-1.5 rounded-full transition-colors cursor-pointer ${
                         activeChannel === 'whatsapp'
                           ? 'bg-[#E11D2A] text-white font-bold'
                           : 'bg-white/10 text-white/70 hover:text-white'
@@ -239,7 +239,7 @@ export const CTASection: React.FC = () => {
                     <button
                       type="button"
                       onClick={() => setActiveChannel('email')}
-                      className={`font-mono text-[11px] uppercase tracking-[0.16em] px-4 py-1.5 rounded-full transition-colors cursor-pointer ${
+                      className={`font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.14em] sm:tracking-[0.16em] px-3.5 sm:px-4 py-1.5 rounded-full transition-colors cursor-pointer ${
                         activeChannel === 'email'
                           ? 'bg-white text-[#0A0A0A] font-bold'
                           : 'bg-white/10 text-white/70 hover:text-white'
@@ -324,7 +324,7 @@ export const CTASection: React.FC = () => {
                           key={service.id}
                           type="button"
                           onClick={() => toggleService(service.name)}
-                          className={`font-mono text-[11px] uppercase tracking-[0.14em] px-4 py-2 rounded-full border transition-all duration-200 cursor-pointer ${
+                          className={`font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.12em] sm:tracking-[0.14em] px-3 sm:px-4 py-1.5 sm:py-2 rounded-full border text-left transition-all duration-200 cursor-pointer ${
                             selected
                               ? 'bg-[#E11D2A] text-white border-[#E11D2A] font-semibold'
                               : 'bg-transparent border-white/15 text-white/75 hover:border-white/40'

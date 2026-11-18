@@ -13,23 +13,23 @@ export const MovingBlocksSection: React.FC = () => {
           Stays locked in the exact center of the screen while all 8 blocks scroll
           smoothly over it in 1:1 native sync — emulating Interbrand.com
           ========================================================================= */}
-      <div className="sticky top-0 h-screen w-full flex flex-col items-center justify-center pointer-events-none select-none z-0 px-4 text-center">
-        <div className="mb-4">
-          <span className="font-mono text-[14px] sm:text-[15px] md:text-[16px] uppercase tracking-[0.24em] text-[#E11D2A] font-bold">
+      <div className="sticky top-0 h-[100svh] w-full flex flex-col items-center justify-center pointer-events-none select-none z-0 px-4 text-center">
+        <div className="mb-3 sm:mb-4">
+          <span className="font-mono text-[12px] sm:text-[15px] md:text-[16px] uppercase tracking-[0.2em] sm:tracking-[0.24em] text-[#E11D2A] font-bold">
             URBRAND 360 · BY DESIGN
           </span>
         </div>
 
-        <h2 className="font-sans font-black uppercase text-[clamp(44px,9vw,148px)] leading-[0.88] tracking-[-0.04em] text-[#0A0A0A] max-w-full">
+        <h2 className="font-sans font-black uppercase text-[clamp(38px,9vw,148px)] leading-[0.88] tracking-[-0.04em] text-[#0A0A0A] max-w-full">
           DID YOU KNOW?
         </h2>
 
-        <div className="mt-6 flex items-center justify-center gap-3">
-          <span className="h-px w-8 md:w-20 bg-[#0A0A0A]/20" />
-          <p className="font-mono text-[10px] sm:text-[11px] md:text-[12px] uppercase tracking-[0.22em] text-[#0A0A0A]/60 font-medium">
+        <div className="mt-4 sm:mt-6 flex items-center justify-center gap-2 sm:gap-3">
+          <span className="h-px w-6 sm:w-8 md:w-20 bg-[#0A0A0A]/20 flex-shrink-0" />
+          <p className="font-mono text-[9px] sm:text-[11px] md:text-[12px] uppercase tracking-[0.16em] sm:tracking-[0.22em] text-[#0A0A0A]/60 font-medium">
             BRAND SYSTEMS · GROWTH MARKETING · CA TAXATION · AI AUTOMATION
           </p>
-          <span className="h-px w-8 md:w-20 bg-[#0A0A0A]/20" />
+          <span className="h-px w-6 sm:w-8 md:w-20 bg-[#0A0A0A]/20 flex-shrink-0" />
         </div>
       </div>
 
@@ -38,12 +38,12 @@ export const MovingBlocksSection: React.FC = () => {
           Natural browser scroll flow = 100% locked 1:1 sync scrolling up & down,
           zero empty gaps, every single block fully visible on every screen size.
           ========================================================================= */}
-      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-14 -mt-[35vh] pb-[20vh] flex flex-col gap-12 lg:gap-0">
+      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-14 -mt-[20vh] sm:-mt-[35vh] pb-[14vh] sm:pb-[20vh] flex flex-col gap-8 sm:gap-12 lg:gap-0">
         {/* =========================================================================
             BLOCK 01 — Left · Pod Structure with Looping Video Reel
             ========================================================================= */}
         <div className="w-full flex justify-center lg:justify-start">
-          <div className="w-full max-w-[460px] lg:w-[460px] xl:w-[500px] min-h-[380px] bg-[#0A0A0A] text-white p-8 xl:p-10 rounded-[20px] shadow-[0_30px_70px_rgba(10,10,10,0.3)] border border-white/15 flex flex-col justify-between relative overflow-hidden">
+          <div className="w-full max-w-[460px] lg:w-[460px] xl:w-[500px] min-h-[320px] sm:min-h-[380px] bg-[#0A0A0A] text-white p-6 sm:p-8 xl:p-10 rounded-[20px] shadow-[0_30px_70px_rgba(10,10,10,0.3)] border border-white/15 flex flex-col justify-between relative overflow-hidden">
             {/* Subtle Looping Silent Reel Video */}
             <div className="absolute inset-0 z-0 opacity-25 overflow-hidden pointer-events-none">
               <video
@@ -99,7 +99,7 @@ export const MovingBlocksSection: React.FC = () => {
             BLOCK 02 — Right · Senior Pedigree with Infinite Moving Marquee
             ========================================================================= */}
         <div className="w-full flex justify-center lg:justify-end lg:-mt-24">
-          <div className="w-full max-w-[460px] lg:w-[460px] xl:w-[500px] min-h-[380px] bg-[#FFFFFF] text-[#0A0A0A] rounded-[20px] border-x-[14px] border-[#0A0A0A] border-y border-y-[#0A0A0A]/15 p-8 xl:p-10 shadow-[0_30px_70px_rgba(10,10,10,0.22)] flex flex-col justify-between overflow-hidden">
+          <div className="w-full max-w-[460px] lg:w-[460px] xl:w-[500px] min-h-[320px] sm:min-h-[380px] bg-[#FFFFFF] text-[#0A0A0A] rounded-[20px] border-x-[8px] sm:border-x-[14px] border-[#0A0A0A] border-y border-y-[#0A0A0A]/15 p-6 sm:p-8 xl:p-10 shadow-[0_30px_70px_rgba(10,10,10,0.22)] flex flex-col justify-between overflow-hidden">
             <div className="flex items-center justify-between border-b border-[#0A0A0A]/10 pb-4">
               <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#E11D2A] font-bold">
                 02 / SENIOR PEDIGREE
@@ -377,13 +377,13 @@ export const MovingBlocksSection: React.FC = () => {
               </span>
             </div>
 
-            <div className="my-auto py-3 grid grid-cols-2 gap-3.5">
+            <div className="my-auto py-3 grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div className="p-3.5 rounded-[12px] bg-white/[0.05] border border-white/10">
                 <div className="flex items-center justify-between mb-1">
                   <span className="font-mono text-[9px] text-white/50 uppercase">INDORE (HQ)</span>
                   <span className="w-1.5 h-1.5 rounded-full bg-[#E11D2A] animate-ping" />
                 </div>
-                <div className="font-display text-[21px] text-white font-medium">IST · UTC+5:30</div>
+                <div className="font-display text-[19px] sm:text-[21px] text-white font-medium">IST · UTC+5:30</div>
               </div>
 
               <div className="p-3.5 rounded-[12px] bg-white/[0.05] border border-white/10">
@@ -391,7 +391,7 @@ export const MovingBlocksSection: React.FC = () => {
                   <span className="font-mono text-[9px] text-white/50 uppercase">LONDON</span>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/70" />
                 </div>
-                <div className="font-display text-[21px] text-white font-medium">GMT · UTC+0</div>
+                <div className="font-display text-[19px] sm:text-[21px] text-white font-medium">GMT · UTC+0</div>
               </div>
 
               <div className="p-3.5 rounded-[12px] bg-white/[0.05] border border-white/10">
@@ -399,7 +399,7 @@ export const MovingBlocksSection: React.FC = () => {
                   <span className="font-mono text-[9px] text-white/50 uppercase">NEW YORK</span>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/70" />
                 </div>
-                <div className="font-display text-[21px] text-white font-medium">EST · UTC-5</div>
+                <div className="font-display text-[19px] sm:text-[21px] text-white font-medium">EST · UTC-5</div>
               </div>
 
               <div className="p-3.5 rounded-[12px] bg-white/[0.05] border border-white/10">
@@ -407,7 +407,7 @@ export const MovingBlocksSection: React.FC = () => {
                   <span className="font-mono text-[9px] text-white/50 uppercase">SINGAPORE</span>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/70" />
                 </div>
-                <div className="font-display text-[21px] text-white font-medium">SGT · UTC+8</div>
+                <div className="font-display text-[19px] sm:text-[21px] text-white font-medium">SGT · UTC+8</div>
               </div>
             </div>
 
@@ -432,8 +432,8 @@ export const MovingBlocksSection: React.FC = () => {
               </span>
             </div>
 
-            <div className="my-auto py-4 flex items-center gap-5">
-              <div className="relative w-20 h-20 flex-shrink-0 flex items-center justify-center">
+            <div className="my-auto py-4 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-5">
+              <div className="relative w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0 flex items-center justify-center">
                 <motion.div
                   animate={{ rotate: 360 }}
                   transition={{ duration: 10, repeat: Infinity, ease: 'linear' }}
@@ -442,12 +442,12 @@ export const MovingBlocksSection: React.FC = () => {
                 <img
                   src="/logo/urbrand360-emblem-dark.png"
                   alt="UR Monogram"
-                  className="w-12 h-12 object-contain"
+                  className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
                 />
               </div>
 
               <blockquote className="border-l-2 border-[#E11D2A] pl-4">
-                <p className="font-serif italic text-[19px] xl:text-[22px] leading-[1.25] text-[#0A0A0A]">
+                <p className="font-serif italic text-[18px] sm:text-[19px] xl:text-[22px] leading-[1.25] text-[#0A0A0A]">
                   “A dedicated team, a clear plan, honest reporting and personal founder accountability.”
                 </p>
               </blockquote>

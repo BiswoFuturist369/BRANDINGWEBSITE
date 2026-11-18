@@ -33,8 +33,8 @@ export const FocusCarousel: React.FC<FocusCarouselProps> = ({ employees }) => {
   const getMetrics = useCallback(() => {
     const width = stageRef.current?.clientWidth || window.innerWidth;
     const isMobile = width < 768;
-    const cardW = isMobile ? 290 : 390;
-    const gap = isMobile ? 28 : 54;
+    const cardW = isMobile ? Math.min(290, Math.max(240, width - 48)) : 390;
+    const gap = isMobile ? 22 : 54;
     const slotW = cardW + gap;
     const totalW = slotW * slots.length;
     return { width, isMobile, cardW, slotW, totalW };
@@ -216,8 +216,8 @@ export const FocusCarousel: React.FC<FocusCarouselProps> = ({ employees }) => {
         style={{ perspective: '1100px', transformStyle: 'preserve-3d' }}
       >
         {/* Left and Right Edge Vignettes ("fade away round the other") */}
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-16 md:w-36 bg-gradient-to-r from-[#0A0A0A] via-[#0A0A0A]/80 to-transparent z-[120]" />
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-16 md:w-36 bg-gradient-to-l from-[#0A0A0A] via-[#0A0A0A]/80 to-transparent z-[120]" />
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-8 sm:w-16 md:w-36 bg-gradient-to-r from-[#0A0A0A] via-[#0A0A0A]/80 to-transparent z-[120]" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-8 sm:w-16 md:w-36 bg-gradient-to-l from-[#0A0A0A] via-[#0A0A0A]/80 to-transparent z-[120]" />
 
         {/* Virtual Curved Cards Track */}
         {slots.map((member, slotIdx) => (
@@ -230,7 +230,7 @@ export const FocusCarousel: React.FC<FocusCarouselProps> = ({ employees }) => {
               }
             }}
             data-center="false"
-            className="absolute w-[290px] md:w-[390px] h-[450px] md:h-[485px] rounded-[20px] bg-[#121212]/95 backdrop-blur-md border border-white/12 data-[center=true]:border-[#E11D2A] p-7 md:p-8 flex flex-col justify-between shadow-2xl transition-colors duration-300 cursor-pointer"
+            className="absolute w-[min(290px,calc(100vw-48px))] md:w-[390px] h-[440px] sm:h-[455px] md:h-[485px] rounded-[20px] bg-[#121212]/95 backdrop-blur-md border border-white/12 data-[center=true]:border-[#E11D2A] p-5 sm:p-7 md:p-8 flex flex-col justify-between shadow-2xl transition-colors duration-300 cursor-pointer"
             style={{
               willChange: 'transform, opacity',
               backfaceVisibility: 'hidden',

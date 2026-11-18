@@ -35,7 +35,7 @@ export const BrandHero: React.FC = () => {
     <section
       ref={containerRef}
       id="home"
-      className="relative w-full max-w-full min-h-screen bg-[#FFFFFF] text-[#0A0A0A] overflow-hidden flex flex-col justify-between pt-24 pb-12 px-4 sm:px-6 md:px-12 selection:bg-[#E11D2A] selection:text-white"
+      className="relative w-full max-w-full min-h-[100svh] bg-[#FFFFFF] text-[#0A0A0A] overflow-hidden flex flex-col justify-between pt-24 pb-10 sm:pb-12 px-4 sm:px-6 md:px-12 selection:bg-[#E11D2A] selection:text-white"
     >
       {/* Fallback anchor for backward compatibility */}
       <div id="studio" className="absolute top-0 left-0 w-0 h-0 pointer-events-none" />
@@ -43,38 +43,38 @@ export const BrandHero: React.FC = () => {
       {/* Clean Architectural Background — Zero cracks, zero noisy filters, pristine Interbrand aesthetic */}
       <div className="relative z-10 max-w-7xl mx-auto w-full flex-1 flex flex-col justify-between">
         {/* Top Header Labels */}
-        <div className="flex flex-col md:flex-row md:items-start justify-between gap-4 pt-4 pb-8 border-b border-[#0A0A0A]/10">
-          <div className="flex flex-col gap-1.5">
-            <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#0A0A0A]/80 flex items-center gap-2">
+        <div className="flex flex-col md:flex-row md:items-start justify-between gap-3 sm:gap-4 pt-2 sm:pt-4 pb-6 sm:pb-8 border-b border-[#0A0A0A]/10">
+          <div className="flex flex-col gap-1">
+            <span className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.16em] sm:tracking-[0.18em] text-[#0A0A0A]/80 flex items-center gap-2">
               <span className="text-[#E11D2A] text-xs leading-none">●</span> INDEPENDENT AGENCY · EST. FOR FOUNDERS
             </span>
-            <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#0A0A0A]/60">
+            <span className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.16em] sm:tracking-[0.18em] text-[#0A0A0A]/60">
               SERVING BRANDS WORLDWIDE
             </span>
           </div>
 
-          <div className="flex flex-col md:items-end gap-1.5 text-left md:text-right">
-            <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#0A0A0A]/80">
+          <div className="flex flex-col md:items-end gap-1 text-left md:text-right">
+            <span className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.16em] sm:tracking-[0.18em] text-[#0A0A0A]/80">
               BRAND · MARKETING · ECOMMERCE
             </span>
-            <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#0A0A0A]/60">
+            <span className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.16em] sm:tracking-[0.18em] text-[#0A0A0A]/60">
               CONSULTING · TAX · AI & AUTOMATION
             </span>
           </div>
         </div>
 
         {/* Center Hero: Eyebrow + Interbrand Reveal H1 (Centered) + Action Controls */}
-        <div className="my-auto py-16 md:py-24 text-center flex flex-col items-center justify-center">
+        <div className="my-auto py-10 sm:py-16 md:py-24 text-center flex flex-col items-center justify-center">
           {/* Eyebrow with enlarged prominent font size */}
-          <div className="mb-6 md:mb-8">
-            <span className="font-mono text-[14px] sm:text-[15px] md:text-[16px] uppercase tracking-[0.22em] text-[#E11D2A] font-bold">
+          <div className="mb-4 sm:mb-6 md:mb-8">
+            <span className="font-mono text-[12px] sm:text-[15px] md:text-[16px] uppercase tracking-[0.2em] sm:tracking-[0.22em] text-[#E11D2A] font-bold">
               ONE PARTNER. EVERY ANGLE.
             </span>
           </div>
 
-          {/* Interbrand Unfold H1: First centered 'U', then expands into full 'URBrand 360' (Enlarged & Perfectly Compact) */}
-          <div className="relative w-full max-w-full flex items-center justify-center select-none overflow-hidden py-2 px-2">
-            <h1 className="font-sans font-black tracking-[-0.035em] text-[clamp(44px,8.8vw,138px)] leading-[0.92] text-[#0A0A0A] flex items-center justify-center uppercase max-w-full">
+          {/* Interbrand Unfold H1: First centered 'U', then expands into full 'URBrand 360' (Fluid across 320px to 4K) */}
+          <div className="relative w-full max-w-full flex items-center justify-center select-none overflow-hidden py-2 px-1 sm:px-2">
+            <h1 className="font-sans font-black tracking-[-0.035em] text-[clamp(32px,9vw,138px)] leading-[0.92] text-[#0A0A0A] flex items-center justify-center uppercase max-w-full">
               {/* The Anchor Initial Letter 'U' */}
               <motion.span
                 layout
@@ -122,15 +122,15 @@ export const BrandHero: React.FC = () => {
           </motion.div>
 
           {/* Under H1: Centered Pill + Solid Black Circle Button */}
-          <div className="mt-10 md:mt-14 flex flex-wrap items-center justify-center gap-4 md:gap-6">
-            <span className="font-mono text-[11px] sm:text-[12px] uppercase tracking-[0.18em] px-6 py-3 rounded-full border border-[#0A0A0A]/20 bg-[#FFFFFF] text-[#0A0A0A] shadow-sm">
+          <div className="mt-8 sm:mt-10 md:mt-14 flex flex-wrap items-center justify-center gap-4 md:gap-6">
+            <span className="font-mono text-[10px] sm:text-[12px] uppercase tracking-[0.16em] sm:tracking-[0.18em] px-4 sm:px-6 py-2.5 sm:py-3 rounded-full border border-[#0A0A0A]/20 bg-[#FFFFFF] text-[#0A0A0A] shadow-sm">
               BRAND × GROWTH × STRATEGY
             </span>
 
             <button
               type="button"
               onClick={handleScrollToProcess}
-              className="group relative w-24 h-24 rounded-full bg-[#0A0A0A] text-white flex flex-col items-center justify-center font-mono text-[10px] uppercase tracking-[0.18em] transition-transform duration-300 hover:scale-105 hover:bg-[#E11D2A] focus:outline-none shadow-lg cursor-pointer"
+              className="group relative w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-[#0A0A0A] text-white flex flex-col items-center justify-center font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.16em] sm:tracking-[0.18em] transition-transform duration-300 hover:scale-105 hover:bg-[#E11D2A] focus:outline-none shadow-lg cursor-pointer"
               aria-label="Scroll to 360° Process view"
             >
               <span>360°</span>
@@ -140,16 +140,16 @@ export const BrandHero: React.FC = () => {
         </div>
 
         {/* Bottom Hairline + Lede & Body */}
-        <div className="pt-8 border-t border-[#0A0A0A]/12 grid grid-cols-1 md:grid-cols-12 gap-8 items-start text-left">
+        <div className="pt-6 sm:pt-8 border-t border-[#0A0A0A]/12 grid grid-cols-1 md:grid-cols-12 gap-5 sm:gap-8 items-start text-left">
           <div className="md:col-span-6">
-            <p className="font-serif text-[28px] md:text-[34px] lg:text-[40px] leading-[1.1] text-[#0A0A0A]">
+            <p className="font-serif text-[24px] sm:text-[28px] md:text-[34px] lg:text-[40px] leading-[1.12] text-[#0A0A0A]">
               A 360° partner for brands that{' '}
               <span className="italic text-[#E11D2A]">refuse to blend in.</span>
             </p>
           </div>
 
           <div className="md:col-span-6 flex justify-start md:justify-end">
-            <p className="font-sans text-[17px] leading-[1.65] text-[#0A0A0A]/72 max-w-[56ch] font-light">
+            <p className="font-sans text-[15px] sm:text-[17px] leading-[1.65] text-[#0A0A0A]/72 max-w-[56ch] font-light">
               We build the identity, the demand engine and the strategy, so a founder can
               move like a company ten times its size. Strategy first. Craft always.
             </p>
