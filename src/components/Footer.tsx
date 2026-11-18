@@ -147,7 +147,7 @@ export const Footer: React.FC = () => {
                 Direct Communication &amp; Booking
               </p>
               <p>{contactConfig.phone}</p>
-              <p className="text-[#25D366]">WhatsApp: {contactConfig.whatsapp}</p>
+              <p className="text-white/85">WhatsApp: <span className="text-[#E11D2A]">{contactConfig.whatsapp}</span></p>
               <a
                 href={contactConfig.calendarUrl}
                 target="_blank"

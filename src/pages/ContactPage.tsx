@@ -13,7 +13,7 @@ export const ContactPage: React.FC = () => {
     email: '',
     company: '',
     location: '',
-    budget: '$10,000 - $25,000',
+    budget: '$2,000 - $5,000',
     message: '',
   });
 
@@ -22,11 +22,11 @@ export const ContactPage: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const budgetOptions = [
-    'Under $10,000',
-    '$10,000 - $25,000',
-    '$25,000 - $50,000',
-    '$50,000+',
-    'Flexible / Advisory',
+    '$500 - $2,000',
+    '$2,000 - $5,000',
+    '$5,000 - $10,000',
+    '$10,000 - $20,000',
+    'Ongoing Fractional Strategic Retainer',
   ];
 
   const toggleService = (name: string) => {
@@ -99,7 +99,7 @@ export const ContactPage: React.FC = () => {
                         type="button"
                         onClick={() => {
                           setIsSubmitted(false);
-                          setFormData({ name: '', email: '', company: '', location: '', budget: '$10,000 - $25,000', message: '' });
+                          setFormData({ name: '', email: '', company: '', location: '', budget: '$2,000 - $5,000', message: '' });
                         }}
                         className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#E11D2A] hover:underline"
                       >

@@ -253,32 +253,27 @@ export const GlobalSection: React.FC = () => {
   return (
     <section
       id="global"
-      className="relative w-full max-w-full py-20 md:py-40 px-4 sm:px-6 md:px-12 bg-[#0A0A0A] text-[#FFFFFF] overflow-hidden border-t border-white/10"
+      className="relative w-full max-w-full py-16 md:py-28 px-4 sm:px-6 md:px-12 bg-[#0A0A0A] text-[#FFFFFF] overflow-x-clip border-t border-white/10"
     >
       <div className="max-w-7xl mx-auto">
-        {/* Eyebrow — Increased font size */}
-        <div className="mb-6">
-          <span className="font-mono text-[14px] sm:text-[15px] md:text-[16px] uppercase tracking-[0.22em] text-[#E11D2A] font-bold">
-            GLOBAL REACH
-          </span>
-        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+          {/* Left: Eyebrow, Heading, Copy & Global Presence Grid */}
+          <div className="lg:col-span-6 flex flex-col gap-6">
+            <div>
+              <span className="font-mono text-[14px] sm:text-[15px] md:text-[16px] uppercase tracking-[0.22em] text-[#E11D2A] font-bold block mb-4">
+                GLOBAL REACH
+              </span>
+              <h2 className="font-display text-[clamp(32px,4.5vw,66px)] leading-[1.03] tracking-[-0.015em] text-white font-normal max-w-full">
+                One partner. <span className="italic text-[#E11D2A]">Every market.</span>
+              </h2>
+            </div>
 
-        {/* Basic Display Heading H2 (Fluids Clamped) */}
-        <div className="max-w-5xl mb-16 md:mb-20">
-          <h2 className="font-display text-[clamp(30px,4.5vw,66px)] leading-[1.03] tracking-[-0.015em] text-white font-normal max-w-full">
-            One partner. <span className="italic text-[#E11D2A]">Every market.</span>
-          </h2>
-        </div>
-
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          {/* Left: Copy & Details */}
-          <div className="lg:col-span-6 flex flex-col gap-8">
-            <p className="font-sans text-[20px] md:text-[22px] leading-[1.65] text-white/80 font-light">
+            <p className="font-sans text-[18px] md:text-[20px] leading-[1.65] text-white/80 font-light">
               A remote-first team of specialists, based in Indore, India, working with brands worldwide.
               We bring the right expert to each project without the overhead of a large agency.
             </p>
 
-            <div className="pt-6 border-t border-white/12 flex flex-col gap-4">
+            <div className="pt-5 border-t border-white/12 flex flex-col gap-3">
               <div className="flex items-center gap-3">
                 <span className="w-2.5 h-2.5 rounded-full bg-[#E11D2A] pulse-red" />
                 <span className="font-mono text-[12px] sm:text-[13px] uppercase tracking-[0.18em] text-white/95 font-semibold">
@@ -290,11 +285,50 @@ export const GlobalSection: React.FC = () => {
                 and expanding enterprises across all major timezones with real-time connectivity.
               </p>
             </div>
+
+            {/* Compact Regional & Delivery Capabilities Grid */}
+            <div className="grid grid-cols-2 gap-4 pt-2">
+              <div className="p-4 rounded-[14px] bg-white/[0.04] border border-white/10">
+                <div className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#E11D2A] font-semibold mb-1">
+                  REGIONS SERVED
+                </div>
+                <div className="font-sans text-[14px] text-white/90 font-medium">
+                  APAC · Europe · Americas · MENA
+                </div>
+              </div>
+
+              <div className="p-4 rounded-[14px] bg-white/[0.04] border border-white/10">
+                <div className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#E11D2A] font-semibold mb-1">
+                  DELIVERY MODEL
+                </div>
+                <div className="font-sans text-[14px] text-white/90 font-medium">
+                  Async-First · Zero Agency Bloat
+                </div>
+              </div>
+
+              <div className="p-4 rounded-[14px] bg-white/[0.04] border border-white/10">
+                <div className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#E11D2A] font-semibold mb-1">
+                  TAX &amp; COMPLIANCE
+                </div>
+                <div className="font-sans text-[14px] text-white/90 font-medium">
+                  Cross-Border CA Led Structuring
+                </div>
+              </div>
+
+              <div className="p-4 rounded-[14px] bg-white/[0.04] border border-white/10">
+                <div className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#E11D2A] font-semibold mb-1">
+                  RESPONSE SLA
+                </div>
+                <div className="font-sans text-[14px] text-white/90 font-medium">
+                  Direct Senior Partner Access
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Right: Rotating 3D Globe with Real Map Continents & Hubs */}
           <div className="lg:col-span-6 flex items-center justify-center">
-            <div className="relative w-full max-w-[480px] aspect-square flex items-center justify-center">
+            <div className="relative w-full max-w-[460px] aspect-square flex items-center justify-center">
               <canvas
                 ref={canvasRef}
                 className="w-full h-full block cursor-grab active:cursor-grabbing"

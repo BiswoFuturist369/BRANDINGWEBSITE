@@ -53,7 +53,7 @@ export const CTASection: React.FC = () => {
       `_Sent via URBrand 360 Online Portal_`;
 
     const encoded = encodeURIComponent(text);
-    window.open(`https://wa.me/${whatsappNumber}?text=${encoded}`, '_blank');
+    window.open(`https://wa.me/${whatsappNumber}?text=${encoded}`, '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -80,19 +80,19 @@ export const CTASection: React.FC = () => {
           We would be happy to start with a no-obligation conversation about your goals. Reach us directly on WhatsApp or submit your brief below.
         </p>
 
-        {/* WhatsApp Highlight Banner Button */}
+        {/* WhatsApp Highlight Banner Button (Theme Palette: #0A0A0A / #E11D2A / #FFFFFF) */}
         <div className="mb-12">
           <div
             onClick={() => setActiveChannel('whatsapp')}
             className={`cursor-pointer rounded-[20px] p-6 sm:p-8 border transition-all duration-300 flex flex-col sm:flex-row sm:items-center justify-between gap-6 ${
               activeChannel === 'whatsapp'
-                ? 'bg-gradient-to-r from-[#0d2818] via-[#091b10] to-[#0A0A0A] border-[#25D366] shadow-[0_0_35px_rgba(37,211,102,0.25)]'
-                : 'bg-[#121212] border-white/15 hover:border-[#25D366]/60'
+                ? 'bg-gradient-to-r from-[#1a0a0c] via-[#120809] to-[#0A0A0A] border-[#E11D2A] shadow-[0_0_35px_rgba(225,29,42,0.22)]'
+                : 'bg-[#121212] border-white/15 hover:border-[#E11D2A]/60'
             }`}
           >
             <div className="flex items-center gap-5">
-              {/* WhatsApp Official Logo SVG */}
-              <div className="w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center flex-shrink-0 shadow-[0_0_20px_rgba(37,211,102,0.6)]">
+              {/* WhatsApp Official Logo SVG in Brand Theme */}
+              <div className="w-14 h-14 rounded-full bg-[#E11D2A] text-white flex items-center justify-center flex-shrink-0 shadow-[0_0_20px_rgba(225,29,42,0.45)]">
                 <svg className="w-8 h-8 fill-current" viewBox="0 0 24 24">
                   <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.971.53 1.834.813 2.796.813 3.183 0 5.768-2.586 5.768-5.766 0-3.18-2.585-5.766-5.768-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.748 0-3.385-.45-4.815-1.242l-5.185 1.358 1.385-5.056c-.886-1.488-1.385-3.218-1.385-5.06 0-5.514 4.486-10 10-10 5.514 0 10 4.486 10 10z"/>
                 </svg>
@@ -100,10 +100,10 @@ export const CTASection: React.FC = () => {
 
               <div>
                 <div className="flex items-center gap-3">
-                  <span className="font-mono text-[12px] uppercase tracking-[0.2em] text-[#25D366] font-bold">
+                  <span className="font-mono text-[12px] uppercase tracking-[0.2em] text-[#E11D2A] font-bold">
                     CONTACT US HERE ON WHATSAPP
                   </span>
-                  <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-mono bg-[#25D366]/20 text-[#25D366]">
+                  <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-mono bg-[#E11D2A]/20 text-white border border-[#E11D2A]/40">
                     FASTEST RESPONSE
                   </span>
                 </div>
@@ -122,7 +122,7 @@ export const CTASection: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={(e) => e.stopPropagation()}
-                className="font-mono text-[12px] uppercase tracking-[0.18em] px-6 py-3 rounded-full bg-[#25D366] text-black font-bold flex items-center gap-2 hover:bg-white transition-colors"
+                className="font-mono text-[12px] uppercase tracking-[0.18em] px-6 py-3 rounded-full bg-[#E11D2A] text-white font-bold flex items-center gap-2 hover:bg-white hover:text-[#0A0A0A] transition-colors"
               >
                 <span>OPEN WHATSAPP CHAT</span>
                 <ArrowUpRight size={16} />
@@ -153,8 +153,8 @@ export const CTASection: React.FC = () => {
               <div className="font-sans text-[16px] text-white/90 font-light mb-1">
                 {contactConfig.phone}
               </div>
-              <div className="font-sans text-[16px] text-[#25D366] font-medium flex items-center gap-2">
-                <span>WhatsApp: {contactConfig.whatsapp}</span>
+              <div className="font-sans text-[16px] text-white/90 font-medium flex items-center gap-2">
+                <span>WhatsApp: <span className="text-[#E11D2A]">{contactConfig.whatsapp}</span></span>
               </div>
             </div>
 
@@ -201,7 +201,7 @@ export const CTASection: React.FC = () => {
           <div className="lg:col-span-8 bg-[#121212] border border-white/10 p-8 md:p-12 rounded-[20px]">
             {submitted ? (
               <div className="py-16 text-center flex flex-col items-center justify-center">
-                <CheckCircle2 className="w-14 h-14 text-[#25D366] mb-4" />
+                <CheckCircle2 className="w-14 h-14 text-[#E11D2A] mb-4" />
                 <h3 className="font-serif text-[32px] text-white mb-2">Inquiry Ready &amp; Transmitted</h3>
                 <p className="font-sans text-white/70 max-w-md mb-6">
                   Thank you for reaching out. We have opened WhatsApp with your formatted brief. Our partners will respond promptly.
@@ -230,7 +230,7 @@ export const CTASection: React.FC = () => {
                       onClick={() => setActiveChannel('whatsapp')}
                       className={`font-mono text-[11px] uppercase tracking-[0.16em] px-4 py-1.5 rounded-full transition-colors cursor-pointer ${
                         activeChannel === 'whatsapp'
-                          ? 'bg-[#25D366] text-black font-bold'
+                          ? 'bg-[#E11D2A] text-white font-bold'
                           : 'bg-white/10 text-white/70 hover:text-white'
                       }`}
                     >
@@ -241,7 +241,7 @@ export const CTASection: React.FC = () => {
                       onClick={() => setActiveChannel('email')}
                       className={`font-mono text-[11px] uppercase tracking-[0.16em] px-4 py-1.5 rounded-full transition-colors cursor-pointer ${
                         activeChannel === 'email'
-                          ? 'bg-[#E11D2A] text-white font-bold'
+                          ? 'bg-white text-[#0A0A0A] font-bold'
                           : 'bg-white/10 text-white/70 hover:text-white'
                       }`}
                     >
@@ -262,7 +262,7 @@ export const CTASection: React.FC = () => {
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       placeholder="Jane Doe"
-                      className="w-full bg-[#181818] border border-white/15 rounded-[10px] px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#25D366] transition-colors"
+                      className="w-full bg-[#181818] border border-white/15 rounded-[10px] px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#E11D2A] transition-colors"
                     />
                   </div>
 
@@ -276,7 +276,7 @@ export const CTASection: React.FC = () => {
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       placeholder="jane@company.com"
-                      className="w-full bg-[#181818] border border-white/15 rounded-[10px] px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#25D366] transition-colors"
+                      className="w-full bg-[#181818] border border-white/15 rounded-[10px] px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#E11D2A] transition-colors"
                     />
                   </div>
                 </div>
@@ -292,7 +292,7 @@ export const CTASection: React.FC = () => {
                       value={formData.company}
                       onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                       placeholder="Acme Corp"
-                      className="w-full bg-[#181818] border border-white/15 rounded-[10px] px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#25D366] transition-colors"
+                      className="w-full bg-[#181818] border border-white/15 rounded-[10px] px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#E11D2A] transition-colors"
                     />
                   </div>
 
@@ -305,8 +305,8 @@ export const CTASection: React.FC = () => {
                       required
                       value={formData.location}
                       onChange={(e) => setFormData({ ...formData, location: e.target.value })}
-                      placeholder="e.g. India, US, UK, Australia, Worldwide..."
-                      className="w-full bg-[#181818] border border-white/15 rounded-[10px] px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#25D366] transition-colors"
+                      placeholder="e.g. India, Canada, Australia, Singapore, Worldwide..."
+                      className="w-full bg-[#181818] border border-white/15 rounded-[10px] px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#E11D2A] transition-colors"
                     />
                   </div>
                 </div>
@@ -326,7 +326,7 @@ export const CTASection: React.FC = () => {
                           onClick={() => toggleService(service.name)}
                           className={`font-mono text-[11px] uppercase tracking-[0.14em] px-4 py-2 rounded-full border transition-all duration-200 cursor-pointer ${
                             selected
-                              ? 'bg-[#25D366] text-black border-[#25D366] font-semibold'
+                              ? 'bg-[#E11D2A] text-white border-[#E11D2A] font-semibold'
                               : 'bg-transparent border-white/15 text-white/75 hover:border-white/40'
                           }`}
                         >
@@ -337,7 +337,7 @@ export const CTASection: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Budget Range */}
+                {/* Budget Range ($500 to $20,000) */}
                 <div>
                   <label className="block font-mono text-[11px] uppercase tracking-[0.18em] text-white/70 mb-2">
                     Estimated Budget Range
@@ -345,13 +345,14 @@ export const CTASection: React.FC = () => {
                   <select
                     value={formData.budget}
                     onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
-                    className="w-full bg-[#181818] border border-white/15 rounded-[10px] px-4 py-3 text-white text-sm focus:outline-none focus:border-[#25D366] transition-colors"
+                    className="w-full bg-[#181818] border border-white/15 rounded-[10px] px-4 py-3 text-white text-sm focus:outline-none focus:border-[#E11D2A] transition-colors"
                   >
                     <option value="">Select an investment tier...</option>
-                    <option value="Under $5,000 / Rs. 4 Lakhs">Sprint: Under $5,000 / Rs. 4 Lakhs</option>
-                    <option value="$5,000 – $15,000 / Rs. 4–12 Lakhs">Quarterly: $5,000 – $15,000 / Rs. 4–12 Lakhs</option>
-                    <option value="$15,000 – $50,000+ / Rs. 12–40 Lakhs+">Scale: $15,000 – $50,000+ / Rs. 12–40 Lakhs+</option>
-                    <option value="Enterprise / Ongoing Fractional Retainer">Ongoing Fractional Strategic Retainer</option>
+                    <option value="$500 – $2,000">Starter / Sprint: $500 – $2,000</option>
+                    <option value="$2,000 – $5,000">Growth: $2,000 – $5,000</option>
+                    <option value="$5,000 – $10,000">Scale: $5,000 – $10,000</option>
+                    <option value="$10,000 – $20,000">Full 360° Partnership: $10,000 – $20,000</option>
+                    <option value="Ongoing Fractional Strategic Retainer">Ongoing Fractional Strategic Retainer</option>
                   </select>
                 </div>
 
@@ -366,18 +367,14 @@ export const CTASection: React.FC = () => {
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     placeholder="Briefly describe your business goals, immediate timeline, or questions for our specialists..."
-                    className="w-full bg-[#181818] border border-white/15 rounded-[10px] px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#25D366] transition-colors"
+                    className="w-full bg-[#181818] border border-white/15 rounded-[10px] px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#E11D2A] transition-colors"
                   />
                 </div>
 
                 {/* Submit Action */}
                 <button
                   type="submit"
-                  className={`w-full font-mono text-[12px] uppercase tracking-[0.2em] py-4 rounded-[12px] transition-all duration-300 font-bold flex items-center justify-center gap-3 cursor-pointer shadow-lg ${
-                    activeChannel === 'whatsapp'
-                      ? 'bg-[#25D366] text-black hover:bg-white hover:text-black shadow-[0_0_25px_rgba(37,211,102,0.4)]'
-                      : 'bg-[#E11D2A] text-white hover:bg-white hover:text-black shadow-[0_0_25px_rgba(225,29,42,0.4)]'
-                  }`}
+                  className="w-full font-mono text-[12px] uppercase tracking-[0.2em] py-4 rounded-[12px] transition-all duration-300 font-bold flex items-center justify-center gap-3 cursor-pointer shadow-lg bg-[#E11D2A] text-white hover:bg-white hover:text-[#0A0A0A] shadow-[0_0_25px_rgba(225,29,42,0.35)]"
                 >
                   {activeChannel === 'whatsapp' ? (
                     <>
