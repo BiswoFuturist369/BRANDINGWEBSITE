@@ -79,6 +79,19 @@ export const CareersPage: React.FC = () => {
   const handleApplySubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setApplied(true);
+
+    const subject = encodeURIComponent(`URBrand 360 Role Application · ${selectedRole?.title} · ${applicantName}`);
+    const body = encodeURIComponent(
+      `URBrand 360 Role Application\n` +
+      `---------------------------------------\n` +
+      `• Role: ${selectedRole?.title} (${selectedRole?.department})\n` +
+      `• Candidate Name: ${applicantName}\n` +
+      `• Candidate Email: ${applicantEmail}\n` +
+      `---------------------------------------\n` +
+      `Sent via URBrand 360 Careers Portal`
+    );
+
+    window.location.href = `mailto:urbrand360@gmail.com?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -171,7 +184,7 @@ export const CareersPage: React.FC = () => {
                     </div>
                     <h3 className="font-serif text-2xl">Application Received</h3>
                     <p className="font-sans text-sm text-white/70 max-w-md mx-auto">
-                      Thank you, {applicantName}. Our leadership team will review your credentials and get in touch if there is a mutual alignment.
+                      Thank you, {applicantName}. Your application brief has been prepared for <span className="text-white font-medium">urbrand360@gmail.com</span>. Our leadership team will review your credentials and get in touch if there is a mutual alignment.
                     </p>
                   </div>
                 ) : (

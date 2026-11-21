@@ -139,7 +139,12 @@ export const Footer: React.FC = () => {
               <p className="text-white/75 font-mono text-[11px] uppercase tracking-[0.14em]">
                 Email
               </p>
-              <p>{contactConfig.email}</p>
+              <a
+                href={`mailto:${contactConfig.email}`}
+                className="hover:text-white transition-colors"
+              >
+                {contactConfig.email}
+              </a>
             </div>
 
             <div className="flex flex-col gap-1.5 font-sans text-[14px] text-white/85 font-normal">

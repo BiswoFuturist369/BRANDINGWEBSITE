@@ -35,7 +35,7 @@ export const FreeAssessmentSection: React.FC = () => {
     );
 
     // Open Microsoft Outlook client / mailto handler
-    window.location.href = `mailto:vaishnavi@urbrand360.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:urbrand360@gmail.com?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -117,7 +117,7 @@ export const FreeAssessmentSection: React.FC = () => {
                   <CheckCircle2 className="w-16 h-16 text-[#E11D2A] mb-4" />
                   <h3 className="font-serif text-[34px] text-white mb-3">Outlook Request Prepared</h3>
                   <p className="font-sans text-white/75 max-w-md mb-8">
-                    Your assessment brief has been formatted. If your Microsoft Outlook client did not open automatically, you can send your brief to <strong className="text-white">vaishnavi@urbrand360.com</strong>.
+                    Your assessment brief has been formatted. If your Microsoft Outlook client did not open automatically, you can send your brief to <strong className="text-white">urbrand360@gmail.com</strong>.
                   </p>
                   <button
                     type="button"

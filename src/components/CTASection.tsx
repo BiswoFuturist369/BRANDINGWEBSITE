@@ -32,6 +32,23 @@ export const CTASection: React.FC = () => {
   const handleSubmitEmail = (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitted(true);
+
+    const subject = encodeURIComponent(`New Partnership Inquiry · ${formData.name || 'URBrand 360'}`);
+    const body = encodeURIComponent(
+      `New Partnership Inquiry · URBrand 360\n` +
+      `--------------------------------------\n` +
+      `• Name: ${formData.name}\n` +
+      `• Work Email: ${formData.email}\n` +
+      `• Company: ${formData.company || 'Not specified'}\n` +
+      `• Location: ${formData.location || 'Worldwide'}\n` +
+      `• Services of Interest: ${formData.selectedServices.length > 0 ? formData.selectedServices.join(', ') : 'All 360° Disciplines'}\n` +
+      `• Budget Range: ${formData.budget || 'Flexible'}\n` +
+      `• Project Scope / Goals:\n${formData.message || 'We would like to explore strategy & brand growth.'}\n` +
+      `--------------------------------------\n` +
+      `Sent via URBrand 360 Online Portal`
+    );
+
+    window.location.href = `mailto:${contactConfig.email}?subject=${subject}&body=${body}`;
   };
 
   const handleSendWhatsApp = (e: React.FormEvent) => {
@@ -138,9 +155,12 @@ export const CTASection: React.FC = () => {
               <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#FF3B47] font-bold mb-3">
                 DIRECT INQUIRIES
               </div>
-              <div className="font-sans text-[16px] text-white/95 font-normal mb-1">
+              <a
+                href={`mailto:${contactConfig.email}`}
+                className="font-sans text-[16px] text-white/95 font-normal mb-1 block hover:text-[#FF3B47] transition-colors"
+              >
                 {contactConfig.email}
-              </div>
+              </a>
               <div className="font-mono text-[11px] text-white/80 tracking-[0.1em]">
                 Direct founder &amp; senior partner inbox
               </div>
@@ -204,7 +224,9 @@ export const CTASection: React.FC = () => {
                 <CheckCircle2 className="w-14 h-14 text-[#E11D2A] mb-4" />
                 <h3 className="font-serif text-[28px] sm:text-[32px] text-white mb-2">Inquiry Ready &amp; Transmitted</h3>
                 <p className="font-sans text-white/70 max-w-md mb-6">
-                  Thank you for reaching out. We have opened WhatsApp with your formatted brief. Our partners will respond promptly.
+                  {activeChannel === 'whatsapp'
+                    ? 'Thank you for reaching out. We have opened WhatsApp with your formatted brief. Our partners will respond promptly.'
+                    : `Thank you for reaching out. Your brief has been prepared for ${contactConfig.email}. Our partners will review and respond promptly.`}
                 </p>
                 <button
                   type="button"

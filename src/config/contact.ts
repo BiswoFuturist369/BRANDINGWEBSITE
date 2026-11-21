@@ -30,7 +30,7 @@ export const contactConfig: ContactConfig = {
   tagline: "Where Vision Meets Strategy",
   headquarters: "Indore, Madhya Pradesh, India",
   reach: "Indore, India · Working worldwide",
-  email: "hello@urbrand360.com",
+  email: "urbrand360@gmail.com",
   phone: "+91 91313 53596",
   whatsapp: "+91 91313 53596",
   calendarUrl: "https://calendar.app.google/4U87pAwTRdixg25Y7",

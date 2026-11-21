@@ -42,6 +42,24 @@ export const ContactPage: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+
+    const subject = encodeURIComponent(`New Project Inquiry · ${formData.name}`);
+    const body = encodeURIComponent(
+      `New Project Inquiry · URBrand 360\n` +
+      `--------------------------------------\n` +
+      `• Name: ${formData.name}\n` +
+      `• Work Email: ${formData.email}\n` +
+      `• Company / Organization: ${formData.company || 'Not specified'}\n` +
+      `• Location: ${formData.location || 'Worldwide'}\n` +
+      `• Services of Interest: ${selectedServices.join(', ')}\n` +
+      `• Budget Tier: ${formData.budget}\n` +
+      `• Project Scope & Objectives:\n${formData.message}\n` +
+      `--------------------------------------\n` +
+      `Sent via URBrand 360 Contact Portal`
+    );
+
+    window.location.href = `mailto:${contactConfig.email}?subject=${subject}&body=${body}`;
+
     setTimeout(() => {
       setIsSubmitting(false);
       setIsSubmitted(true);
@@ -247,7 +265,11 @@ export const ContactPage: React.FC = () => {
                 <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#E11D2A] font-semibold block mb-3">
                   DIRECT CONTACT
                 </span>
-                <p className="font-sans text-[16px] text-white/90 font-light mb-1">{contactConfig.email}</p>
+                <p className="font-sans text-[16px] text-white/90 font-light mb-1">
+                  <a href={`mailto:${contactConfig.email}`} className="hover:text-[#E11D2A] transition-colors">
+                    {contactConfig.email}
+                  </a>
+                </p>
                 <p className="font-sans text-[16px] text-white/90 font-light">{contactConfig.phone}</p>
                 <p className="font-sans text-[16px] text-white/90 font-light">{contactConfig.whatsapp}</p>
               </div>
