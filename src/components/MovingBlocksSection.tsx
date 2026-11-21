@@ -439,11 +439,18 @@ export const MovingBlocksSection: React.FC = () => {
                   transition={{ duration: 10, repeat: Infinity, ease: 'linear' }}
                   className="absolute inset-0 rounded-full border border-dashed border-[#E11D2A]"
                 />
-                <img
-                  src="/logo/urbrand360-emblem-dark.png"
-                  alt="UR Monogram"
-                  className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
-                />
+                <picture>
+                  <source srcSet="/logo/urbrand360-emblem-dark-sm.webp" type="image/webp" />
+                  <img
+                    src="/logo/urbrand360-emblem-dark-sm.png"
+                    alt="UR Monogram"
+                    width={48}
+                    height={48}
+                    loading="lazy"
+                    decoding="async"
+                    className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
+                  />
+                </picture>
               </div>
 
               <blockquote className="border-l-2 border-[#E11D2A] pl-4">

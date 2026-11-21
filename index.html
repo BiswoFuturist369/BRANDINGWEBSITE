@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>URBrand 360 | Where Vision Meets Strategy</title>
     <meta name="description" content="Global branding, marketing, consulting, ecommerce, tax and AI automation studio." />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0A0A0A" />
     <link rel="canonical" href="https://urbrand360.com/" />
 
     <!-- Open Graph / Meta -->
@@ -23,10 +25,21 @@
     <meta name="twitter:description" content="Global branding, marketing, consulting, ecommerce, tax and AI automation studio." />
     <meta name="twitter:image" content="https://urbrand360.com/logo/urbrand360-logo-dark.png" />
 
-    <!-- Google Fonts: DM Serif Display, Instrument Serif, Inter Tight, Space Mono -->
+    <!-- Performance & Preloads: High Priority LCP Poster & Logo -->
+    <link rel="preload" as="image" href="/video/urbrand360-reel-poster-mobile.webp" type="image/webp" media="(max-width: 768px)" fetchpriority="high" />
+    <link rel="preload" as="image" href="/video/urbrand360-reel-poster.webp" type="image/webp" media="(min-width: 769px)" fetchpriority="high" />
+    <link rel="preload" as="image" href="/logo/urbrand360-emblem-dark-sm.webp" type="image/webp" />
+
+    <!-- Google Fonts: Non-render-blocking asynchronous load -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" media="print" onload="this.media='all'" />
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" />
+    </noscript>
 
     <!-- Organization JSON-LD -->
     <script type="application/ld+json">

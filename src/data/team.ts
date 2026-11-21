@@ -24,7 +24,7 @@ export interface EmployeeProfile {
 export const FOUNDER_DATA: FounderProfile = {
   name: 'Vaishnavi Ahuja',
   role: 'FOUNDER & CEO, URBRAND 360',
-  image: '/team/founder-vaishnavi-ahuja.jpg',
+  image: '/team/founder-vaishnavi-ahuja.webp',
   location: 'Indore, Madhya Pradesh, India · Working worldwide',
   quote:
     'Our promise to you: a dedicated team, a clear plan, honest reporting and a founder who is personally accountable for the quality of our work.',
@@ -55,7 +55,7 @@ export const EMPLOYEES_DATA: EmployeeProfile[] = [
     number: '01',
     name: 'Sanjeev Panjwani',
     role: 'CHARTERED ACCOUNTANT | TAXATION & FINANCE',
-    image: '/team/team-sanjeev-panjwani.jpg',
+    image: '/team/team-sanjeev-panjwani.webp',
     bio: 'CA with 6 years of corporate experience and specialised expertise in complex taxation within the international market; precise financial oversight and compliance strategies, helping businesses navigate cross-border tax regulations and optimise their financial strategy.',
   },
   {
@@ -63,7 +63,7 @@ export const EMPLOYEES_DATA: EmployeeProfile[] = [
     number: '02',
     name: 'Prakash Tiwari',
     role: 'MARKETING & SALES STRATEGY LEADER',
-    image: '/team/Prakash_tiwari.jpg',
+    image: '/team/Prakash_tiwari.webp',
     bio: 'Strategic leader in commercial marketing, CMO-level leadership and sales management; strong in high-level networking; builds structured sales strategies that drive revenue growth and aligns operational planning with business goals so success can scale; website tester.',
   },
   {
@@ -71,7 +71,7 @@ export const EMPLOYEES_DATA: EmployeeProfile[] = [
     number: '03',
     name: 'Ajay Harshchandani',
     role: 'ECOMMERCE MARKETING HEAD',
-    image: '/team/team-ajay-harshchandani.jpg',
+    image: '/team/team-ajay-harshchandani.webp',
     bio: '8+ years driving digital marketing and revenue growth across Shopify, Amazon, Flipkart, Google Ads and Meta Ads. Personal credentials: has managed monthly ad budgets of Rs. 18+ Lakhs while achieving 4.5x+ ROAS and has led strategies delivering 200%+ ARR growth.',
     note: 'Personal professional credentials prior to & alongside URBrand 360.',
   },
@@ -80,7 +80,7 @@ export const EMPLOYEES_DATA: EmployeeProfile[] = [
     number: '04',
     name: 'Bisworanjan Nayak',
     role: 'AI & AUTOMATION DEVELOPER',
-    image: '/team/team-bisworanjan-nayak.jpg',
+    image: '/team/team-bisworanjan-nayak.webp',
     bio: '3 years in AI and development, including facial recognition with OpenCV, the MediScan medicine information bot, e-commerce websites and text summarisation tools; builds automation workflows that connect APIs and AI to remove repetitive work.',
   },
 ];

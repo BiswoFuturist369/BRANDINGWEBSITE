@@ -17,9 +17,12 @@ export const URBrandLogo: React.FC<LogoProps> = ({
   // theme === 'light' means the background is light (white), so use the dark logo/text
   // theme === 'dark' means the background is dark (#0A0A0A), so use the light logo/text
   const isLightBg = theme === 'light';
-  const emblemSrc = isLightBg
-    ? '/logo/urbrand360-emblem-dark.png'
-    : '/logo/urbrand360-emblem-light.png';
+  const emblemWebp = isLightBg
+    ? '/logo/urbrand360-emblem-dark-sm.webp'
+    : '/logo/urbrand360-emblem-light-sm.webp';
+  const emblemPng = isLightBg
+    ? '/logo/urbrand360-emblem-dark-sm.png'
+    : '/logo/urbrand360-emblem-light-sm.png';
 
   return (
     <Link
@@ -28,13 +31,19 @@ export const URBrandLogo: React.FC<LogoProps> = ({
       className={`inline-flex items-center gap-2.5 sm:gap-3.5 focus:outline-none select-none transition-colors duration-200 ${className}`}
       aria-label="URBrand 360 - Where Vision Meets Strategy"
     >
-      {/* Real Emblem Image (responsive height, no box/background) */}
-      <img
-        src={emblemSrc}
-        alt="URBrand 360 Emblem"
-        className="h-[28px] sm:h-[34px] w-auto object-contain flex-shrink-0"
-        loading="eager"
-      />
+      {/* Optimized Modern Emblem (WebP with PNG fallback, explicit dimensions for zero CLS) */}
+      <picture className="flex-shrink-0">
+        <source srcSet={emblemWebp} type="image/webp" />
+        <img
+          src={emblemPng}
+          alt="URBrand 360 Emblem"
+          width={57}
+          height={34}
+          className="h-[28px] sm:h-[34px] w-auto object-contain flex-shrink-0"
+          loading="eager"
+          decoding="async"
+        />
+      </picture>
 
       {/* Wordmark */}
       <div className="flex flex-col justify-center leading-none">

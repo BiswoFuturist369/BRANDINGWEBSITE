@@ -4,6 +4,26 @@ export const HeroReel: React.FC = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
+  // Responsive high-efficiency WebP poster (10.8KB on mobile, 29KB on desktop)
+  const [posterSrc, setPosterSrc] = React.useState(
+    typeof window !== 'undefined' && window.innerWidth > 768
+      ? '/video/urbrand360-reel-poster.webp'
+      : '/video/urbrand360-reel-poster-mobile.webp'
+  );
+
+  useEffect(() => {
+    const updatePoster = () => {
+      setPosterSrc(
+        window.innerWidth > 768
+          ? '/video/urbrand360-reel-poster.webp'
+          : '/video/urbrand360-reel-poster-mobile.webp'
+      );
+    };
+    updatePoster();
+    window.addEventListener('resize', updatePoster, { passive: true });
+    return () => window.removeEventListener('resize', updatePoster);
+  }, []);
+
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
@@ -155,8 +175,8 @@ export const HeroReel: React.FC = () => {
           autoPlay
           muted
           playsInline
-          preload="auto"
-          poster="/video/urbrand360-reel-poster.jpg"
+          preload="metadata"
+          poster={posterSrc}
           className="w-full h-full object-contain sm:object-cover"
         >
           <source src="/video/urbrand360-reel-720p.mp4" media="(max-width: 768px)" type="video/mp4" />

@@ -183,10 +183,11 @@ export const AboutPanelContent: React.FC<AboutPanelContentProps> = ({
             <div className="lg:col-span-5 relative flex justify-center">
               <div className="w-64 h-64 md:w-72 md:h-72 rounded-full p-2 ring-2 ring-[#E11D2A] overflow-hidden">
                 <img
-                  src="/team/founder-vaishnavi-ahuja.jpg"
+                  src="/team/founder-vaishnavi-ahuja.webp"
                   alt="Vaishnavi Ahuja, Founder & CEO"
                   className="w-full h-full object-cover rounded-full grayscale contrast-115 hover:scale-105 transition-transform duration-700"
                   loading="lazy"
+                  decoding="async"
                 />
               </div>
             </div>
