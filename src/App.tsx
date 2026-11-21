@@ -73,8 +73,8 @@ export const App: React.FC = () => {
   return (
     <BrowserRouter>
       <SmoothScroll>
-        {/* Subtle noise grain overlay */}
-        <div className="fixed inset-0 pointer-events-none grain-overlay z-[9990] opacity-40" />
+        {/* Subtle noise grain overlay (desktop only to protect mobile composite paint performance) */}
+        <div className="fixed inset-0 pointer-events-none grain-overlay z-[9990] opacity-40 hidden md:block" />
 
         {/* Morphing Custom Cursor */}
         <CustomCursor />

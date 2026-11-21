@@ -41,47 +41,50 @@ export const HomePage: React.FC = () => {
       {/* Dynamic Header switching theme on scroll */}
       <Header />
 
-      {/* 1. Reel Hero (Silent Video, auto-scrolls on completion) */}
-      <HeroReel />
+      {/* Primary Main Landmark for accessibility navigation */}
+      <main id="main-content" role="main">
+        {/* 1. Reel Hero (Silent Video, auto-scrolls on completion) */}
+        <HeroReel />
 
-      {/* 2. Brand Hero (#home / #studio, Interbrand Starting Reveal H1 URBrand 360) */}
-      <BrandHero />
+        {/* 2. Brand Hero (#home / #studio, Interbrand Starting Reveal H1 URBrand 360) */}
+        <BrandHero />
 
-      {/* 3. Statement + Stats (#statement, Tagline, real stats) */}
-      <StatementStats />
+        {/* 3. Statement + Stats (#statement, Tagline, real stats) */}
+        <StatementStats />
 
-      {/* 4. Services (#services, 8 numbered rows) */}
-      <ServicesSection />
+        {/* 4. Services (#services, 8 numbered rows) */}
+        <ServicesSection />
 
-      {/* 5. Middle Section: Moving Blocks Upon Scrolling ("DID YOU KNOW?") */}
-      <MovingBlocksSection />
+        {/* 5. Middle Section: Moving Blocks Upon Scrolling ("DID YOU KNOW?") */}
+        <MovingBlocksSection />
 
-      {/* 6. About URBrand 360 & Why Choose Us (Mission, Vision & Strategic Pillars) */}
-      <AboutSection />
+        {/* 6. About URBrand 360 & Why Choose Us (Mission, Vision & Strategic Pillars) */}
+        <AboutSection />
 
-      {/* 7. How We Work (#process, 3D Rotating Gyroscope Quadrant Diagram) */}
-      <ProcessSection />
+        {/* 7. How We Work (#process, 3D Rotating Gyroscope Quadrant Diagram) */}
+        <ProcessSection />
 
-      {/* 8. Book a Free Assessment (Outlook Integration & Intake Modal) */}
-      <FreeAssessmentSection />
+        {/* 8. Book a Free Assessment (Outlook Integration & Intake Modal) */}
+        <FreeAssessmentSection />
 
-      {/* 9. Global Reach (#global, 3D Canvas Continents Globe & Worldwide Hubs) */}
-      <GlobalSection />
+        {/* 9. Global Reach (#global, 3D Canvas Continents Globe & Worldwide Hubs) */}
+        <GlobalSection />
 
-      {/* 10. Leadership Gateway (#founder, Links to /founder -> /employees) */}
-      <LeadershipGatewaySection />
+        {/* 10. Leadership Gateway (#founder, Links to /founder -> /employees) */}
+        <LeadershipGatewaySection />
 
-      {/* 11. Why Clients Trust Us (#trust, 6 items in hairline grid) */}
-      <TrustSection />
+        {/* 11. Why Clients Trust Us (#trust, 6 items in hairline grid) */}
+        <TrustSection />
 
-      {/* 12. Strategic Perspectives & Articles (#results, Replaces ad-like case studies) */}
-      <ArticlesSection />
+        {/* 12. Strategic Perspectives & Articles (#results, Replaces ad-like case studies) */}
+        <ArticlesSection />
 
-      {/* 13. Frequently Asked Questions (#faq, Accordion) */}
-      <FAQSection />
+        {/* 13. Frequently Asked Questions (#faq, Accordion) */}
+        <FAQSection />
 
-      {/* 14. Contact (#contact, WhatsApp Direct Modal & Email Brief) */}
-      <CTASection />
+        {/* 14. Contact (#contact, WhatsApp Direct Modal & Email Brief) */}
+        <CTASection />
+      </main>
 
       {/* 15. Footer (Wordmark, Navigation, Worldwide metadata) */}
       <Footer />

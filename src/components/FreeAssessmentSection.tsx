@@ -47,7 +47,7 @@ export const FreeAssessmentSection: React.FC = () => {
             <div className="absolute top-0 right-0 w-80 h-80 rounded-full bg-[#E11D2A]/15 blur-3xl pointer-events-none" />
 
             <div className="max-w-2xl">
-              <span className="font-mono text-[11px] sm:text-[12px] uppercase tracking-[0.2em] text-[#E11D2A] font-bold block mb-3">
+              <span className="font-mono text-[11px] sm:text-[12px] uppercase tracking-[0.2em] text-[#FF3B47] font-bold block mb-3">
                 FREE 360° STRATEGIC ASSESSMENT
               </span>
 
@@ -55,7 +55,7 @@ export const FreeAssessmentSection: React.FC = () => {
                 Discover your brand’s next tier of leverage.
               </h2>
 
-              <p className="font-sans text-[15px] sm:text-[16px] md:text-[18px] leading-[1.65] text-white/75 font-light">
+              <p className="font-sans text-[15px] sm:text-[16px] md:text-[18px] leading-[1.65] text-white/85 font-normal">
                 Receive an objective diagnostic across your positioning, commercial funnels,
                 and international compliance with actionable recommendations directly from our specialists.
               </p>
@@ -74,9 +74,9 @@ export const FreeAssessmentSection: React.FC = () => {
               <button
                 type="button"
                 onClick={() => setModalOpen(true)}
-                className="font-mono text-[11px] sm:text-[12px] uppercase tracking-[0.16em] sm:tracking-[0.18em] px-5 sm:px-6 py-3.5 sm:py-4 rounded-full border border-white/20 text-white hover:bg-white/10 transition-colors flex items-center justify-center gap-2 cursor-pointer"
+                className="font-mono text-[11px] sm:text-[12px] uppercase tracking-[0.16em] sm:tracking-[0.18em] px-5 sm:px-6 py-3.5 sm:py-4 rounded-full border border-white/20 text-white hover:bg-white/10 transition-colors flex items-center justify-center gap-2 cursor-pointer font-semibold"
               >
-                <Mail className="w-4 h-4 text-[#E11D2A] flex-shrink-0" />
+                <Mail className="w-4 h-4 text-[#FF3B47] flex-shrink-0" />
                 <span>Outlook Form</span>
               </button>
             </div>
@@ -149,72 +149,83 @@ export const FreeAssessmentSection: React.FC = () => {
                   <form onSubmit={handleOutlookSubmit} className="space-y-5">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div>
-                        <label className="block font-mono text-[11px] uppercase tracking-[0.16em] text-white/70 mb-1.5">
+                        <label htmlFor="assessment-name" className="block font-mono text-[11px] uppercase tracking-[0.16em] text-white/85 font-semibold mb-1.5">
                           Your Name *
                         </label>
                         <input
+                          id="assessment-name"
+                          name="name"
                           type="text"
                           required
                           value={formData.name}
                           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                           placeholder="Jane Doe"
-                          className="w-full bg-[#1c1c1c] border border-white/15 rounded-[10px] px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#E11D2A]"
+                          className="w-full bg-[#1c1c1c] border border-white/20 rounded-[10px] px-4 py-3 text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#FF3B47]"
                         />
                       </div>
 
                       <div>
-                        <label className="block font-mono text-[11px] uppercase tracking-[0.16em] text-white/70 mb-1.5">
+                        <label htmlFor="assessment-email" className="block font-mono text-[11px] uppercase tracking-[0.16em] text-white/85 font-semibold mb-1.5">
                           Work Email *
                         </label>
                         <input
+                          id="assessment-email"
+                          name="email"
                           type="email"
                           required
                           value={formData.email}
                           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                           placeholder="jane@company.com"
-                          className="w-full bg-[#1c1c1c] border border-white/15 rounded-[10px] px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#E11D2A]"
+                          className="w-full bg-[#1c1c1c] border border-white/20 rounded-[10px] px-4 py-3 text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#FF3B47]"
                         />
                       </div>
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div>
-                        <label className="block font-mono text-[11px] uppercase tracking-[0.16em] text-white/70 mb-1.5">
+                        <label htmlFor="assessment-company" className="block font-mono text-[11px] uppercase tracking-[0.16em] text-white/85 font-semibold mb-1.5">
                           Company / Venture *
                         </label>
                         <input
+                          id="assessment-company"
+                          name="company"
                           type="text"
                           required
                           value={formData.company}
                           onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                           placeholder="Acme Corp"
-                          className="w-full bg-[#1c1c1c] border border-white/15 rounded-[10px] px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#E11D2A]"
+                          className="w-full bg-[#1c1c1c] border border-white/20 rounded-[10px] px-4 py-3 text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#FF3B47]"
                         />
                       </div>
 
                       <div>
-                        <label className="block font-mono text-[11px] uppercase tracking-[0.16em] text-white/70 mb-1.5">
+                        <label htmlFor="assessment-website" className="block font-mono text-[11px] uppercase tracking-[0.16em] text-white/85 font-semibold mb-1.5">
                           Website or Store Link
                         </label>
                         <input
+                          id="assessment-website"
+                          name="website"
                           type="text"
                           value={formData.website}
                           onChange={(e) => setFormData({ ...formData, website: e.target.value })}
                           placeholder="https://acme.com"
-                          className="w-full bg-[#1c1c1c] border border-white/15 rounded-[10px] px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#E11D2A]"
+                          className="w-full bg-[#1c1c1c] border border-white/20 rounded-[10px] px-4 py-3 text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#FF3B47]"
                         />
                       </div>
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div>
-                        <label className="block font-mono text-[11px] uppercase tracking-[0.16em] text-white/70 mb-1.5">
+                        <label htmlFor="assessment-stage" className="block font-mono text-[11px] uppercase tracking-[0.16em] text-white/85 font-semibold mb-1.5">
                           Current Stage
                         </label>
                         <select
+                          id="assessment-stage"
+                          name="stage"
+                          aria-label="Current Stage"
                           value={formData.stage}
                           onChange={(e) => setFormData({ ...formData, stage: e.target.value })}
-                          className="w-full bg-[#1c1c1c] border border-white/15 rounded-[10px] px-4 py-3 text-white text-sm focus:outline-none focus:border-[#E11D2A]"
+                          className="w-full bg-[#1c1c1c] border border-white/20 rounded-[10px] px-4 py-3 text-white text-sm focus:outline-none focus:border-[#FF3B47]"
                         >
                           <option value="Early-Stage Startup (< $100k)">Early-Stage Startup (&lt; $100k)</option>
                           <option value="Growing SME ($100k - $500k)">Growing SME ($100k - $500k)</option>
@@ -224,13 +235,16 @@ export const FreeAssessmentSection: React.FC = () => {
                       </div>
 
                       <div>
-                        <label className="block font-mono text-[11px] uppercase tracking-[0.16em] text-white/70 mb-1.5">
+                        <label htmlFor="assessment-bottleneck" className="block font-mono text-[11px] uppercase tracking-[0.16em] text-white/85 font-semibold mb-1.5">
                           Primary Growth Bottleneck
                         </label>
                         <select
+                          id="assessment-bottleneck"
+                          name="bottleneck"
+                          aria-label="Primary Growth Bottleneck"
                           value={formData.bottleneck}
                           onChange={(e) => setFormData({ ...formData, bottleneck: e.target.value })}
-                          className="w-full bg-[#1c1c1c] border border-white/15 rounded-[10px] px-4 py-3 text-white text-sm focus:outline-none focus:border-[#E11D2A]"
+                          className="w-full bg-[#1c1c1c] border border-white/20 rounded-[10px] px-4 py-3 text-white text-sm focus:outline-none focus:border-[#FF3B47]"
                         >
                           <option value="Brand Positioning & Market Authority">Brand Positioning &amp; Authority</option>
                           <option value="Paid Media Scaling & CAC Inefficiency">Paid Media Scaling &amp; CAC</option>

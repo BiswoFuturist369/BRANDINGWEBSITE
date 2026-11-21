@@ -59,7 +59,7 @@ export const ServicesSection: React.FC = () => {
 
         {/* Section Eyebrow — Increased font size */}
         <div className="mb-6">
-          <span className="font-mono text-[14px] sm:text-[15px] md:text-[16px] uppercase tracking-[0.22em] text-[#E11D2A] font-bold">
+          <span className="font-mono text-[14px] sm:text-[15px] md:text-[16px] uppercase tracking-[0.22em] text-[#C71723] font-bold">
             SERVICES & EXPERTISE
           </span>
         </div>
@@ -68,7 +68,7 @@ export const ServicesSection: React.FC = () => {
         <div className="max-w-5xl mb-16 md:mb-24">
           <h2 className="font-display text-[clamp(30px,4.5vw,66px)] leading-[1.03] tracking-[-0.015em] text-[#0A0A0A] font-normal max-w-full">
             Eight ways we help brands{' '}
-            <span className="italic text-[#E11D2A]">find and command</span>{' '}
+            <span className="italic text-[#C71723]">find and command</span>{' '}
             their unique premium.
           </h2>
         </div>
@@ -83,27 +83,27 @@ export const ServicesSection: React.FC = () => {
               className="group relative border-t border-[#0A0A0A]/12 py-6 sm:py-8 md:py-10 transition-colors duration-300 hover:bg-[#F6F6F4]/50 cursor-pointer"
             >
               <div className="grid grid-cols-1 md:grid-cols-12 gap-3 sm:gap-6 items-baseline transition-transform duration-300 md:group-hover:translate-x-3">
-                {/* Number + Red Dot on Hover */}
+                {/* Number + Red Dot on Hover (High-contrast text-[#0A0A0A]/85 exceeds 9:1 ratio) */}
                 <div className="md:col-span-2 flex items-center gap-3">
                   <span className="w-2 h-2 rounded-full bg-[#E11D2A] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <span className="font-mono text-[12px] uppercase tracking-[0.18em] text-[#0A0A0A]/50 group-hover:text-[#E11D2A] transition-colors">
+                  <span className="font-mono text-[12px] uppercase tracking-[0.18em] text-[#0A0A0A]/85 group-hover:text-[#C71723] font-semibold transition-colors">
                     {service.number}
                   </span>
                 </div>
 
                 {/* Service Name & "Led by" */}
                 <div className="md:col-span-6">
-                  <h3 className="font-serif text-[24px] sm:text-[28px] md:text-[34px] lg:text-[38px] leading-[1.12] text-[#0A0A0A] group-hover:text-[#E11D2A] transition-colors">
+                  <h3 className="font-serif text-[24px] sm:text-[28px] md:text-[34px] lg:text-[38px] leading-[1.12] text-[#0A0A0A] group-hover:text-[#C71723] transition-colors">
                     {service.name}
                   </h3>
-                  <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#E11D2A] mt-2">
+                  <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#C71723] font-semibold mt-2">
                     Led by {service.ledBy}
                   </div>
                 </div>
 
-                {/* Short line right: Tagline */}
+                {/* Short line right: Tagline (High-contrast text-[#0A0A0A]/85) */}
                 <div className="md:col-span-4 flex items-center">
-                  <p className="font-sans text-[15px] leading-[1.6] text-[#0A0A0A]/70 font-light">
+                  <p className="font-sans text-[15px] leading-[1.6] text-[#0A0A0A]/85 font-normal">
                     {service.tagline}
                   </p>
                 </div>

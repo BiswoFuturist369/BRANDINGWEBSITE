@@ -127,7 +127,7 @@ export const ArticlesSection: React.FC = () => {
         {/* Top Header */}
         <div className="mb-14 md:mb-20">
           <div className="mb-6">
-            <span className="font-mono text-[14px] sm:text-[15px] md:text-[16px] uppercase tracking-[0.22em] text-[#E11D2A] font-bold">
+            <span className="font-mono text-[14px] sm:text-[15px] md:text-[16px] uppercase tracking-[0.22em] text-[#FF3B47] font-bold">
               STRATEGIC PERSPECTIVES · ARTICLES &amp; INSIGHTS
             </span>
           </div>
@@ -135,11 +135,11 @@ export const ArticlesSection: React.FC = () => {
           <div className="max-w-5xl mb-6">
             <h2 className="font-display text-[clamp(30px,4.5vw,66px)] leading-[1.03] tracking-[-0.015em] text-white font-normal max-w-full">
               Thinking that drives{' '}
-              <span className="italic text-[#E11D2A]">market conviction.</span>
+              <span className="italic text-[#FF3B47]">market conviction.</span>
             </h2>
           </div>
 
-          <p className="font-sans text-[17px] md:text-[19px] leading-[1.65] text-white/70 font-light max-w-3xl">
+          <p className="font-sans text-[17px] md:text-[19px] leading-[1.65] text-white/85 font-light max-w-3xl">
             In-depth strategic briefs authored by our domain specialists on brand architecture,
             commercial growth, international compliance, and AI workflows.
           </p>
@@ -153,15 +153,15 @@ export const ArticlesSection: React.FC = () => {
               whileHover={{ y: -6 }}
               transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
               onClick={() => setSelectedArticle(article)}
-              className="group cursor-pointer rounded-[20px] p-6 sm:p-8 md:p-10 bg-[#121212] border border-white/10 hover:border-[#E11D2A]/60 shadow-[0_20px_50px_rgba(0,0,0,0.5)] transition-all duration-300 flex flex-col justify-between"
+              className="group cursor-pointer rounded-[20px] p-6 sm:p-8 md:p-10 bg-[#121212] border border-white/10 hover:border-[#FF3B47]/60 shadow-[0_20px_50px_rgba(0,0,0,0.5)] transition-all duration-300 flex flex-col justify-between"
             >
               <div>
                 {/* Meta Header */}
                 <div className="flex items-center justify-between gap-4 mb-6">
-                  <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-[#E11D2A] font-semibold">
+                  <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-[#FF3B47] font-bold">
                     {article.category}
                   </span>
-                  <div className="flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.12em] text-white/40">
+                  <div className="flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.12em] text-white/80 font-medium">
                     <Clock size={12} />
                     <span>{article.readTime}</span>
                   </div>
@@ -172,18 +172,18 @@ export const ArticlesSection: React.FC = () => {
                   {article.title}
                 </h3>
 
-                <p className="font-sans text-[15px] leading-[1.6] text-white/70 font-light mb-6">
+                <p className="font-sans text-[15px] leading-[1.6] text-white/85 font-light mb-6">
                   {article.excerpt}
                 </p>
               </div>
 
               {/* Bottom Card Footer */}
               <div className="pt-6 border-t border-white/10 flex items-center justify-between">
-                <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-white/40">
+                <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-white/80 font-medium">
                   {article.date}
                 </span>
 
-                <div className="inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.18em] text-white group-hover:text-[#E11D2A] transition-colors font-semibold">
+                <div className="inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.18em] text-white group-hover:text-[#FF3B47] transition-colors font-semibold">
                   <span>Read Article</span>
                   <ArrowUpRight size={14} className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                 </div>

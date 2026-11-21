@@ -55,7 +55,7 @@ export const FAQSection: React.FC = () => {
       <div className="max-w-5xl mx-auto">
         {/* Eyebrow */}
         <div className="mb-6">
-          <span className="font-mono text-[14px] sm:text-[15px] md:text-[16px] uppercase tracking-[0.22em] text-[#E11D2A] font-bold">
+          <span className="font-mono text-[14px] sm:text-[15px] md:text-[16px] uppercase tracking-[0.22em] text-[#C71723] font-bold">
             FREQUENTLY ASKED QUESTIONS
           </span>
         </div>
@@ -64,9 +64,9 @@ export const FAQSection: React.FC = () => {
         <div className="mb-14 md:mb-20">
           <h2 className="font-display text-[clamp(30px,4.5vw,66px)] leading-[1.03] tracking-[-0.015em] text-[#0A0A0A] font-normal max-w-full">
             Answers to help you{' '}
-            <span className="italic text-[#E11D2A]">move with certainty.</span>
+            <span className="italic text-[#C71723]">move with certainty.</span>
           </h2>
-          <p className="font-sans text-[17px] md:text-[19px] leading-[1.65] text-[#0A0A0A]/70 font-light mt-4">
+          <p className="font-sans text-[17px] md:text-[19px] leading-[1.65] text-[#0A0A0A]/85 font-normal mt-4">
             Everything you need to know about our partnership structure, execution cadence, and global capabilities.
           </p>
         </div>
@@ -83,14 +83,14 @@ export const FAQSection: React.FC = () => {
                   className="w-full flex items-start justify-between gap-6 text-left cursor-pointer focus:outline-none group"
                   aria-expanded={isOpen}
                 >
-                  <span className="font-serif text-[22px] sm:text-[26px] md:text-[28px] leading-[1.2] text-[#0A0A0A] group-hover:text-[#E11D2A] transition-colors">
+                  <span className="font-serif text-[22px] sm:text-[26px] md:text-[28px] leading-[1.2] text-[#0A0A0A] group-hover:text-[#C71723] transition-colors">
                     {faq.question}
                   </span>
                   <div
                     className={`flex-shrink-0 w-8 h-8 rounded-full border flex items-center justify-center transition-all duration-300 mt-1 ${
                       isOpen
-                        ? 'border-[#E11D2A] bg-[#E11D2A] text-white'
-                        : 'border-[#0A0A0A]/20 text-[#0A0A0A] group-hover:border-[#E11D2A]'
+                        ? 'border-[#C71723] bg-[#C71723] text-white'
+                        : 'border-[#0A0A0A]/20 text-[#0A0A0A] group-hover:border-[#C71723]'
                     }`}
                   >
                     {isOpen ? <Minus size={16} /> : <Plus size={16} />}
@@ -106,7 +106,7 @@ export const FAQSection: React.FC = () => {
                       transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
                       className="overflow-hidden"
                     >
-                      <p className="font-sans text-[16px] md:text-[17px] leading-[1.7] text-[#0A0A0A]/75 font-light pt-5 pr-8 max-w-4xl">
+                      <p className="font-sans text-[16px] md:text-[17px] leading-[1.7] text-[#0A0A0A]/85 font-normal pt-5 pr-8 max-w-4xl">
                         {faq.answer}
                       </p>
                     </motion.div>

@@ -15,7 +15,7 @@ export const MovingBlocksSection: React.FC = () => {
           ========================================================================= */}
       <div className="sticky top-0 h-[100svh] w-full flex flex-col items-center justify-center pointer-events-none select-none z-0 px-4 text-center">
         <div className="mb-3 sm:mb-4">
-          <span className="font-mono text-[12px] sm:text-[15px] md:text-[16px] uppercase tracking-[0.2em] sm:tracking-[0.24em] text-[#E11D2A] font-bold">
+          <span className="font-mono text-[12px] sm:text-[15px] md:text-[16px] uppercase tracking-[0.2em] sm:tracking-[0.24em] text-[#C71723] font-bold">
             URBRAND 360 · BY DESIGN
           </span>
         </div>
@@ -59,12 +59,12 @@ export const MovingBlocksSection: React.FC = () => {
 
             <div className="relative z-10 flex items-center justify-between gap-4">
               <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/20">
-                <span className="w-2 h-2 rounded-full bg-[#E11D2A] animate-ping" />
+                <span className="w-2 h-2 rounded-full bg-[#FF3B47] animate-ping" />
                 <span className="font-mono text-[10px] uppercase tracking-[0.16em] text-white">
                   LIVE POD · ACTIVE
                 </span>
               </div>
-              <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-[#E11D2A] font-bold">
+              <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-[#FF3B47] font-bold">
                 01 / STRUCTURE
               </span>
             </div>
@@ -73,7 +73,7 @@ export const MovingBlocksSection: React.FC = () => {
               <p className="font-serif italic text-[26px] xl:text-[30px] leading-[1.18] text-white max-w-[17ch]">
                 One dedicated pod engineered around your business.
               </p>
-              <p className="font-sans text-[14px] leading-[1.6] text-white/75 font-light mt-3 max-w-[32ch]">
+              <p className="font-sans text-[14px] leading-[1.6] text-white/85 font-normal mt-3 max-w-[32ch]">
                 Brand directors, performance marketers, CA finance &amp; AI developers synced into a single high-conviction unit.
               </p>
             </div>
@@ -83,11 +83,11 @@ export const MovingBlocksSection: React.FC = () => {
                 <div className="font-display text-[76px] xl:text-[88px] leading-[0.82] tracking-tighter text-white">
                   05
                 </div>
-                <div className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#E11D2A] mt-2 font-semibold">
+                <div className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#FF3B47] mt-2 font-semibold">
                   SPECIALISTS · 01 CONTACT
                 </div>
               </div>
-              <div className="font-mono text-[11px] text-white/60 tracking-wider text-right uppercase">
+              <div className="font-mono text-[11px] text-white/80 tracking-wider text-right uppercase">
                 <div>Zero Silos</div>
                 <div className="text-white">Direct Access</div>
               </div>
@@ -101,10 +101,10 @@ export const MovingBlocksSection: React.FC = () => {
         <div className="w-full flex justify-center lg:justify-end lg:-mt-24">
           <div className="w-full max-w-[460px] lg:w-[460px] xl:w-[500px] min-h-[320px] sm:min-h-[380px] bg-[#FFFFFF] text-[#0A0A0A] rounded-[20px] border-x-[8px] sm:border-x-[14px] border-[#0A0A0A] border-y border-y-[#0A0A0A]/15 p-6 sm:p-8 xl:p-10 shadow-[0_30px_70px_rgba(10,10,10,0.22)] flex flex-col justify-between overflow-hidden">
             <div className="flex items-center justify-between border-b border-[#0A0A0A]/10 pb-4">
-              <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#E11D2A] font-bold">
+              <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#C71723] font-bold">
                 02 / SENIOR PEDIGREE
               </span>
-              <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-[#0A0A0A]/50">
+              <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-[#0A0A0A]/85 font-semibold">
                 NO JUNIORS
               </span>
             </div>
@@ -119,7 +119,7 @@ export const MovingBlocksSection: React.FC = () => {
                 <span className="font-mono text-[11px] uppercase tracking-[0.2em] font-semibold text-[#0A0A0A]">
                   BRAND ARCHITECTURE ✦ PERFORMANCE ADS ✦ GLOBAL TAXATION ✦ AI AUTOMATION ✦
                 </span>
-                <span className="font-mono text-[11px] uppercase tracking-[0.2em] font-semibold text-[#E11D2A]">
+                <span className="font-mono text-[11px] uppercase tracking-[0.2em] font-semibold text-[#C71723]">
                   BRAND ARCHITECTURE ✦ PERFORMANCE ADS ✦ GLOBAL TAXATION ✦ AI AUTOMATION ✦
                 </span>
               </motion.div>
@@ -127,7 +127,7 @@ export const MovingBlocksSection: React.FC = () => {
 
             <div className="text-center my-auto py-3">
               <div className="font-display text-[68px] xl:text-[82px] leading-none text-[#0A0A0A] tracking-tight">
-                3–8<span className="text-[#E11D2A] italic">+</span>
+                3–8<span className="text-[#C71723] italic">+</span>
               </div>
               <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#0A0A0A]/60 mt-2 font-medium">
                 YEARS CORPORATE EXPERIENCE EACH
@@ -141,16 +141,16 @@ export const MovingBlocksSection: React.FC = () => {
         </div>
 
         {/* =========================================================================
-            BLOCK 03 — Left · Crimson CA-Led Tax Radar
+            BLOCK 03 — Left · Crimson CA-Led Tax Radar (Rich Brand Crimson #BA1A24 with contrast > 6:1)
             ========================================================================= */}
         <div className="w-full flex justify-center lg:justify-start lg:-mt-20">
-          <div className="w-full max-w-[460px] lg:w-[460px] xl:w-[500px] min-h-[380px] bg-[#E11D2A] text-white p-8 xl:p-10 rounded-[20px] shadow-[0_30px_70px_rgba(225,29,42,0.32)] flex flex-col justify-between relative overflow-hidden">
-            <div className="flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.2em] text-white/90">
+          <div className="w-full max-w-[460px] lg:w-[460px] xl:w-[500px] min-h-[380px] bg-[#BA1A24] text-white p-8 xl:p-10 rounded-[20px] shadow-[0_30px_70px_rgba(186,26,36,0.35)] flex flex-col justify-between relative overflow-hidden">
+            <div className="flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.2em] text-white">
               <span className="flex items-center gap-1.5 font-bold">
                 <ShieldCheck size={14} />
                 03 / TAX &amp; COMPLIANCE
               </span>
-              <span className="px-2.5 py-0.5 rounded-full bg-white/20 text-white text-[9px]">
+              <span className="px-2.5 py-0.5 rounded-full bg-white/20 text-white font-semibold text-[9px]">
                 CHARTERED LED
               </span>
             </div>
@@ -170,7 +170,7 @@ export const MovingBlocksSection: React.FC = () => {
                   <div className="w-1/2 h-0.5 bg-gradient-to-r from-transparent to-white origin-right self-start mt-20" />
                 </motion.div>
 
-                <div className="relative z-10 w-16 h-16 rounded-full bg-white text-[#E11D2A] flex flex-col items-center justify-center font-mono text-[11px] font-bold shadow-lg">
+                <div className="relative z-10 w-16 h-16 rounded-full bg-white text-[#BA1A24] flex flex-col items-center justify-center font-mono text-[11px] font-bold shadow-lg">
                   <span>CA</span>
                   <span className="text-[8px] uppercase tracking-wider text-[#0A0A0A]">FINANCE</span>
                 </div>
@@ -181,7 +181,7 @@ export const MovingBlocksSection: React.FC = () => {
               <h3 className="font-serif text-[25px] xl:text-[28px] leading-[1.18] text-white mb-2">
                 Financial precision across international borders.
               </h3>
-              <p className="font-sans text-[13.5px] leading-[1.55] text-white/90 font-light">
+              <p className="font-sans text-[13.5px] leading-[1.55] text-white font-normal">
                 Cross-border structuring, overseas tax compliance, and investor audit handled directly by a Chartered Accountant.
               </p>
             </div>
@@ -195,7 +195,7 @@ export const MovingBlocksSection: React.FC = () => {
           <div className="w-full max-w-[460px] lg:w-[460px] xl:w-[500px] min-h-[380px] bg-[#FFFFFF] text-[#0A0A0A] rounded-[20px] border border-[#0A0A0A]/15 p-8 xl:p-10 shadow-[0_30px_70px_rgba(10,10,10,0.22)] flex flex-col justify-between overflow-hidden">
             <div className="flex items-center justify-between border-b border-[#0A0A0A]/10 pb-4">
               <span className="font-serif italic text-[22px] text-[#0A0A0A]">Global Delivery</span>
-              <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#E11D2A] font-bold">
+              <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#C71723] font-bold">
                 04 / REACH
               </span>
             </div>
@@ -211,7 +211,7 @@ export const MovingBlocksSection: React.FC = () => {
               <motion.div
                 animate={{ rotate: -360 }}
                 transition={{ duration: 15, repeat: Infinity, ease: 'linear' }}
-                className="absolute w-36 h-36 rounded-full border border-[#E11D2A]/50"
+                className="absolute w-36 h-36 rounded-full border border-[#FF3B47]/50"
               />
               {/* Pulsing Core */}
               <div className="relative z-10 text-center">
@@ -219,7 +219,7 @@ export const MovingBlocksSection: React.FC = () => {
                   <span className="w-1.5 h-1.5 rounded-full bg-white animate-ping" />
                   WORKING WORLDWIDE
                 </div>
-                <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-white/60 mt-2.5">
+                <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-white/80 mt-2.5 font-medium">
                   APAC · EUROPE · AMERICAS · MENA
                 </div>
               </div>
@@ -229,7 +229,7 @@ export const MovingBlocksSection: React.FC = () => {
               <div className="font-sans font-bold uppercase tracking-[-0.02em] text-[22px] xl:text-[25px] leading-tight text-[#0A0A0A]">
                 INDORE, INDIA · WORKING WORLDWIDE
               </div>
-              <p className="font-sans text-[13.5px] text-[#0A0A0A]/70 leading-relaxed font-light mt-2">
+              <p className="font-sans text-[13.5px] text-[#0A0A0A]/85 leading-relaxed font-normal mt-2">
                 100% remote-first agility connecting founders directly with dedicated specialists without traditional agency bloat.
               </p>
             </div>
@@ -240,15 +240,15 @@ export const MovingBlocksSection: React.FC = () => {
             BLOCK 05 — Left-Center Offset · Live Strategy Waveform Equalizer
             ========================================================================= */}
         <div className="w-full flex justify-center lg:justify-start lg:pl-10 xl:pl-16 lg:-mt-20">
-          <div className="w-full max-w-[460px] lg:w-[460px] xl:w-[500px] min-h-[380px] bg-[#0A0A0A] text-white rounded-[20px] border-t-4 border-[#E11D2A] p-8 xl:p-10 shadow-[0_30px_70px_rgba(10,10,10,0.35)] flex flex-col justify-between">
+          <div className="w-full max-w-[460px] lg:w-[460px] xl:w-[500px] min-h-[380px] bg-[#0A0A0A] text-white rounded-[20px] border-t-4 border-[#FF3B47] p-8 xl:p-10 shadow-[0_30px_70px_rgba(10,10,10,0.35)] flex flex-col justify-between">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
-                <Activity size={16} className="text-[#E11D2A]" />
-                <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#E11D2A] font-bold">
+                <Activity size={16} className="text-[#FF3B47]" />
+                <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#FF3B47] font-bold">
                   05 / COMMERCE + PERFORMANCE
                 </span>
               </div>
-              <span className="font-mono text-[10px] uppercase tracking-[0.16em] text-white/50">
+              <span className="font-mono text-[10px] uppercase tracking-[0.16em] text-white/80 font-medium">
                 REAL-TIME AD ENGINE
               </span>
             </div>
@@ -272,7 +272,7 @@ export const MovingBlocksSection: React.FC = () => {
                       ease: 'easeInOut',
                       delay: i * 0.05,
                     }}
-                    className={`w-2 rounded-t-sm ${i % 3 === 0 ? 'bg-[#E11D2A]' : 'bg-white/80'}`}
+                    className={`w-2 rounded-t-sm ${i % 3 === 0 ? 'bg-[#FF3B47]' : 'bg-white/80'}`}
                   />
                 ))}
               </div>
@@ -280,17 +280,17 @@ export const MovingBlocksSection: React.FC = () => {
               <div className="mt-5">
                 <h3 className="font-display text-[28px] xl:text-[32px] leading-[1.08] text-white">
                   Revenue engines &amp;{' '}
-                  <span className="italic text-[#E11D2A]">smart workflows.</span>
+                  <span className="italic text-[#FF3B47]">smart workflows.</span>
                 </h3>
-                <p className="font-sans text-[13.5px] leading-[1.55] text-white/70 font-light mt-2">
+                <p className="font-sans text-[13.5px] leading-[1.55] text-white/85 font-normal mt-2">
                   Full-funnel performance across Shopify, Amazon, Meta &amp; Google Ads — synced with custom AI automations.
                 </p>
               </div>
             </div>
 
-            <div className="pt-4 border-t border-white/15 flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.18em] text-white/60">
+            <div className="pt-4 border-t border-white/15 flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.18em] text-white/80">
               <span>PAID MEDIA · CRO · API</span>
-              <span className="text-[#E11D2A]">SCALE ENGINE</span>
+              <span className="text-[#FF3B47] font-semibold">SCALE ENGINE</span>
             </div>
           </div>
         </div>
@@ -302,12 +302,12 @@ export const MovingBlocksSection: React.FC = () => {
           <div className="w-full max-w-[460px] lg:w-[460px] xl:w-[500px] min-h-[380px] bg-[#FFFFFF] text-[#0A0A0A] rounded-[20px] border border-[#0A0A0A]/20 p-8 xl:p-10 shadow-[0_30px_70px_rgba(10,10,10,0.22)] flex flex-col justify-between">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
-                <Cpu size={16} className="text-[#E11D2A]" />
-                <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#E11D2A] font-bold">
+                <Cpu size={16} className="text-[#C71723]" />
+                <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#C71723] font-bold">
                   06 / AI AUTOMATION
                 </span>
               </div>
-              <span className="font-mono text-[10px] uppercase tracking-[0.16em] text-[#0A0A0A]/50">
+              <span className="font-mono text-[10px] uppercase tracking-[0.16em] text-[#0A0A0A]/85 font-semibold">
                 SYSTEM PIPELINE
               </span>
             </div>
@@ -317,10 +317,10 @@ export const MovingBlocksSection: React.FC = () => {
                 <span className="font-mono text-[11px] font-semibold uppercase text-[#0A0A0A]">
                   01. AUDIT &amp; ROADMAP
                 </span>
-                <span className="w-2 h-2 rounded-full bg-[#E11D2A] animate-pulse" />
+                <span className="w-2 h-2 rounded-full bg-[#C71723] animate-pulse" />
               </div>
 
-              <div className="flex items-center justify-center text-[#E11D2A] font-mono text-[12px]">
+              <div className="flex items-center justify-center text-[#C71723] font-mono text-[12px]">
                 <motion.div animate={{ y: [0, 4, 0] }} transition={{ duration: 1.4, repeat: Infinity }}>
                   ↓
                 </motion.div>
@@ -330,12 +330,12 @@ export const MovingBlocksSection: React.FC = () => {
                 <span className="font-mono text-[11px] font-semibold uppercase text-white">
                   02. AI WORKFLOW INGESTION
                 </span>
-                <span className="font-mono text-[9px] uppercase tracking-wider bg-[#E11D2A] text-white px-2 py-0.5 rounded">
+                <span className="font-mono text-[9px] uppercase tracking-wider bg-[#E11D2A] text-white font-semibold px-2 py-0.5 rounded">
                   ACTIVE
                 </span>
               </div>
 
-              <div className="flex items-center justify-center text-[#E11D2A] font-mono text-[12px]">
+              <div className="flex items-center justify-center text-[#C71723] font-mono text-[12px]">
                 <motion.div animate={{ y: [0, 4, 0] }} transition={{ duration: 1.4, repeat: Infinity, delay: 0.3 }}>
                   ↓
                 </motion.div>
@@ -345,15 +345,15 @@ export const MovingBlocksSection: React.FC = () => {
                 <span className="font-mono text-[11px] font-semibold uppercase text-[#0A0A0A]">
                   03. HIGH LEVERAGE DEPLOYMENT
                 </span>
-                <span className="font-mono text-[10px] text-[#E11D2A] font-bold">LIVE</span>
+                <span className="font-mono text-[10px] text-[#C71723] font-bold">LIVE</span>
               </div>
             </div>
 
             <div className="pt-4 border-t border-[#0A0A0A]/10 flex items-center justify-between">
-              <span className="font-sans text-[13px] text-[#0A0A0A]/70 font-light">
+              <span className="font-sans text-[13px] text-[#0A0A0A]/85 font-normal">
                 Eliminating manual overhead across systems.
               </span>
-              <span className="font-mono text-[10px] uppercase tracking-wider text-[#E11D2A] font-bold">
+              <span className="font-mono text-[10px] uppercase tracking-wider text-[#C71723] font-bold">
                 48H DIAGNOSTIC
               </span>
             </div>
@@ -367,12 +367,12 @@ export const MovingBlocksSection: React.FC = () => {
           <div className="w-full max-w-[460px] lg:w-[460px] xl:w-[500px] min-h-[380px] bg-[#0A0A0A] text-white rounded-[20px] border border-white/15 p-8 xl:p-10 shadow-[0_30px_70px_rgba(10,10,10,0.35)] flex flex-col justify-between">
             <div className="flex items-center justify-between border-b border-white/10 pb-4">
               <div className="flex items-center gap-2">
-                <Globe2 size={16} className="text-[#E11D2A]" />
-                <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#E11D2A] font-bold">
+                <Globe2 size={16} className="text-[#FF3B47]" />
+                <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#FF3B47] font-bold">
                   07 / WORLDWIDE HUBS
                 </span>
               </div>
-              <span className="font-mono text-[10px] uppercase tracking-[0.16em] text-white/50">
+              <span className="font-mono text-[10px] uppercase tracking-[0.16em] text-white/80 font-medium">
                 24/7 SYNCHRONIZED
               </span>
             </div>
@@ -380,15 +380,15 @@ export const MovingBlocksSection: React.FC = () => {
             <div className="my-auto py-3 grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div className="p-3.5 rounded-[12px] bg-white/[0.05] border border-white/10">
                 <div className="flex items-center justify-between mb-1">
-                  <span className="font-mono text-[9px] text-white/50 uppercase">INDORE (HQ)</span>
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#E11D2A] animate-ping" />
+                  <span className="font-mono text-[9px] text-white/75 uppercase font-medium">INDORE (HQ)</span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#FF3B47] animate-ping" />
                 </div>
                 <div className="font-display text-[19px] sm:text-[21px] text-white font-medium">IST · UTC+5:30</div>
               </div>
 
               <div className="p-3.5 rounded-[12px] bg-white/[0.05] border border-white/10">
                 <div className="flex items-center justify-between mb-1">
-                  <span className="font-mono text-[9px] text-white/50 uppercase">LONDON</span>
+                  <span className="font-mono text-[9px] text-white/75 uppercase font-medium">LONDON</span>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/70" />
                 </div>
                 <div className="font-display text-[19px] sm:text-[21px] text-white font-medium">GMT · UTC+0</div>
@@ -396,7 +396,7 @@ export const MovingBlocksSection: React.FC = () => {
 
               <div className="p-3.5 rounded-[12px] bg-white/[0.05] border border-white/10">
                 <div className="flex items-center justify-between mb-1">
-                  <span className="font-mono text-[9px] text-white/50 uppercase">NEW YORK</span>
+                  <span className="font-mono text-[9px] text-white/75 uppercase font-medium">NEW YORK</span>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/70" />
                 </div>
                 <div className="font-display text-[19px] sm:text-[21px] text-white font-medium">EST · UTC-5</div>
@@ -404,16 +404,16 @@ export const MovingBlocksSection: React.FC = () => {
 
               <div className="p-3.5 rounded-[12px] bg-white/[0.05] border border-white/10">
                 <div className="flex items-center justify-between mb-1">
-                  <span className="font-mono text-[9px] text-white/50 uppercase">SINGAPORE</span>
+                  <span className="font-mono text-[9px] text-white/75 uppercase font-medium">SINGAPORE</span>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/70" />
                 </div>
                 <div className="font-display text-[19px] sm:text-[21px] text-white font-medium">SGT · UTC+8</div>
               </div>
             </div>
 
-            <div className="pt-4 border-t border-white/10 flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.16em] text-white/60">
+            <div className="pt-4 border-t border-white/10 flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.16em] text-white/80">
               <span>ASYNC FIRST DELIVERY</span>
-              <span className="text-[#E11D2A]">GLOBAL AGILITY</span>
+              <span className="text-[#FF3B47] font-semibold">GLOBAL AGILITY</span>
             </div>
           </div>
         </div>
@@ -424,10 +424,10 @@ export const MovingBlocksSection: React.FC = () => {
         <div className="w-full flex justify-center lg:justify-end lg:-mt-20">
           <div className="w-full max-w-[460px] lg:w-[460px] xl:w-[500px] min-h-[380px] bg-[#FFFFFF] text-[#0A0A0A] rounded-[20px] border border-[#0A0A0A]/20 p-8 xl:p-10 shadow-[0_30px_70px_rgba(10,10,10,0.25)] flex flex-col justify-between overflow-hidden relative">
             <div className="flex items-center justify-between">
-              <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#E11D2A] font-bold">
+              <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#C71723] font-bold">
                 08 / ACCOUNTABILITY
               </span>
-              <span className="font-mono text-[10px] uppercase tracking-[0.16em] text-[#0A0A0A]/50">
+              <span className="font-mono text-[10px] uppercase tracking-[0.16em] text-[#0A0A0A]/85 font-semibold">
                 FOUNDER LED
               </span>
             </div>

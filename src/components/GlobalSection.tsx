@@ -260,27 +260,27 @@ export const GlobalSection: React.FC = () => {
           {/* Left: Eyebrow, Heading, Copy & Global Presence Grid */}
           <div className="lg:col-span-6 flex flex-col gap-6">
             <div>
-              <span className="font-mono text-[14px] sm:text-[15px] md:text-[16px] uppercase tracking-[0.22em] text-[#E11D2A] font-bold block mb-4">
+              <span className="font-mono text-[14px] sm:text-[15px] md:text-[16px] uppercase tracking-[0.22em] text-[#FF3B47] font-bold block mb-4">
                 GLOBAL REACH
               </span>
               <h2 className="font-display text-[clamp(32px,4.5vw,66px)] leading-[1.03] tracking-[-0.015em] text-white font-normal max-w-full">
-                One partner. <span className="italic text-[#E11D2A]">Every market.</span>
+                One partner. <span className="italic text-[#FF3B47]">Every market.</span>
               </h2>
             </div>
 
-            <p className="font-sans text-[18px] md:text-[20px] leading-[1.65] text-white/80 font-light">
+            <p className="font-sans text-[18px] md:text-[20px] leading-[1.65] text-white/85 font-light">
               A remote-first team of specialists, based in Indore, India, working with brands worldwide.
               We bring the right expert to each project without the overhead of a large agency.
             </p>
 
             <div className="pt-5 border-t border-white/12 flex flex-col gap-3">
               <div className="flex items-center gap-3">
-                <span className="w-2.5 h-2.5 rounded-full bg-[#E11D2A] pulse-red" />
+                <span className="w-2.5 h-2.5 rounded-full bg-[#FF3B47] pulse-red" />
                 <span className="font-mono text-[12px] sm:text-[13px] uppercase tracking-[0.18em] text-white/95 font-semibold">
                   Indore, India · Working worldwide
                 </span>
               </div>
-              <p className="font-sans text-[15px] leading-[1.65] text-white/60">
+              <p className="font-sans text-[15px] leading-[1.65] text-white/80 font-normal">
                 Operating without geographical friction, serving ambitious founders, D2C ventures,
                 and expanding enterprises across all major timezones with real-time connectivity.
               </p>
@@ -289,37 +289,37 @@ export const GlobalSection: React.FC = () => {
             {/* Compact Regional & Delivery Capabilities Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-4 pt-2">
               <div className="p-4 rounded-[14px] bg-white/[0.04] border border-white/10">
-                <div className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#E11D2A] font-semibold mb-1">
+                <div className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#FF3B47] font-bold mb-1">
                   REGIONS SERVED
                 </div>
-                <div className="font-sans text-[14px] text-white/90 font-medium">
+                <div className="font-sans text-[14px] text-white/95 font-medium">
                   APAC · Europe · Americas · MENA
                 </div>
               </div>
 
               <div className="p-4 rounded-[14px] bg-white/[0.04] border border-white/10">
-                <div className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#E11D2A] font-semibold mb-1">
+                <div className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#FF3B47] font-bold mb-1">
                   DELIVERY MODEL
                 </div>
-                <div className="font-sans text-[14px] text-white/90 font-medium">
+                <div className="font-sans text-[14px] text-white/95 font-medium">
                   Async-First · Zero Agency Bloat
                 </div>
               </div>
 
               <div className="p-4 rounded-[14px] bg-white/[0.04] border border-white/10">
-                <div className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#E11D2A] font-semibold mb-1">
+                <div className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#FF3B47] font-bold mb-1">
                   TAX &amp; COMPLIANCE
                 </div>
-                <div className="font-sans text-[14px] text-white/90 font-medium">
+                <div className="font-sans text-[14px] text-white/95 font-medium">
                   Cross-Border CA Led Structuring
                 </div>
               </div>
 
               <div className="p-4 rounded-[14px] bg-white/[0.04] border border-white/10">
-                <div className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#E11D2A] font-semibold mb-1">
+                <div className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#FF3B47] font-bold mb-1">
                   RESPONSE SLA
                 </div>
-                <div className="font-sans text-[14px] text-white/90 font-medium">
+                <div className="font-sans text-[14px] text-white/95 font-medium">
                   Direct Senior Partner Access
                 </div>
               </div>

@@ -79,7 +79,7 @@ export const StatementStats: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         {/* Eyebrow — Increased font size */}
         <div className="mb-6">
-          <span className="font-mono text-[14px] sm:text-[15px] md:text-[16px] uppercase tracking-[0.22em] text-[#E11D2A] font-bold">
+          <span className="font-mono text-[14px] sm:text-[15px] md:text-[16px] uppercase tracking-[0.22em] text-[#C71723] font-bold">
             THE STATEMENT
           </span>
         </div>
@@ -87,13 +87,13 @@ export const StatementStats: React.FC = () => {
         {/* Clean Display Heading H2 (Fluids Clamped for All Screens) */}
         <div className="max-w-5xl mb-8">
           <h2 className="font-display text-[clamp(32px,5.2vw,72px)] leading-[1.04] text-[#0A0A0A] font-normal tracking-[-0.015em] max-w-full">
-            Rewrite the way the world <span className="italic text-[#E11D2A]">sees you.</span>
+            Rewrite the way the world <span className="italic text-[#C71723]">sees you.</span>
           </h2>
         </div>
 
         {/* Short Statement Paragraph */}
         <div className="max-w-3xl mb-20">
-          <p className="font-sans text-[18px] md:text-[20px] leading-[1.65] text-[#0A0A0A]/72 font-light">
+          <p className="font-sans text-[18px] md:text-[20px] leading-[1.65] text-[#0A0A0A]/85 font-normal">
             We are a startup, and we are open about that: the energy and personal attention
             of a new company, backed by specialists with years of experience in corporate roles,
             performance marketing, finance and technology.
@@ -107,7 +107,7 @@ export const StatementStats: React.FC = () => {
             <div className="font-display text-[clamp(42px,5vw,76px)] leading-none text-[#0A0A0A] mb-3">
               <Counter end={5} trigger={inView} />
             </div>
-            <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#0A0A0A]/60">
+            <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#0A0A0A]/85 font-semibold">
               SPECIALISTS ON YOUR PROJECT
             </div>
           </div>
@@ -123,7 +123,7 @@ export const StatementStats: React.FC = () => {
                 '3–8+'
               )}
             </div>
-            <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#0A0A0A]/60">
+            <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#0A0A0A]/85 font-semibold">
               YEARS OF EXPERIENCE PER EXPERT
             </div>
           </div>
@@ -133,7 +133,7 @@ export const StatementStats: React.FC = () => {
             <div className="font-display text-[clamp(42px,5vw,76px)] leading-none text-[#0A0A0A] mb-3">
               <Counter end={100} suffix="%" trigger={inView} />
             </div>
-            <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#0A0A0A]/60">
+            <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#0A0A0A]/85 font-semibold">
               REMOTE-FIRST, FLEXIBLE
             </div>
           </div>
@@ -143,7 +143,7 @@ export const StatementStats: React.FC = () => {
             <div className="font-display text-[clamp(42px,5vw,76px)] leading-none text-[#0A0A0A] mb-3">
               <Counter end={1} trigger={inView} />
             </div>
-            <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#0A0A0A]/60">
+            <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#0A0A0A]/85 font-semibold">
               POINT OF CONTACT FOR YOU
             </div>
           </div>

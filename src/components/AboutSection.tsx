@@ -15,7 +15,7 @@ export const AboutSection: React.FC = () => {
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Eyebrow */}
         <div className="mb-4">
-          <span className="font-mono text-[14px] sm:text-[15px] md:text-[16px] uppercase tracking-[0.22em] text-[#E11D2A] font-bold">
+          <span className="font-mono text-[14px] sm:text-[15px] md:text-[16px] uppercase tracking-[0.22em] text-[#C71723] font-bold">
             ABOUT URBRAND 360
           </span>
         </div>
@@ -23,7 +23,7 @@ export const AboutSection: React.FC = () => {
         {/* Large Prominent Display Headline: WHY CHOOSE URBRAND 360 */}
         <div className="max-w-5xl mb-6">
           <h2 className="font-display text-[clamp(36px,5.8vw,80px)] leading-[1.0] tracking-[-0.02em] text-[#0A0A0A] font-normal uppercase max-w-full">
-            WHY CHOOSE <span className="italic text-[#E11D2A]">URBRAND 360</span>
+            WHY CHOOSE <span className="italic text-[#C71723]">URBRAND 360</span>
           </h2>
         </div>
 
@@ -74,7 +74,7 @@ export const AboutSection: React.FC = () => {
                 <div className="w-10 h-10 rounded-full bg-[#E11D2A] text-white flex items-center justify-center">
                   <Target className="w-5 h-5" />
                 </div>
-                <span className="font-mono text-[12px] uppercase tracking-[0.2em] text-[#E11D2A] font-bold">
+                <span className="font-mono text-[12px] uppercase tracking-[0.2em] text-[#FF3B47] font-bold">
                   OUR MISSION
                 </span>
               </div>
@@ -83,14 +83,14 @@ export const AboutSection: React.FC = () => {
                 Clarity, Capabilities &amp; Connections
               </h3>
 
-              <p className="font-sans text-[16px] md:text-[17px] leading-[1.65] text-white/80 font-light">
+              <p className="font-sans text-[16px] md:text-[17px] leading-[1.65] text-white/90 font-light">
                 To empower businesses with the clarity, capabilities and connections they need to build stronger brands and sustainable, compounding growth.
               </p>
             </div>
 
-            <div className="mt-8 pt-6 border-t border-white/15 flex items-center justify-between font-mono text-[11px] uppercase tracking-[0.16em] text-white/50">
+            <div className="mt-8 pt-6 border-t border-white/15 flex items-center justify-between font-mono text-[11px] uppercase tracking-[0.16em] text-white/80">
               <span>FOUNDER-FIRST COMMITMENT</span>
-              <span className="text-[#E11D2A]">360° IMPACT</span>
+              <span className="text-[#FF3B47] font-semibold">360° IMPACT</span>
             </div>
           </motion.div>
 
@@ -106,7 +106,7 @@ export const AboutSection: React.FC = () => {
             <div>
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-10 h-10 rounded-full bg-[#0A0A0A] text-white flex items-center justify-center">
-                  <Compass className="w-5 h-5 text-[#E11D2A]" />
+                  <Compass className="w-5 h-5 text-[#FF3B47]" />
                 </div>
                 <span className="font-mono text-[12px] uppercase tracking-[0.2em] text-[#0A0A0A] font-bold">
                   OUR VISION
@@ -117,14 +117,14 @@ export const AboutSection: React.FC = () => {
                 Trusted Global Growth Partner
               </h3>
 
-              <p className="font-sans text-[16px] md:text-[17px] leading-[1.65] text-[#0A0A0A]/75 font-light">
+              <p className="font-sans text-[16px] md:text-[17px] leading-[1.65] text-[#0A0A0A]/85 font-normal">
                 To become a trusted global growth partner for businesses seeking meaningful transformation, operational excellence and long-term commercial success.
               </p>
             </div>
 
-            <div className="mt-8 pt-6 border-t border-[#0A0A0A]/12 flex items-center justify-between font-mono text-[11px] uppercase tracking-[0.16em] text-[#0A0A0A]/55">
+            <div className="mt-8 pt-6 border-t border-[#0A0A0A]/12 flex items-center justify-between font-mono text-[11px] uppercase tracking-[0.16em] text-[#0A0A0A]/85 font-semibold">
               <span>WORLDWIDE REACH</span>
-              <span className="text-[#E11D2A]">LONG-TERM SUCCESS</span>
+              <span className="text-[#C71723] font-bold">LONG-TERM SUCCESS</span>
             </div>
           </motion.div>
         </div>

@@ -22,7 +22,7 @@ export const LeadershipGatewaySection: React.FC = () => {
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Eyebrow — Increased font size */}
         <div className="mb-6">
-          <span className="font-mono text-[14px] sm:text-[15px] md:text-[16px] uppercase tracking-[0.22em] text-[#E11D2A] font-bold">
+          <span className="font-mono text-[14px] sm:text-[15px] md:text-[16px] uppercase tracking-[0.22em] text-[#FF3B47] font-bold">
             LEADERSHIP &amp; SPECIALISTS
           </span>
         </div>
@@ -31,9 +31,9 @@ export const LeadershipGatewaySection: React.FC = () => {
         <div className="max-w-5xl mb-14 md:mb-20">
           <h2 className="font-display text-[clamp(28px,4.2vw,62px)] leading-[1.03] tracking-[-0.015em] text-white font-normal max-w-full">
             Led by a founder who is{' '}
-            <span className="italic text-[#E11D2A]">personally accountable.</span>
+            <span className="italic text-[#FF3B47]">personally accountable.</span>
           </h2>
-          <p className="font-sans text-[17px] md:text-[19px] leading-[1.65] text-white/70 font-light mt-6 max-w-2xl">
+          <p className="font-sans text-[17px] md:text-[19px] leading-[1.65] text-white/85 font-light mt-6 max-w-2xl">
             Meet our Founder &amp; CEO Vaishnavi Ahuja and explore the dedicated domain specialists who execute your brand, marketing, financial compliance, and automation strategy.
           </p>
         </div>
@@ -75,7 +75,7 @@ export const LeadershipGatewaySection: React.FC = () => {
                       </div>
                     ))}
                   </div>
-                  <div className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.16em] sm:tracking-[0.18em] text-[#E11D2A] font-semibold">
+                  <div className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.16em] sm:tracking-[0.18em] text-[#FF3B47] font-bold">
                     01 FOUNDER · 04 SPECIALISTS
                   </div>
                 </div>
@@ -85,9 +85,9 @@ export const LeadershipGatewaySection: React.FC = () => {
                   Tap on it to know about the founder and the team
                 </div>
 
-                <div className="mt-4 sm:mt-5 flex flex-wrap items-center gap-2 sm:gap-3 font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.16em] sm:tracking-[0.18em] text-white/55">
-                  <span className="text-white/85">Step 01: Company Owner Details</span>
-                  <span className="text-[#E11D2A]">→</span>
+                <div className="mt-4 sm:mt-5 flex flex-wrap items-center gap-2 sm:gap-3 font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.16em] sm:tracking-[0.18em] text-white/80">
+                  <span className="text-white">Step 01: Company Owner Details</span>
+                  <span className="text-[#FF3B47]">→</span>
                   <span>Step 02: The Team &amp; Their Expertise</span>
                 </div>
               </div>

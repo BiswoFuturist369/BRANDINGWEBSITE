@@ -48,7 +48,7 @@ export const TrustSection: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         {/* Eyebrow — Increased font size */}
         <div className="mb-6">
-          <span className="font-mono text-[14px] sm:text-[15px] md:text-[16px] uppercase tracking-[0.22em] text-[#E11D2A] font-bold">
+          <span className="font-mono text-[14px] sm:text-[15px] md:text-[16px] uppercase tracking-[0.22em] text-[#FF3B47] font-bold">
             OUR FOUNDATION
           </span>
         </div>
@@ -57,7 +57,7 @@ export const TrustSection: React.FC = () => {
         <div className="max-w-4xl mb-16 md:mb-20">
           <h2 className="font-serif text-[clamp(28px,3.8vw,54px)] leading-[1.08] text-white max-w-full">
             Built on transparency, senior craft, and{' '}
-            <span className="italic text-[#E11D2A]">real accountability.</span>
+            <span className="italic text-[#FF3B47]">real accountability.</span>
           </h2>
         </div>
 
@@ -68,15 +68,15 @@ export const TrustSection: React.FC = () => {
               key={pillar.number}
               className="p-8 md:p-10 border-r border-b border-white/10 flex flex-col justify-between group hover:bg-[#111111] transition-colors duration-300"
             >
-              <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#E11D2A] mb-8">
+              <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#FF3B47] font-bold mb-8">
                 {pillar.number}
               </div>
 
               <div>
-                <h3 className="font-serif text-[24px] md:text-[28px] leading-[1.15] text-white mb-3 group-hover:text-[#E11D2A] transition-colors">
+                <h3 className="font-serif text-[24px] md:text-[28px] leading-[1.15] text-white mb-3 group-hover:text-[#FF3B47] transition-colors">
                   {pillar.title}
                 </h3>
-                <p className="font-sans text-[15px] leading-[1.65] text-white/70 font-light">
+                <p className="font-sans text-[15px] leading-[1.65] text-white/85 font-normal">
                   {pillar.description}
                 </p>
               </div>

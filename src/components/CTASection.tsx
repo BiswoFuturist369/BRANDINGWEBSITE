@@ -64,7 +64,7 @@ export const CTASection: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         {/* Eyebrow */}
         <div className="mb-6">
-          <span className="font-mono text-[14px] sm:text-[15px] md:text-[16px] uppercase tracking-[0.22em] text-[#E11D2A] font-bold">
+          <span className="font-mono text-[14px] sm:text-[15px] md:text-[16px] uppercase tracking-[0.22em] text-[#FF3B47] font-bold">
             GET IN TOUCH
           </span>
         </div>
@@ -72,22 +72,22 @@ export const CTASection: React.FC = () => {
         {/* Basic Display Heading H2 (Fluids Clamped) */}
         <div className="max-w-5xl mb-6">
           <h2 className="font-display text-[clamp(30px,4.5vw,66px)] leading-[1.03] tracking-[-0.015em] text-white font-normal max-w-full">
-            Let’s build something <span className="italic text-[#E11D2A]">great together.</span>
+            Let’s build something <span className="italic text-[#FF3B47]">great together.</span>
           </h2>
         </div>
 
-        <p className="font-sans text-[18px] md:text-[20px] leading-[1.65] text-white/75 font-light max-w-2xl mb-12">
+        <p className="font-sans text-[18px] md:text-[20px] leading-[1.65] text-white/85 font-light max-w-2xl mb-12">
           We would be happy to start with a no-obligation conversation about your goals. Reach us directly on WhatsApp or submit your brief below.
         </p>
 
-        {/* WhatsApp Highlight Banner Button (Theme Palette: #0A0A0A / #E11D2A / #FFFFFF) */}
+        {/* WhatsApp Highlight Banner Button (Theme Palette: #0A0A0A / #FF3B47 / #FFFFFF) */}
         <div className="mb-10 sm:mb-12">
           <div
             onClick={() => setActiveChannel('whatsapp')}
             className={`cursor-pointer rounded-[20px] p-5 sm:p-8 border transition-all duration-300 flex flex-col md:flex-row md:items-center justify-between gap-5 sm:gap-6 ${
               activeChannel === 'whatsapp'
-                ? 'bg-gradient-to-r from-[#1a0a0c] via-[#120809] to-[#0A0A0A] border-[#E11D2A] shadow-[0_0_35px_rgba(225,29,42,0.22)]'
-                : 'bg-[#121212] border-white/15 hover:border-[#E11D2A]/60'
+                ? 'bg-gradient-to-r from-[#1a0a0c] via-[#120809] to-[#0A0A0A] border-[#FF3B47] shadow-[0_0_35px_rgba(255,59,71,0.25)]'
+                : 'bg-[#121212] border-white/15 hover:border-[#FF3B47]/60'
             }`}
           >
             <div className="flex items-start sm:items-center gap-4 sm:gap-5">
@@ -100,17 +100,17 @@ export const CTASection: React.FC = () => {
 
               <div className="min-w-0">
                 <div className="flex flex-wrap items-center gap-2 sm:gap-3">
-                  <span className="font-mono text-[11px] sm:text-[12px] uppercase tracking-[0.16em] sm:tracking-[0.2em] text-[#E11D2A] font-bold">
+                  <span className="font-mono text-[11px] sm:text-[12px] uppercase tracking-[0.16em] sm:tracking-[0.2em] text-[#FF3B47] font-bold">
                     CONTACT US HERE ON WHATSAPP
                   </span>
-                  <span className="inline-flex items-center px-2 py-0.5 rounded text-[9px] sm:text-[10px] font-mono bg-[#E11D2A]/20 text-white border border-[#E11D2A]/40">
+                  <span className="inline-flex items-center px-2 py-0.5 rounded text-[9px] sm:text-[10px] font-mono bg-[#E11D2A]/30 text-white font-semibold border border-[#FF3B47]/60">
                     FASTEST RESPONSE
                   </span>
                 </div>
                 <h3 className="font-serif text-[20px] sm:text-[26px] text-white mt-1 leading-tight">
                   Chat Directly with Our Leadership Team
                 </h3>
-                <p className="font-sans text-[13px] sm:text-[14px] text-white/70 font-light mt-1">
+                <p className="font-sans text-[13px] sm:text-[14px] text-white/85 font-light mt-1">
                   Fill the brief below and click send — it instantly routes directly to our WhatsApp.
                 </p>
               </div>
@@ -135,38 +135,38 @@ export const CTASection: React.FC = () => {
           {/* Left Column: Direct Contact Info */}
           <div className="lg:col-span-4 flex flex-col gap-10">
             <div>
-              <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#E11D2A] mb-3">
+              <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#FF3B47] font-bold mb-3">
                 DIRECT INQUIRIES
               </div>
-              <div className="font-sans text-[16px] text-white/90 font-light mb-1">
+              <div className="font-sans text-[16px] text-white/95 font-normal mb-1">
                 {contactConfig.email}
               </div>
-              <div className="font-mono text-[11px] text-white/50 tracking-[0.1em]">
+              <div className="font-mono text-[11px] text-white/80 tracking-[0.1em]">
                 Direct founder &amp; senior partner inbox
               </div>
             </div>
 
             <div>
-              <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#E11D2A] mb-3">
+              <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#FF3B47] font-bold mb-3">
                 TELEPHONE &amp; WHATSAPP
               </div>
-              <div className="font-sans text-[16px] text-white/90 font-light mb-1">
+              <div className="font-sans text-[16px] text-white/95 font-normal mb-1">
                 {contactConfig.phone}
               </div>
-              <div className="font-sans text-[16px] text-white/90 font-medium flex items-center gap-2">
-                <span>WhatsApp: <span className="text-[#E11D2A]">{contactConfig.whatsapp}</span></span>
+              <div className="font-sans text-[16px] text-white/95 font-medium flex items-center gap-2">
+                <span>WhatsApp: <span className="text-[#FF3B47] font-bold">{contactConfig.whatsapp}</span></span>
               </div>
             </div>
 
             <div>
-              <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#E11D2A] mb-3">
+              <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#FF3B47] font-bold mb-3">
                 SCHEDULE A 1-ON-1 STRATEGY CALL
               </div>
               <a
                 href={contactConfig.calendarUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.18em] px-5 py-2.5 rounded-full border border-white/20 text-white hover:border-[#E11D2A] hover:bg-[#E11D2A] transition-all"
+                className="inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.18em] px-5 py-2.5 rounded-full border border-white/25 text-white hover:border-[#FF3B47] hover:bg-[#FF3B47] transition-all font-semibold"
               >
                 <span>OPEN GOOGLE CALENDAR</span>
                 <ArrowUpRight size={14} />
@@ -174,25 +174,25 @@ export const CTASection: React.FC = () => {
             </div>
 
             <div>
-              <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#E11D2A] mb-3">
+              <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#FF3B47] font-bold mb-3">
                 HEADQUARTERS &amp; WORKING REGIONS
               </div>
-              <div className="font-sans text-[16px] text-white/90 font-light leading-relaxed">
+              <div className="font-sans text-[16px] text-white/95 font-normal leading-relaxed">
                 {contactConfig.officeAddress.city}, {contactConfig.officeAddress.state}, {contactConfig.officeAddress.country}
               </div>
-              <div className="font-mono text-[11px] text-white/50 tracking-[0.1em] mt-1">
+              <div className="font-mono text-[11px] text-white/80 tracking-[0.1em] mt-1">
                 Serving brands and founders worldwide
               </div>
             </div>
 
             <div className="pt-6 border-t border-white/10">
-              <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#E11D2A] mb-4">
+              <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#FF3B47] font-bold mb-4">
                 CHANNELS
               </div>
               <div className="flex flex-col gap-2 font-mono text-[11px] uppercase tracking-[0.14em] break-all">
-                <span className="text-white/60">LinkedIn · {contactConfig.social.linkedin}</span>
-                <span className="text-white/60">Instagram · {contactConfig.social.instagram}</span>
-                <span className="text-white/60">Twitter / X · {contactConfig.social.twitter}</span>
+                <span className="text-white/80">LinkedIn · {contactConfig.social.linkedin}</span>
+                <span className="text-white/80">Instagram · {contactConfig.social.instagram}</span>
+                <span className="text-white/80">Twitter / X · {contactConfig.social.twitter}</span>
               </div>
             </div>
           </div>
@@ -253,30 +253,34 @@ export const CTASection: React.FC = () => {
                 {/* Name & Email */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block font-mono text-[11px] uppercase tracking-[0.18em] text-white/70 mb-2">
+                    <label htmlFor="contact-form-name" className="block font-mono text-[11px] uppercase tracking-[0.18em] text-white/85 font-semibold mb-2">
                       Your Name *
                     </label>
                     <input
+                      id="contact-form-name"
+                      name="name"
                       type="text"
                       required
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       placeholder="Jane Doe"
-                      className="w-full bg-[#181818] border border-white/15 rounded-[10px] px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#E11D2A] transition-colors"
+                      className="w-full bg-[#181818] border border-white/20 rounded-[10px] px-4 py-3 text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#FF3B47] transition-colors"
                     />
                   </div>
 
                   <div>
-                    <label className="block font-mono text-[11px] uppercase tracking-[0.18em] text-white/70 mb-2">
+                    <label htmlFor="contact-form-email" className="block font-mono text-[11px] uppercase tracking-[0.18em] text-white/85 font-semibold mb-2">
                       Work Email *
                     </label>
                     <input
+                      id="contact-form-email"
+                      name="email"
                       type="email"
                       required
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       placeholder="jane@company.com"
-                      className="w-full bg-[#181818] border border-white/15 rounded-[10px] px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#E11D2A] transition-colors"
+                      className="w-full bg-[#181818] border border-white/20 rounded-[10px] px-4 py-3 text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#FF3B47] transition-colors"
                     />
                   </div>
                 </div>
@@ -284,36 +288,40 @@ export const CTASection: React.FC = () => {
                 {/* Company & "Where are you based?" */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block font-mono text-[11px] uppercase tracking-[0.18em] text-white/70 mb-2">
+                    <label htmlFor="contact-form-company" className="block font-mono text-[11px] uppercase tracking-[0.18em] text-white/85 font-semibold mb-2">
                       Company / Venture
                     </label>
                     <input
+                      id="contact-form-company"
+                      name="company"
                       type="text"
                       value={formData.company}
                       onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                       placeholder="Acme Corp"
-                      className="w-full bg-[#181818] border border-white/15 rounded-[10px] px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#E11D2A] transition-colors"
+                      className="w-full bg-[#181818] border border-white/20 rounded-[10px] px-4 py-3 text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#FF3B47] transition-colors"
                     />
                   </div>
 
                   <div>
-                    <label className="block font-mono text-[11px] uppercase tracking-[0.18em] text-white/70 mb-2">
+                    <label htmlFor="contact-form-location" className="block font-mono text-[11px] uppercase tracking-[0.18em] text-white/85 font-semibold mb-2">
                       Where are you based? *
                     </label>
                     <input
+                      id="contact-form-location"
+                      name="location"
                       type="text"
                       required
                       value={formData.location}
                       onChange={(e) => setFormData({ ...formData, location: e.target.value })}
                       placeholder="e.g. India, Canada, Australia, Singapore, Worldwide..."
-                      className="w-full bg-[#181818] border border-white/15 rounded-[10px] px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#E11D2A] transition-colors"
+                      className="w-full bg-[#181818] border border-white/20 rounded-[10px] px-4 py-3 text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#FF3B47] transition-colors"
                     />
                   </div>
                 </div>
 
                 {/* Services Pills */}
                 <div>
-                  <label className="block font-mono text-[11px] uppercase tracking-[0.18em] text-white/70 mb-3">
+                  <label className="block font-mono text-[11px] uppercase tracking-[0.18em] text-white/85 font-semibold mb-3">
                     Services of Interest (Select all that apply)
                   </label>
                   <div className="flex flex-wrap gap-2.5">
@@ -327,7 +335,7 @@ export const CTASection: React.FC = () => {
                           className={`font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.12em] sm:tracking-[0.14em] px-3 sm:px-4 py-1.5 sm:py-2 rounded-full border text-left transition-all duration-200 cursor-pointer ${
                             selected
                               ? 'bg-[#E11D2A] text-white border-[#E11D2A] font-semibold'
-                              : 'bg-transparent border-white/15 text-white/75 hover:border-white/40'
+                              : 'bg-transparent border-white/20 text-white/85 hover:border-white/50'
                           }`}
                         >
                           {service.name}
@@ -337,15 +345,18 @@ export const CTASection: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Budget Range ($500 to $20,000) */}
+                {/* Budget Range ($500 to $20,000) with explicit label & id */}
                 <div>
-                  <label className="block font-mono text-[11px] uppercase tracking-[0.18em] text-white/70 mb-2">
-                    Estimated Budget Range
+                  <label htmlFor="budget-tier-select" className="block font-mono text-[11px] uppercase tracking-[0.18em] text-white/85 font-semibold mb-2">
+                    Estimated Budget Range (Select Investment Tier)
                   </label>
                   <select
+                    id="budget-tier-select"
+                    name="budget"
+                    aria-label="Select an investment tier"
                     value={formData.budget}
                     onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
-                    className="w-full bg-[#181818] border border-white/15 rounded-[10px] px-4 py-3 text-white text-sm focus:outline-none focus:border-[#E11D2A] transition-colors"
+                    className="w-full bg-[#181818] border border-white/20 rounded-[10px] px-4 py-3 text-white text-sm focus:outline-none focus:border-[#FF3B47] transition-colors"
                   >
                     <option value="">Select an investment tier...</option>
                     <option value="$500 – $2,000">Starter / Sprint: $500 – $2,000</option>
@@ -358,16 +369,18 @@ export const CTASection: React.FC = () => {
 
                 {/* Message */}
                 <div>
-                  <label className="block font-mono text-[11px] uppercase tracking-[0.18em] text-white/70 mb-2">
+                  <label htmlFor="contact-form-message" className="block font-mono text-[11px] uppercase tracking-[0.18em] text-white/85 font-semibold mb-2">
                     Project Scope &amp; Objectives *
                   </label>
                   <textarea
+                    id="contact-form-message"
+                    name="message"
                     required
                     rows={4}
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     placeholder="Briefly describe your business goals, immediate timeline, or questions for our specialists..."
-                    className="w-full bg-[#181818] border border-white/15 rounded-[10px] px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#E11D2A] transition-colors"
+                    className="w-full bg-[#181818] border border-white/20 rounded-[10px] px-4 py-3 text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#FF3B47] transition-colors"
                   />
                 </div>
 

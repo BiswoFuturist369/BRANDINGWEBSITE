@@ -65,7 +65,7 @@ export const ProcessSection: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         {/* Eyebrow — Increased font size */}
         <div className="mb-6">
-          <span className="font-mono text-[14px] sm:text-[15px] md:text-[16px] uppercase tracking-[0.22em] text-[#E11D2A] font-bold">
+          <span className="font-mono text-[14px] sm:text-[15px] md:text-[16px] uppercase tracking-[0.22em] text-[#C71723] font-bold">
             HOW WE WORK
           </span>
         </div>
@@ -73,7 +73,7 @@ export const ProcessSection: React.FC = () => {
         {/* Basic Display Heading H2 (Fluids Clamped) */}
         <div className="max-w-5xl mb-16 md:mb-24">
           <h2 className="font-display text-[clamp(30px,4.5vw,66px)] leading-[1.03] tracking-[-0.015em] text-[#0A0A0A] font-normal max-w-full">
-            Strategy first. <span className="italic text-[#E11D2A]">Craft always.</span>
+            Strategy first. <span className="italic text-[#C71723]">Craft always.</span>
           </h2>
         </div>
 
@@ -181,10 +181,10 @@ export const ProcessSection: React.FC = () => {
                     <span className="font-display text-[46px] md:text-[54px] leading-none text-[#0A0A0A] drop-shadow-sm">
                       360°
                     </span>
-                    <span className="font-mono text-[10px] md:text-[11px] uppercase tracking-[0.2em] text-[#E11D2A] font-semibold mt-1.5">
+                    <span className="font-mono text-[10px] md:text-[11px] uppercase tracking-[0.2em] text-[#C71723] font-bold mt-1.5">
                       QUADRANT {activeStep + 1} / 4
                     </span>
-                    <span className="font-mono text-[9px] uppercase tracking-[0.14em] text-[#0A0A0A]/50 mt-0.5">
+                    <span className="font-mono text-[9px] uppercase tracking-[0.14em] text-[#0A0A0A]/85 font-semibold mt-0.5">
                       STRATEGIC ORBIT
                     </span>
                   </motion.div>
@@ -193,7 +193,7 @@ export const ProcessSection: React.FC = () => {
             </div>
           </div>
 
-          {/* Right: 4 Sequential Steps */}
+          {/* Right: 4 Sequential Steps (All steps maintain compliant >= 4.5:1 contrast) */}
           <div className="lg:col-span-7 flex flex-col gap-16 md:gap-24 py-4">
             {STEPS.map((step, index) => {
               const isActive = index <= activeStep;
@@ -203,17 +203,17 @@ export const ProcessSection: React.FC = () => {
                   ref={(el) => (stepRefs.current[index] = el)}
                   className={`border-l-2 pl-8 transition-all duration-500 ${
                     isActive
-                      ? 'border-[#E11D2A] opacity-100'
-                      : 'border-[#0A0A0A]/10 opacity-40'
+                      ? 'border-[#C71723]'
+                      : 'border-[#0A0A0A]/20'
                   }`}
                 >
-                  <div className="font-mono text-[12px] uppercase tracking-[0.18em] text-[#E11D2A] mb-2 font-bold">
+                  <div className="font-mono text-[12px] uppercase tracking-[0.18em] text-[#C71723] mb-2 font-bold">
                     PHASE {step.number}
                   </div>
                   <h3 className="font-serif text-[32px] md:text-[40px] leading-[1.1] text-[#0A0A0A] mb-4">
                     {step.title}
                   </h3>
-                  <p className="font-sans text-[17px] leading-[1.65] text-[#0A0A0A]/72 max-w-[50ch] font-light">
+                  <p className="font-sans text-[17px] leading-[1.65] text-[#0A0A0A]/85 max-w-[50ch] font-normal">
                     {step.description}
                   </p>
                 </div>

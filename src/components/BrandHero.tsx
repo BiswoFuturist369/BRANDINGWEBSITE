@@ -45,19 +45,19 @@ export const BrandHero: React.FC = () => {
         {/* Top Header Labels */}
         <div className="flex flex-col md:flex-row md:items-start justify-between gap-3 sm:gap-4 pt-2 sm:pt-4 pb-6 sm:pb-8 border-b border-[#0A0A0A]/10">
           <div className="flex flex-col gap-1">
-            <span className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.16em] sm:tracking-[0.18em] text-[#0A0A0A]/80 flex items-center gap-2">
-              <span className="text-[#E11D2A] text-xs leading-none">●</span> INDEPENDENT AGENCY · EST. FOR FOUNDERS
+            <span className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.16em] sm:tracking-[0.18em] text-[#0A0A0A] font-semibold flex items-center gap-2">
+              <span className="text-[#C71723] text-xs leading-none">●</span> INDEPENDENT AGENCY · EST. FOR FOUNDERS
             </span>
-            <span className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.16em] sm:tracking-[0.18em] text-[#0A0A0A]/60">
+            <span className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.16em] sm:tracking-[0.18em] text-[#0A0A0A]/85">
               SERVING BRANDS WORLDWIDE
             </span>
           </div>
 
           <div className="flex flex-col md:items-end gap-1 text-left md:text-right">
-            <span className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.16em] sm:tracking-[0.18em] text-[#0A0A0A]/80">
+            <span className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.16em] sm:tracking-[0.18em] text-[#0A0A0A] font-semibold">
               BRAND · MARKETING · ECOMMERCE
             </span>
-            <span className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.16em] sm:tracking-[0.18em] text-[#0A0A0A]/60">
+            <span className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.16em] sm:tracking-[0.18em] text-[#0A0A0A]/85">
               CONSULTING · TAX · AI & AUTOMATION
             </span>
           </div>
@@ -67,7 +67,7 @@ export const BrandHero: React.FC = () => {
         <div className="my-auto py-10 sm:py-16 md:py-24 text-center flex flex-col items-center justify-center">
           {/* Eyebrow with enlarged prominent font size */}
           <div className="mb-4 sm:mb-6 md:mb-8">
-            <span className="font-mono text-[12px] sm:text-[15px] md:text-[16px] uppercase tracking-[0.2em] sm:tracking-[0.22em] text-[#E11D2A] font-bold">
+            <span className="font-mono text-[12px] sm:text-[15px] md:text-[16px] uppercase tracking-[0.2em] sm:tracking-[0.22em] text-[#C71723] font-bold">
               ONE PARTNER. EVERY ANGLE.
             </span>
           </div>
@@ -100,7 +100,7 @@ export const BrandHero: React.FC = () => {
                 <span className="inline-block text-[#0A0A0A]">
                   RBrand
                 </span>
-                <span className="inline-block ml-2 sm:ml-3 md:ml-4 text-[#E11D2A]">
+                <span className="inline-block ml-2 sm:ml-3 md:ml-4 text-[#C71723]">
                   360
                 </span>
               </motion.div>
@@ -115,7 +115,7 @@ export const BrandHero: React.FC = () => {
             className="mt-8 flex items-center justify-center gap-3 text-center"
           >
             <span className="h-px w-8 md:w-16 bg-[#0A0A0A]/20" />
-            <span className="font-serif italic text-[20px] sm:text-[24px] md:text-[28px] text-[#0A0A0A]/75">
+            <span className="font-serif italic text-[20px] sm:text-[24px] md:text-[28px] text-[#0A0A0A]/85">
               Where Vision Meets Strategy
             </span>
             <span className="h-px w-8 md:w-16 bg-[#0A0A0A]/20" />
@@ -123,14 +123,14 @@ export const BrandHero: React.FC = () => {
 
           {/* Under H1: Centered Pill + Solid Black Circle Button */}
           <div className="mt-8 sm:mt-10 md:mt-14 flex flex-wrap items-center justify-center gap-4 md:gap-6">
-            <span className="font-mono text-[10px] sm:text-[12px] uppercase tracking-[0.16em] sm:tracking-[0.18em] px-4 sm:px-6 py-2.5 sm:py-3 rounded-full border border-[#0A0A0A]/20 bg-[#FFFFFF] text-[#0A0A0A] shadow-sm">
+            <span className="font-mono text-[10px] sm:text-[12px] uppercase tracking-[0.16em] sm:tracking-[0.18em] px-4 sm:px-6 py-2.5 sm:py-3 rounded-full border border-[#0A0A0A]/20 bg-[#FFFFFF] text-[#0A0A0A] font-semibold shadow-sm">
               BRAND × GROWTH × STRATEGY
             </span>
 
             <button
               type="button"
               onClick={handleScrollToProcess}
-              className="group relative w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-[#0A0A0A] text-white flex flex-col items-center justify-center font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.16em] sm:tracking-[0.18em] transition-transform duration-300 hover:scale-105 hover:bg-[#E11D2A] focus:outline-none shadow-lg cursor-pointer"
+              className="group relative w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-[#0A0A0A] text-white flex flex-col items-center justify-center font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.16em] sm:tracking-[0.18em] transition-transform duration-300 hover:scale-105 hover:bg-[#C71723] focus:outline-none shadow-lg cursor-pointer"
               aria-label="Scroll to 360° Process view"
             >
               <span>360°</span>
@@ -144,12 +144,12 @@ export const BrandHero: React.FC = () => {
           <div className="md:col-span-6">
             <p className="font-serif text-[24px] sm:text-[28px] md:text-[34px] lg:text-[40px] leading-[1.12] text-[#0A0A0A]">
               A 360° partner for brands that{' '}
-              <span className="italic text-[#E11D2A]">refuse to blend in.</span>
+              <span className="italic text-[#C71723]">refuse to blend in.</span>
             </p>
           </div>
 
           <div className="md:col-span-6 flex justify-start md:justify-end">
-            <p className="font-sans text-[15px] sm:text-[17px] leading-[1.65] text-[#0A0A0A]/72 max-w-[56ch] font-light">
+            <p className="font-sans text-[15px] sm:text-[17px] leading-[1.65] text-[#0A0A0A]/85 max-w-[56ch] font-normal">
               We build the identity, the demand engine and the strategy, so a founder can
               move like a company ten times its size. Strategy first. Craft always.
             </p>
