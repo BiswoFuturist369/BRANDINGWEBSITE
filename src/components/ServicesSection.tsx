@@ -47,6 +47,11 @@ export const ServicesSection: React.FC = () => {
               <img
                 src={hoveredService.previewImage}
                 alt={hoveredService.name}
+                loading="eager"
+                decoding="async"
+                onError={(e) => {
+                  (e.target as HTMLImageElement).src = '/logo/urbrand360-emblem-dark.png';
+                }}
                 className="w-full h-full object-cover grayscale contrast-125"
               />
               <div className="absolute inset-0 bg-[#E11D2A]/15 mix-blend-multiply" />

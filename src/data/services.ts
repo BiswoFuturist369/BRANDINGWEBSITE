@@ -17,7 +17,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     name: 'Brand Strategy & Positioning',
     tagline: 'Who you are, who you serve and how you should sound, so your brand is easy to recognise and remember.',
     ledBy: 'Vaishnavi Ahuja, Prakash Tiwari',
-    previewImage: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?q=80&w=900&auto=format&fit=crop',
+    previewImage: '/services/brand-strategy.webp',
     headline: 'Brands engineered to define categories and transcend trends.',
     overview: 'We craft comprehensive identity systems rooted in rigorous strategy. From core brand philosophy to visual architecture and guidelines, our branding work builds instant equity across global markets.',
     deliverables: [
@@ -34,7 +34,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     name: 'Commercial Marketing & Sales Strategy',
     tagline: 'Structured marketing plans and sales processes aligned with your goals.',
     ledBy: 'Prakash Tiwari',
-    previewImage: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=900&auto=format&fit=crop',
+    previewImage: '/services/commercial-marketing.webp',
     headline: 'High-conviction go-to-market strategies that convert awareness into revenue.',
     overview: 'We bridge commercial ambition with tactical execution. Our market strategies align product narratives, distribution channels, and revenue funnels for sustained momentum.',
     deliverables: [
@@ -51,7 +51,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     name: 'Ecommerce Growth & Marketplaces',
     tagline: 'Go-to-market and growth for D2C stores and marketplaces such as Shopify, Amazon, Flipkart and Walmart.',
     ledBy: 'Ajay Harshchandani',
-    previewImage: 'https://images.unsplash.com/photo-1556742049-0a67c5574f73?q=80&w=900&auto=format&fit=crop',
+    previewImage: '/services/ecommerce-growth.webp',
     headline: 'End-to-end commerce acceleration across storefronts and global marketplaces.',
     overview: 'From catalog listing optimization and storefront UI to inventory forecasting and marketplace algorithms, we scale high-volume commerce channels across platforms.',
     deliverables: [
@@ -68,7 +68,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     name: 'Performance Marketing',
     tagline: 'Meta Ads, Google Ads and marketplace advertising with a focus on return on ad spend.',
     ledBy: 'Ajay Harshchandani',
-    previewImage: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=900&auto=format&fit=crop',
+    previewImage: '/services/performance-marketing.webp',
     headline: 'Disciplined capital allocation focused strictly on profitable ROAS.',
     overview: 'We engineer precision paid media campaigns across Meta, Google Search/Shopping, and marketplace ad networks, relentlessly testing creatives, copy, and audience clusters.',
     deliverables: [
@@ -85,7 +85,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     name: 'Conversion & Customer Journey Optimisation',
     tagline: 'Funnel improvements, higher prepaid-order conversion, marketing automation and retention.',
     ledBy: 'Ajay Harshchandani',
-    previewImage: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=900&auto=format&fit=crop',
+    previewImage: '/services/conversion-optimisation.webp',
     headline: 'Maximizing transaction velocity, prepaid conversion, and lifetime customer value.',
     overview: 'We inspect every step from landing page to checkout, eliminating drop-offs, boosting prepaid purchase rates, and implementing automated lifecycle retention flows.',
     deliverables: [
@@ -102,7 +102,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     name: 'Business Consulting',
     tagline: 'Planning, strategy and growth advice, including fractional marketing leadership for teams that need senior direction without a full-time hire.',
     ledBy: 'Vaishnavi Ahuja',
-    previewImage: 'https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=900&auto=format&fit=crop',
+    previewImage: '/services/business-consulting.webp',
     headline: 'Navigating complexity with clarity, rigor, and strategic conviction.',
     overview: 'Senior advisory for founders and leadership teams preparing for expansion or capital events. We dissect unit economics, organizational design, and operational leverage.',
     deliverables: [
@@ -119,7 +119,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     name: 'Taxation & Financial Compliance',
     tagline: 'Chartered Accountant support on tax matters, including cross-border and international taxation.',
     ledBy: 'Sanjeev Panjwani',
-    previewImage: 'https://images.unsplash.com/photo-1450133064473-71024230f91b?q=80&w=900&auto=format&fit=crop',
+    previewImage: '/services/taxation-compliance.webp',
     headline: 'Cross-border and international taxation, handled by a Chartered Accountant.',
     overview: 'Precise financial oversight and compliance strategies for modern global enterprises, navigating cross-border tax regulations, transfer pricing, and corporate financial health.',
     deliverables: [
@@ -136,7 +136,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     name: 'AI & Automation Solutions',
     tagline: 'Custom automation workflows, AI-assisted tools and API integrations that save your team time.',
     ledBy: 'Bisworanjan Nayak',
-    previewImage: 'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=900&auto=format&fit=crop',
+    previewImage: '/services/ai-automation.webp',
     headline: 'Eliminate friction. Unlock exponential operational leverage.',
     overview: 'Modern businesses scale through intelligent workflows. We build robust automated systems connecting APIs, LLMs, computer vision, CRM pipelines, and workflows into cohesive digital machinery.',
     deliverables: [
